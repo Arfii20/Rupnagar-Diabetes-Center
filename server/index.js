@@ -14,6 +14,66 @@ async function sendQueryEmail(event) {
     const subjectElement = form.querySelector('input[placeholder*="Subject"]');
     const descriptionElement = form.querySelector('input[placeholder*="Description"]');
 
+    const firstName = firstNameElement.value;
+    const lastName = lastNameElement.value;
+    const age = ageElement.value;
+    const emailAddress = emailAddressElement.value;
+    const phoneNumber = phoneNumberElement.value;
+    const subject = subjectElement.value;
+    const description = descriptionElement.value;
+
+    // Check first name
+    if (firstName === "") {
+        setInputError(firstNameElement, 'Please enter First Name');
+        return;
+    }
+    else{
+        clearInputError(firstNameElement);
+    }
+
+    // Check last name
+    if (lastName === "") {
+        setInputError(lastNameElement, 'Please enter Last Name');
+        return;
+    }
+    else{
+        clearInputError(lastNameElement);
+    }
+
+    // Check age
+    if (age === "") {
+        setInputError(ageElement, 'Please enter age');
+        return;
+    }
+    else if (0 < age < 110) {
+        setInputError(ageElement, 'Invalid age');
+        return;
+    }
+    else{
+        clearInputError(ageElement);
+    }
+
+    // Check phone number
+    if (phoneNumber === "") {
+        setInputError(phoneNumberElement, 'Please enter phone number');
+        return;
+    }
+    else if (!isValidNumber(phoneNumber)) {
+        setInputError(phoneNumberElement, 'Invalid phone number format');
+        return;
+    }
+    else{
+        clearInputError(phoneNumberElement);
+    }
+
+    // Check description
+    if (description === "") {
+        setInputError(descriptionElement, 'Please enter some Description');
+        return;
+    }
+    else{
+        clearInputError(descriptionElement);
+    }
 
     const formBody=
         "Name: " + firstName + " " + lastName + "\n" +
@@ -46,13 +106,63 @@ async function sendAppointmentEmail(event) {
 
     const form = button.closest('form');
 
-    const firstName = form.querySelector('input[placeholder*="First Name"]');
-    const lastName = form.querySelector('input[placeholder*="Last Name"]');
-    const age = form.querySelector('input[placeholder*="Age"]');
-    const emailAddress = form.querySelector('input[placeholder*="Email Address"]');
-    const phoneNumber = form.querySelector('input[placeholder*="Number"]');
-    const subject = form.querySelector('input[placeholder*="Subject"]');
-    const description = form.querySelector('input[placeholder*="Description"]');
+    const firstNameElement = form.querySelector('input[placeholder*="First Name"]');
+    const lastNameElement = form.querySelector('input[placeholder*="Last Name"]');
+    const ageElement = form.querySelector('input[placeholder*="Age"]');
+    const emailAddressElement = form.querySelector('input[placeholder*="Email Address"]');
+    const phoneNumberElement = form.querySelector('input[placeholder*="Number"]');
+    const descriptionElement = form.querySelector('input[placeholder*="Description"]');
+
+    const firstName = firstNameElement.value;
+    const lastName = lastNameElement.value;
+    const age = ageElement.value;
+    const emailAddress = emailAddressElement.value;
+    const phoneNumber = phoneNumberElement.value;
+    const description = descriptionElement.value;
+
+    // Check first name
+    if (firstName === "") {
+        setInputError(firstNameElement, 'Please enter First Name');
+        return;
+    }
+    else{
+        clearInputError(firstNameElement);
+    }
+
+    // Check last name
+    if (lastName === "") {
+        setInputError(lastNameElement, 'Please enter Last Name');
+        return;
+    }
+    else{
+        clearInputError(lastNameElement);
+    }
+
+    // Check age
+    if (age === "") {
+        setInputError(ageElement, 'Please enter age');
+        return;
+    }
+    else if (0 < age < 110) {
+        setInputError(ageElement, 'Invalid age');
+        return;
+    }
+    else{
+        clearInputError(ageElement);
+    }
+
+    // Check phone number
+    if (phoneNumber === "") {
+        setInputError(phoneNumberElement, 'Please enter phone number');
+        return;
+    }
+    else if (!isValidNumber(phoneNumber)) {
+        setInputError(phoneNumberElement, 'Invalid phone number format');
+        return;
+    }
+    else{
+        clearInputError(phoneNumberElement);
+    }
 
     const formBody=
         "Name: " + firstName + " " + lastName + "\n" +
@@ -62,7 +172,7 @@ async function sendAppointmentEmail(event) {
         "Description: " + description
 
     let emailData = {
-        subject: subject,
+        subject: "Appointment",
         description: formBody
     };
 
@@ -79,13 +189,8 @@ async function sendAppointmentEmail(event) {
     }
 }
 
-function isValidEmail(user_mail) {
-    const email = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return email.test(user_mail);
-}
-
 function isValidNumber(phone_number) {
-    const number = /^[+]880[0-9]{10}/;
+    const number = /^[+]880[0-9]{10}$|^0[0-9]{10}$/;
     return number.test(phone_number);
 }
 
