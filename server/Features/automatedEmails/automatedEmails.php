@@ -19,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 }
 
-
 function sendQueryEmail($data): void
 {
     $mail = new PHPMailer(true);
@@ -48,7 +47,6 @@ function sendQueryEmail($data): void
         echo json_encode('Caught exception: ' . $e->getMessage() . "\n");
     }
 }
-
 
 function sendAppointmentEmail($data): void
 {
