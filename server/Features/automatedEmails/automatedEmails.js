@@ -87,7 +87,7 @@ async function sendQueryEmail(event) {
         description: formBody
     };
 
-    const response= await fetch(BASE + 'automatedEmails.php', {
+    const response= await fetch(BASE + '/Features/automatedEmails/automatedEmails.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -176,7 +176,7 @@ async function sendAppointmentEmail(event) {
         description: formBody
     };
 
-    const response= await fetch(BASE + 'automatedEmails.php', {
+    const response= await fetch(BASE + '/Features/automatedEmails/automatedEmails.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
