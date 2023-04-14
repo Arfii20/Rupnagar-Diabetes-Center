@@ -2,16 +2,17 @@
 
 async function loadYouTubeVideos(event) {
     const divElement = document.getElementById("testing_videos");
-    console.log(divElement);
     let divString = "";
 
     const response = await fetch(BASE + '/Features/youtubeVideos/youtubeVideos.php');
     if (response.ok) {
         const linkData = await response.json();
-        console.log(linkData);
         for (let i = 0; i < linkData.length; i++) {
-            divString += '<iframe width="560" height="315" src=' + linkData[i].link + ' allowfullscreen></iframe>';
+            divString += `<h5>${linkData[i].title}</h5>
+                          <iframe width="560" height="315" src=${linkData[i].link}?rel=0 allowfullscreen></iframe>
+                          <br>`;
         }
         divElement.innerHTML = divString;
     }
 }
+
