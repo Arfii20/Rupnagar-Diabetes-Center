@@ -21,25 +21,29 @@
   -----the nav bar and the title page -->
   <section id="nav-bar" style="margin-top: 0%;">
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">RMC FTW</a>
+      <div style="padding-left: 30px;" class="container-fluid">
+
+        <a class="navbar-brand" href="#">Rupanagar Diabetes Center</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto"> <!--fix nav bar not going to right-->
+          <ul class="navbar-nav ms-auto"> 
             <li class="nav-item">
               <a class="nav-link" aria-current="page" href="#welcome-page">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Health Videos</a>
+              <a class="nav-link" aria-current="page" href="#testimonials">Testimonials</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Health Tips</a>
+              <a class="nav-link" aria-current="page" href="#location">Contact</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Link</a>
+              <a class="nav-link" aria-current="page" href="#appointment">Book Appointment</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#about-us">About us</a>
             </li>
           </ul>
 
@@ -55,11 +59,11 @@
 
 
 
-  <section class="landing-section" style="background-image: url('homephoto.jpeg'); background-size: cover; margin-top: 0%;">
-    <div class="container">
+  <section class="landing-section" style="margin-top: 0%;" >
+    <!-- <div class="container">
       <div class="row">
-        <div class="col-md-6">
-          <div style="margin-bottom: 30%; margin-top: 30%;" class="card float-start">
+        <div class="col-12">
+          <div style="margin-bottom: 30%; margin-top: 30%;" class="card float-end">
             <div class="card-body">
               <h1>Welcome to Our Website</h1>
               <p>Discover the best products and services.</p>
@@ -68,8 +72,64 @@
           </div>
         </div>
       </div>
+    </div> -->
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+
+
+
+        <div class="carousel-item active">
+          <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="color: black;">First slide label</h5>
+            <p>Some representative placeholder content for the first slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Second slide label</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Third slide label</h5>
+            <p>Some representative placeholder content for the third slide.</p>
+          </div>
+        </div>
+
+      </div>
+
+
+
+
+
+
+
+
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
     </div>
+
+
+
+
+
+
+
   </section>
+
+
+
 
 
 
@@ -85,6 +145,18 @@
     <div class="container-fluid padding">
       <div class="row padding text-center">
       <!-- This section is divided into a card and a jumbotron -->
+
+        <div class="col-xs-12 col-sm-6 col-md-6 jumbotron">
+
+          <!-- This code below is for the jumbotron i know i did a good job -->
+          <div class="p-5 container">
+            <h1 class="display-5">Welcome to RMC website</h1>
+            <p class="lead">Health is wealth typa shit quote or smthn.</p>
+            <hr class="my-4">
+            <p>Get youself the headltcare you deserve!</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Visit our gallery</a>
+          </div>
+        </div>
 
 
 
@@ -105,18 +177,8 @@
           </div>
 
         </div>
-        <div class="col-xs-12 col-sm-6 col-md-6 jumbotron">
 
-          <!-- This code below is for the jumbotron i know i did a good job -->
-          <div class="p-5 container">
-            <h1 class="display-5">Welcome to RMC website</h1>
-            <p class="lead">Health is wealth typa shit quote or smthn.</p>
-            <hr class="my-4">
-            <p>Get youself the headltcare you deserve!</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Visit our gallery</a>
-          </div>
 
-        </div>
       </div>
     </div>
   </section>
@@ -131,28 +193,30 @@
 
 <!-- All the testimonials are in a single row
 -----Look at the css file as well
-----Each testimonial has 4 columns just change that if you wanna change the width
------Testimonials are spaced evenly look at the doc from bootstrap for different kind
------of spacing -->
+----Each testimonial has a col value; just change that if you wanna change the width
+----- -->
 <section id="testimonials">
   <div class="container">
       <h1 class="title text-center">Client testimonials</h1>
-      <div class="row justify-content-center" style="padding-top: 30px;">
-          <div class="col-md-4 testimonials">
-              <p>very very nice dactor</p>
+      <div class="row" style="padding-top: 30px;">
+          <div class="col-lg-3 col-md-4 col-sm-12 testimonials">
+              <p>very very nice jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjjjjjjjjj ggggggggggggggggggggg ggggggggggggggg dactor</p>
               <img src="homepagephoto.jpeg"  alt="">
               <p class="user-details">hanzila <br> cofounder of Illuminati</p>
           </div>
-          <div class="col-md-4 testimonials">
+          <div class="col-lg-3 col-md-4 col-sm-12 testimonials">
               <p>very very nice dactor</p>
               <img src="homepagephoto.jpeg"  alt="">
               <p class="user-details">arefin <br>Amazonian girlie</p>
           </div>
-          <div class="col-md-4 testimonials">
+          <div class="col-lg-3 col-md-4 col-sm-12 testimonials">
             <p>very very nice dactor</p>
             <img src="homepagephoto.jpeg"  alt="">
             <p class="user-details">arefin <br>Amazonian girlie</p>
         </div>
+        
+        
+
       </div>
   </div>
 
@@ -160,9 +224,14 @@
 
 
 
+<!-- ---------------------why choose us--------------------------------------------------------------------- -->
 
+<!-- This section consists of two rows
+-----The first row is only for the text
+-----The second row consist of three cards 
+-----just change the h-100 value to change the height of the card-->
 
-  <section>
+  <section id="why-choose-us">
     <div class="row text-center">
       <h1>Why choose us?</h1>
     </div>
@@ -201,48 +270,22 @@
         </div>
       </div>
     </div>
-    <!-- <div class="row" style="display: flex; justify-content: space-evenly; ">
-            <div class="float-start card col-lg-3 col-md-5 col-sm-6 sm-offset-1" style="width: 300px;" >
-                <img src="homepagephoto.jpeg" width="60px" height="60px" class="card-img-top" alt="...">
-              
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            
-
-            <div class="float-start card col-lg-3 col-md-5 col-sm-1 sm-offset-1" style="width: 300px;">
-                <img src="homepagephoto.jpeg" width="60px" height="60px" class="card-img-top" alt="...">
-              
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-            <div class="card col-lg-3 col-md-5 col-sm-1 sm-offset-1" style="width: 300px;">
-                <img src="homepagephoto.jpeg" width="60px" height="60px" class="card-img-top" alt="...">
-              
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-
-
-
-
-            </div>
-        </div> -->
 
   </section>
 
-  <hr style=" height: 1px; width: 50%; position: relative; left: 30%;">
-  <hr style="border: none; height: 1px; background-color: transparent;">
 
-  <section>
+
+  
+  <hr style="border: none; height: 1px; background-color: transparent;">
+  <hr style=" height: 1px; width: 50%; position: relative; left: 30%;">
+
+
+  <!-- ----------------------------------Appointment----------------------------------------------- -->
+  
+  
+
+
+  <section id="appointment">
     <div class="cream-bg justify-content">
       <div class="container">
         <div class="row g-5 justify-content-evenly">
@@ -255,7 +298,7 @@
                 </div>
                 <div class="col-6 col-md-7">
                   <div class="card-body d-flex flex-column">
-                    <div class="h-100">
+                    <div >
                       <h3 class="card-title">hi ther</h3>
                       <h2 class="card-title">alsdfjl</h2>
                       <p class="card-text">fuck you man this is just a para text about appointments</p>
@@ -265,61 +308,24 @@
               </div>
 
             </div>
-
-            <!-- ----------------------------The below code is also for Card and a better version ----------------
-                            -----------------------------but looks repetitive on phone -------------------------------------- -->
-            <!-- <div class="card">
-                            <div class="row g-0">
-                              <div class="col-12 col-md-5 col-lg-6">
-                                <img src="homephoto.jpeg" class="card-img img-fluid rounded-start" style="width: 100%; height: auto;" alt="">
-                              </div>
-                              <div class="col-12 col-md-7 col-lg-6">
-                                <div class="card-body d-flex flex-column">
-                                  <div class="h-100">
-                                    <h3 class="card-title">hi ther</h3>
-                                    <h2 class="card-title">alsdfjl</h2>
-                                    <p class="card-text">fuck you man this is just a para text</p>
-                                  </div>
-                                </div>
-                              </div>
-                            </div>
-                          </div> -->
-
-
-
           </div>
 
         </div>
       </div>
     </div>
   </section>
-  <!-- <section>
-        <div class="container">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">Map</h5>
-                    <div id="map">
-                        <img src="homephoto.jpeg" alt="">
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="card">
-                  <div class="card-body">
-                    <h5 class="card-title">About Us</h5>
-                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia mi id orci ultrices, id rutrum nisi iaculis. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.</p>
-                    <a href="#" class="btn btn-primary">Learn More</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          
-    </section> -->
-  <section id="consultant-info">
+
+  
+
+
+
+
+<!-- -------------------------------About us ------------------------------------------------------- -->
+
+
+<!-- This is just one huge card for an img div on the left and the info div on the right
+-----Look at the style file for the box shadow -->
+  <section id="about-us">
     <div class="container">
       <div class="card wrapper-consultant-info">
         <div class="row g-0">
@@ -342,6 +348,14 @@
 
   </section>
 
+
+
+
+  <!-- ---------------------------------------Maps------------------------------------------ -->
+ 
+  <!-- Notice that i use an off-3 to centre the divs
+  ----There are two main divs: one containing the location url and the other containing the text -->
+ 
   <section id="location">
     <div class="container">
       <div style="margin-top: 10%; margin-bottom: 10%;" class="row g-4">
@@ -380,31 +394,30 @@
 
 
 
-
-
-
-
-
-
+<section>
   <footer class="footer mt-auto py-3 bg-light">
     <div class="container text-center">
 
-
-
-      <div class="card-body">
-        <div class="row">
-          <div class="col-12">
-            <span class="text-muted">© 2023 Your Website. All rights reserved.</span>
-          </div>
-        </div>
-      </div>
       <div class="row">
-        <div class="col-12 p-5 d-flex justify-content-center">
-          <a href="#" class="social-link mr-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
-          <a href="#" class="social-link mr-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
-          <a href="#" class="social-link"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
+        <div class="col-12">
+          <span class="text-muted">© 2023 Your Website. All rights reserved.</span>
         </div>
       </div>
+
+
+      <div class="container text-center">
+        <p style="margin-top: 1%;">Find us on social media</p>
+
+        <div style="margin-top: 1%;" class="row">
+
+        <div class="col-12 d-flex social-handle justify-content-center">
+          <a href="#" class="social-link p-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
+          <a href="#" class="social-link p-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
+          <a href="#" class="social-link p-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
+        </div>
+      </div>
+      </div>
+      
 
 
 
@@ -415,6 +428,13 @@
 
     </div>
   </footer>
+</section>
+
+
+
+
+
+  
 
 
 </body>

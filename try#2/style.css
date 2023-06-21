@@ -12,8 +12,9 @@ body{
 }
 
 #nav-bar{
-    /* position: sticky; */
+    position: sticky;
     top: 0;
+    z-index: 20;
 }
 
 
@@ -29,33 +30,21 @@ body{
 
 
 
-
-/*  */
-#banner{
-    color: black;
-    padding-top: 5%;
-}
-.promo-title{
-    
-    margin-top: 100px;
-}
-
-#title-page{
-    height: 80vh;
-    background-image: url('homephoto.jpeg');
-    background-size: cover;
-    background-position: center;
-    height: 0;
-    padding-top: calc(100% / (16 / 9));
-}
-
-
-
-
-
-
-
-
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-height: 600px;
+  }
+  
+  .carousel-item img {
+    max-width: 100%;
+    max-height: 80%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+  }
+  
 
 
 
@@ -142,8 +131,13 @@ body{
 
 .social-handle{
     border-radius: 50%;
+    transition: 0.5s;
+
 }
 
+.social-handle a:hover img{
+    transform: translatey(-10px);
+}
 
 
 
