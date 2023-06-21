@@ -1,260 +1,207 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
   <script src="index.js"></script>
   <title>Healthcare Website</title>
 </head>
+
 <body>
-    <section id="nav-bar">
-        <nav class="navbar navbar-expand-lg bg-body-tertiary">
-            <div class="container-fluid">
-            <a class="navbar-brand" href="#">RMC FTW</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto"> <!--fix nav bar not going to right-->
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Home</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Health Videos</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" aria-current="page" href="#">Health Tips</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Link</a>
-                    </li>
-                </ul>
-                  
-                
-            </div>
-            </div>
-        </nav>
-    </section>
 
 
-
-    <!-- ----------------------------------------title page---------------------------------------------------------- -->
-    
-    <!-- ------------------------THis code for title page worked well but didnt look good----------------- -->
-    
-    <!-- <section id="banner">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 m-10" >
-                    <h1 class="promo-title font-size-16 font-size-18-md font-size-20-lg" >
-                        Rupanagar Medical Complex
-                    </h1>
-                    <p>
-                        Dedicated to excellence
-                        Transformers was pretty okayish
-                    </p>
-                     <a><img src="homepagephoto.jpeg" alt=""></a> -->
-                <!-- </div>
-                <div class="col-md-6 text-center">
-                    <img src="homephoto.jpeg" class="img-fluid" alt="">
-                </div>
-            </div>
-        </div>
-
-
-
-    </section>  -->
+  <!-- margin-top of each section was 8% in the css file so it needs to be made 0 for 
+  -----the nav bar and the title page -->
+  <section id="nav-bar" style="margin-top: 0%;">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">RMC FTW</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto"> <!--fix nav bar not going to right-->
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#welcome-page">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Health Videos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#">Health Tips</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+          </ul>
 
 
-
-    <!-- <section  id="title-page">
-      <div class="card" style="width: 18rem;">
-        <div class="card-body">
-          <h5 class="card-title">Card title</h5>
-          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="card-link">Card link</a>
-          <a href="#" class="card-link">Another link</a>
         </div>
       </div>
+    </nav>
+  </section>
 
-    </section> -->
 
-    <section class="landing-section" style="background-image: url('homephoto.jpeg'); background-size: cover;">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6">
-            <div style="margin: 20% auto;" class="card float-start">
-              <div class="card-body">
-                <h1>Welcome to Our Website</h1>
-                <p>Discover the best products and services.</p>
-                <a href="#" class="btn btn-primary">Learn More</a>
-              </div>
+
+  <!-- ----------------------------------------title page---------------------------------------------------------- -->
+
+
+
+  <section class="landing-section" style="background-image: url('homephoto.jpeg'); background-size: cover; margin-top: 0%;">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <div style="margin-bottom: 30%; margin-top: 30%;" class="card float-start">
+            <div class="card-body">
+              <h1>Welcome to Our Website</h1>
+              <p>Discover the best products and services.</p>
+              <a href="#" class="btn btn-primary">Learn More</a>
             </div>
           </div>
         </div>
       </div>
-    </section>
-    
-    
-    
-
-    <hr style="border: none; height: 1px; background-color: transparent;">
-    <hr style="border: none; height: 1px; background-color: transparent;">
+    </div>
+  </section>
 
 
 
-<!-- ----------------------------services --------------------------------------------------------- -->
 
 
-    <section >
-        <!-- <div class="row">
-            <div class="col-sm-6 mb-3 mb-sm-0">
-              <div class="card">
-                <div class="card-body m-50">
-                  <h5 class="card-title">Special title treatment</h5>
-                  <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                  <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-              </div>
+  
+
+  <!-- ----------------------------Welcome page --------------------------------------------------------- -->
+
+
+  <section id="welcome-page" style="margin-bottom: 6%;" >
+
+    <div class="container-fluid padding">
+      <div class="row padding text-center">
+      <!-- This section is divided into a card and a jumbotron -->
+
+
+
+        <div style="display: flex; justify-content: center;" class="col-xs-12 col-sm-6 col-md-6">
+          <!-- This is the card for the youtube video -->
+          <div class="card" style="width: 20rem;">
+            <iframe width="100%" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"
+              allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <div class="card-body">
+              <h5 class="card-title">One video title</h5>
+              <p class="card-text">here we are gonna have a long ass description of youtube </p>
             </div>
-            <div class="col-sm-6">
-              <div class="card text-center">
-                <iframe width="280" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-              </div>
+
+            <div class="card-body">
+              <a href="#" class="card-link">Link to youtube channel</a>
+              <a href="#" class="card-link">Another link maybe</a>
             </div>
-          </div> -->
-
-
-        <div class="container-fluid padding">
-            <div class="row padding text-center">
-
-                <div style="display: flex; justify-content: center;" class="col-xs-12 col-sm-6 col-md-6">
-                    <div class="card" style="width: 18rem;">
-                    <iframe width="100%" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                    <div class="card-body">
-                          <h5 class="card-title">One video title</h5>
-                          <p class="card-text">here we are gonna have a long ass description of youtube </p>
-                        </div>
-                        
-                        <div class="card-body">
-                          <a href="#" class="card-link">Link to youtube channel</a>
-                          <a href="#" class="card-link">Another link maybe</a>
-                        </div>
-                      </div>
-                    <!-- <iframe width="280" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"  allow="autoplay; encrypted-media" allowfullscreen></iframe> -->
-                </div>
-                <!-- <div class="col-xs-12 col-sm-6 col-md-6">
-
-                    <i class="fas fa-code"></i>
-                    <h3>FInally worked</h3>
-                    <p>some horrendous motivational words here</p>
-                </div> -->
-                <div class="col-xs-12 col-sm-6 col-md-6 jumbotron">
-                    <div class="p-5 container">
-                        <h1 class="display-5">Welcome to RMC website</h1>
-                        <p class="lead">Health is wealth typa shit quote or smthn.</p>
-                        <hr class="my-4">
-                        <p>Get youself the headltcare you deserve!</p>
-                        <a class="btn btn-primary btn-lg" href="#" role="button">Visit our gallery</a>
-                      </div>
-                      
-                  </div>
-                
-
-
-            </div>
+          </div>
 
         </div>
-        
-        <!-- <div class="container-fluid padding" >
-            <div class="row">
-                <div class="col-md-12 col-lg-6"> 
-                    <div class="card">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="card-link">Card link</a>
-                          <a href="#" class="card-link">Another link</a>
-                        </div>
-                      </div>
-                </div>
-                <div class="col-lg-6 text-center " >
-                        <iframe width="280" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"  allow="autoplay; encrypted-media" allowfullscreen></iframe>
-                </div>
-            </div>
+        <div class="col-xs-12 col-sm-6 col-md-6 jumbotron">
 
+          <!-- This code below is for the jumbotron i know i did a good job -->
+          <div class="p-5 container">
+            <h1 class="display-5">Welcome to RMC website</h1>
+            <p class="lead">Health is wealth typa shit quote or smthn.</p>
+            <hr class="my-4">
+            <p>Get youself the headltcare you deserve!</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Visit our gallery</a>
+          </div>
 
-
-        </div> -->
-    </section>
-
-    <hr style="border: none; height: 1px; background-color: transparent;">
-    <hr style="border: none; height: 1px; background-color: transparent;">
-
-    <section id="testimonials">
-        <div class="container">
-            <h1 class="title text-center">Client testimonials</h1>
-            <div class="row offset-2" style="padding-top: 30px;">
-                <div class="col-md-5 testimonials">
-                    <p>very very nice dactor</p>
-                    <img src="homepagephoto.jpeg"  alt="">
-                    <p class="user-details">hanzila <br> cofounder of Illuminati</p>
-                </div>
-                <div class="col-md-5 testimonials">
-                    <p>very very nice dactor</p>
-                    <img src="homepagephoto.jpeg"  alt="">
-                    <p class="user-details">arefin <br>Amazonian girlie</p>
-                </div>
-            </div>
         </div>
+      </div>
+    </div>
+  </section>
 
-    </section>
 
-    <section>
-        <div class="row text-center">
-            <h1 >Why choose us?</h1>
+
+
+
+
+<!-- --------------------------Testimonials------------------------------------------------ -->
+
+
+<!-- All the testimonials are in a single row
+-----Look at the css file as well
+----Each testimonial has 4 columns just change that if you wanna change the width
+-----Testimonials are spaced evenly look at the doc from bootstrap for different kind
+-----of spacing -->
+<section id="testimonials">
+  <div class="container">
+      <h1 class="title text-center">Client testimonials</h1>
+      <div class="row justify-content-center" style="padding-top: 30px;">
+          <div class="col-md-4 testimonials">
+              <p>very very nice dactor</p>
+              <img src="homepagephoto.jpeg"  alt="">
+              <p class="user-details">hanzila <br> cofounder of Illuminati</p>
+          </div>
+          <div class="col-md-4 testimonials">
+              <p>very very nice dactor</p>
+              <img src="homepagephoto.jpeg"  alt="">
+              <p class="user-details">arefin <br>Amazonian girlie</p>
+          </div>
+          <div class="col-md-4 testimonials">
+            <p>very very nice dactor</p>
+            <img src="homepagephoto.jpeg"  alt="">
+            <p class="user-details">arefin <br>Amazonian girlie</p>
         </div>
+      </div>
+  </div>
 
-        <div class="container text-center">
-            <div class="row gy-3">
-              <div class="col-sm">
-                <div class="card h-100" >
-                    <img src="homephoto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Some ecellence</h5>
-                      <p class="card-text">Some long boring tedious irrelevant promotional explanation.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-sm">
-                <div class="card h-100" >
-                    <img src="homephoto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some long boring tedious irrelevant promotional explanation</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
-              <div class="col-sm">
-                <div class="card h-100" >
-                    <img src="homephoto.jpeg" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Card title</h5>
-                      <p class="card-text">Some long boring tedious irrelevant promotional explanation.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
-                    </div>
-                  </div>
-              </div>
+</section>
+
+
+
+
+
+  <section>
+    <div class="row text-center">
+      <h1>Why choose us?</h1>
+    </div>
+
+    <div class="container text-center">
+      <div class="row gy-3">
+        <div class="col-sm">
+          <div class="card h-100">
+            <img src="homephoto.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Some ecellence</h5>
+              <p class="card-text">Some long boring tedious irrelevant promotional explanation.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
             </div>
+          </div>
         </div>
-        <!-- <div class="row" style="display: flex; justify-content: space-evenly; ">
+        <div class="col-sm">
+          <div class="card h-100">
+            <img src="homephoto.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some long boring tedious irrelevant promotional explanation</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+        <div class="col-sm">
+          <div class="card h-100">
+            <img src="homephoto.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some long boring tedious irrelevant promotional explanation.</p>
+              <a href="#" class="btn btn-primary">Go somewhere</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="row" style="display: flex; justify-content: space-evenly; ">
             <div class="float-start card col-lg-3 col-md-5 col-sm-6 sm-offset-1" style="width: 300px;" >
                 <img src="homepagephoto.jpeg" width="60px" height="60px" class="card-img-top" alt="...">
               
@@ -286,42 +233,42 @@
 
 
 
-                
+
             </div>
         </div> -->
 
-    </section>
+  </section>
 
-    <hr style=" height: 1px; width: 50%; position: relative; left: 30%;">
-    <hr style="border: none; height: 1px; background-color: transparent;">
+  <hr style=" height: 1px; width: 50%; position: relative; left: 30%;">
+  <hr style="border: none; height: 1px; background-color: transparent;">
 
-    <section>
-        <div class="cream-bg justify-content">
-            <div class="container">
-                <div class="row g-5 justify-content-evenly">
-                    <div class="col-lg-10">
+  <section>
+    <div class="cream-bg justify-content">
+      <div class="container">
+        <div class="row g-5 justify-content-evenly">
+          <div class="col-lg-10">
 
-                        <div class="card">
-                            <div class="row g-0">
-                                <div class="col-6 col-md-5">
-                                    <img src="homephoto.jpeg" class="card-img img-fluid rounded-start"  alt="">
-                                </div>
-                                <div class="col-6 col-md-7">
-                                    <div class="card-body d-flex flex-column">
-                                        <div class="h-100">
-                                            <h3 class="card-title">hi ther</h3>
-                                            <h2 class="card-title">alsdfjl</h2>
-                                            <p class="card-text">fuck you man this is just a para text about appointments</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+            <div class="card">
+              <div class="row g-0">
+                <div class="col-6 col-md-5">
+                  <img src="homephoto.jpeg" class="card-img img-fluid rounded-start" alt="">
+                </div>
+                <div class="col-6 col-md-7">
+                  <div class="card-body d-flex flex-column">
+                    <div class="h-100">
+                      <h3 class="card-title">hi ther</h3>
+                      <h2 class="card-title">alsdfjl</h2>
+                      <p class="card-text">fuck you man this is just a para text about appointments</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
-                        </div>
-                        
-                        <!-- ----------------------------The below code is also for Card and a better version ----------------
+            </div>
+
+            <!-- ----------------------------The below code is also for Card and a better version ----------------
                             -----------------------------but looks repetitive on phone -------------------------------------- -->
-                        <!-- <div class="card">
+            <!-- <div class="card">
                             <div class="row g-0">
                               <div class="col-12 col-md-5 col-lg-6">
                                 <img src="homephoto.jpeg" class="card-img img-fluid rounded-start" style="width: 100%; height: auto;" alt="">
@@ -337,16 +284,16 @@
                               </div>
                             </div>
                           </div> -->
-                        
-                          
 
-                    </div>
-                    
-                </div>
-            </div>
+
+
+          </div>
+
         </div>
-    </section>
-    <!-- <section>
+      </div>
+    </div>
+  </section>
+  <!-- <section>
         <div class="container">
             <div class="row">
               <div class="col-md-6">
@@ -372,98 +319,104 @@
           </div>
           
     </section> -->
-    <section id="consultant-info">
-      <div class="container">
-        <div class="card wrapper-consultant-info">
-          <div class="row g-0">
-            <div class="col-md-4">
-              <img height="100%" src="homepagephoto.jpeg" class="card-img" alt="Image">
-            </div>
-            <div class="col-md-8">
-              <div class="card-body ps-lg-4">
-                <h5 class="card-title">About our doctor arefin</h5>
-                <p class="card-text">Card description ggggggggggggdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggoes here.</p>
-                <a href="#" class="btn btn-primary">Read More</a>
-              </div>
+  <section id="consultant-info">
+    <div class="container">
+      <div class="card wrapper-consultant-info">
+        <div class="row g-0">
+          <div class="col-md-4">
+            <img height="100%" src="homepagephoto.jpeg" class="card-img" alt="Image">
+          </div>
+          <div class="col-md-8">
+            <div class="card-body ps-lg-4">
+              <h5 class="card-title">About our doctor arefin</h5>
+              <p class="card-text">Card description
+                ggggggggggggdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggoes
+                here.</p>
+              <a href="#" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
       </div>
-      
+    </div>
 
-    </section>
 
-    <section id="location">
-      <div class="container">
-        <div style="margin-top: 10%; margin-bottom: 10%;" class="row g-4">
-          <div class="card  col-6 offset-3 align-items-center p-0">
-            <iframe class="ratio ratio-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.9789620869595!2d-122.4194158848887!3d37.7749299797544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a7b8b87a9%3A0x4a4f2c3b9917426f!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1623877119530!5m2!1sen!2sin" width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-          </div>
-          
-          <div class="col-6 offset-3 text-center">
-            <p>Location of thegfddddddddddddd dddddddddddddd dddddddddddddd ddddddddddddd dddddddd ddddddddddd dddddddddddddddddddje place</p>
+  </section>
+
+  <section id="location">
+    <div class="container">
+      <div style="margin-top: 10%; margin-bottom: 10%;" class="row g-4">
+        <div class="card  col-6 offset-3 align-items-center p-0">
+          <iframe class="ratio ratio-iframe"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.9789620869595!2d-122.4194158848887!3d37.7749299797544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a7b8b87a9%3A0x4a4f2c3b9917426f!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1623877119530!5m2!1sen!2sin"
+            width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+        <div class="col-6 offset-3 text-center">
+          <p>Location of thegfddddddddddddd dddddddddddddd dddddddddddddd ddddddddddddd dddddddd ddddddddddd
+            dddddddddddddddddddje place</p>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <footer class="footer mt-auto py-3 bg-light">
+    <div class="container text-center">
+
+
+
+      <div class="card-body">
+        <div class="row">
+          <div class="col-12">
+            <span class="text-muted">© 2023 Your Website. All rights reserved.</span>
           </div>
         </div>
       </div>
-
-    </section>
-    
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    <footer class="footer mt-auto py-3 bg-light">
-      <div class="container text-center">
-
-        
-          
-          <div class="card-body">
-            <div class="row">
-              <div class="col-12">
-                <span class="text-muted">© 2023 Your Website. All rights reserved.</span>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-12 p-5 d-flex justify-content-center">
-              <a href="#" class="social-link mr-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
-              <a href="#" class="social-link mr-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
-              <a href="#" class="social-link"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
-            </div>
-          </div>
-
-
-            
+      <div class="row">
+        <div class="col-12 p-5 d-flex justify-content-center">
+          <a href="#" class="social-link mr-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
+          <a href="#" class="social-link mr-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
+          <a href="#" class="social-link"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
         </div>
+      </div>
 
 
 
-        
-        </div>
-    </footer>
-    
-    
+    </div>
+
+
+
+
+    </div>
+  </footer>
+
+
 </body>
+
 </html>
