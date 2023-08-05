@@ -2,6 +2,20 @@
     margin: 0;
     padding: 0;
 } */
+
+
+.text-truncate {
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    max-height: 1.5em; /* Adjust as needed */
+}
+
+.text-truncate.expanded {
+    max-height: none;
+}
+
+
 section{
     margin-top: 8%;
 
