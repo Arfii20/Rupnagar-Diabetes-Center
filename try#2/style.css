@@ -4,17 +4,9 @@
 } */
 
 
-.text-truncate {
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
-    max-height: 1.5em; /* Adjust as needed */
+html{
+    scroll-behavior: smooth;
 }
-
-.text-truncate.expanded {
-    max-height: none;
-}
-
 
 section{
     margin-top: 8%;

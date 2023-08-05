@@ -1,0 +1,45 @@
+/* Define the animation */
+@keyframes slideInRight {
+  from { transform: translateX(20%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+
+.slide-in-right {
+  opacity: 0;
+  animation: slideInRight 1s ease-in-out forwards;
+}
+
+/* Define the animation */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(50px); }
+  to { opacity: 1; transform: translateY(0px);}
+}
+
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+/* Slide In from Left Animation */
+@keyframes slideInLeft {
+  from { transform: translateX(-20%); opacity: 0; }
+  to { transform: translateX(0); opacity: 1; }
+}
+
+.slide-in-left {
+  opacity: 0;
+  animation: slideInLeft 1s ease-in-out forwards;
+}
+
+
+.reveal{
+  opacity: 0;
+}
+
+/* Apply the animation to an element */
+.welcome-animation {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}

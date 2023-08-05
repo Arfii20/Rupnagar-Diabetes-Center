@@ -5,6 +5,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="animations.css">
+
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
@@ -149,7 +151,7 @@
   <!-- ----------------------------Welcome page --------------------------------------------------------- -->
 
 
-  <section id="welcome-page" style="margin-bottom: 6%;" >
+  <section id="welcome-page" class="" style="margin-bottom: 6%;" >
 
     <div class="container-fluid padding">
       <div class="row padding text-center">
@@ -158,7 +160,7 @@
         <div class="col-xs-12 col-sm-6 col-md-6 jumbotron">
 
           <!-- This code below is for the jumbotron i know i did a good job -->
-          <div class="p-5 container">
+          <div class="p-5 reveal animate-fade-in  container">
             <h1 class="display-5">Welcome to RMC website</h1>
             <p class="lead">Health is wealth typa shit quote or smthn.</p>
             <hr class="my-4">
@@ -171,7 +173,7 @@
 
         <div style="display: flex; justify-content: center;" class="col-xs-12 col-sm-6 col-md-6">
           <!-- This is the card for the youtube video -->
-          <div class="card" style="width: 20rem;">
+          <div class="card reveal animate-fade-in" style="width: 20rem;">
             <iframe width="100%" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"
               allow="autoplay; encrypted-media" allowfullscreen></iframe>
             <div class="card-body">
@@ -204,21 +206,21 @@
 -----Look at the css file as well
 ----Each testimonial has a col value; just change that if you wanna change the width
 ----- -->
-<section id="testimonials">
+<section class="" id="testimonials">
   <div class="container">
-      <h1 class="title text-center">Client testimonials</h1>
-      <div class="row" style="padding-top: 30px;">
-          <div class="col-lg-3 col-md-4 col-sm-12 testimonials">
+      <h1 class="title reveal animate-fade-in text-center">Client testimonials</h1>
+      <div class="row justify-content-center pt-3" >
+          <div class="col-lg-3 col-md-4 col-sm-12 testimonials reveal animate-slide-in-left">
               <p>very very nice jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjjjjjjjjj ggggggggggggggggggggg ggggggggggggggg dactor</p>
               <img src="homepagephoto.jpeg"  alt="">
               <p class="user-details">hanzila <br> cofounder of Illuminati</p>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 testimonials">
+          <div class="col-lg-3 col-md-4 col-sm-12 testimonials reveal animate-slide-in-left">
               <p>very very nice dactor</p>
               <img src="homepagephoto.jpeg"  alt="">
               <p class="user-details">arefin <br>Amazonian girlie</p>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 testimonials">
+          <div class="col-lg-3 col-md-4 col-sm-12 testimonials reveal animate-slide-in-left">
             <p>very very nice dactor</p>
             <img src="homepagephoto.jpeg"  alt="">
             <p class="user-details">arefin <br>Amazonian girlie</p>
@@ -241,14 +243,14 @@
 -----just change the h-100 value to change the height of the card-->
 
   <section id="why-choose-us">
-    <div class="row text-center">
+    <div class="row  reveal animate-fade-in text-center">
       <h1>Why choose us?</h1>
     </div>
 
     <div class="container text-center">
       <div class="row gy-3">
         <div class="col-sm">
-          <div class="card h-100">
+          <div class="card reveal animate-slide-in-right h-100">
             <img src="homephoto.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Some ecellence</h5>
@@ -258,7 +260,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card h-100">
+          <div class="card reveal animate-slide-in-right h-100">
             <img src="homephoto.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -268,7 +270,7 @@
           </div>
         </div>
         <div class="col-sm">
-          <div class="card h-100">
+          <div class="card reveal animate-slide-in-right h-100">
             <img src="homephoto.jpeg" class="card-img-top" alt="...">
             <div class="card-body">
               <h5 class="card-title">Card title</h5>
@@ -295,23 +297,23 @@
 
 
   <section id="appointment">
-    <div class="cream-bg justify-content">
+    <div class="cream-bg">
       <div class="container">
-        <div class="row g-5 justify-content-evenly">
+        <div class="row  justify-content-center">
           <div class="col-lg-10">
 
-            <div class="card">
+            <div class="card reveal animate-fade-in">
               <div class="row g-0">
-                <div class="col-6 col-md-5">
-                  <img src="homephoto.jpeg" class="card-img img-fluid rounded-start" alt="">
+                <div class="col-6 col-md-5 col-sm-7">
+                  <img src="homephoto.jpeg" style="height: 100%; object-fit: cover;" class="card-img img-fluid rounded-start" alt="">
                 </div>
-                <div class="col-6 col-md-7">
+                <div class="col-6 col-md-7 col-sm-5">
                   <div class="card-body d-flex flex-column">
                     <div >
                       <h3 class="card-title">hi ther</h3>
                       <h2 class="card-title">alsdfjl</h2>
                       <p class="card-text">fuck you man this is just a para text about appointments</p>
-                      <a href="appointment.html" class="btn btn-primary">Go somewhere</a>
+                      <a href="appointment.html" class="btn btn-primary">Appointment</a>
                     </div>
                   </div>
                 </div>
@@ -337,7 +339,7 @@
 -----Look at the style file for the box shadow -->
   <section id="about-us">
     <div class="container">
-      <div class="card wrapper-consultant-info">
+      <div class="card reveal animate-slide-in-left wrapper-consultant-info">
         <div class="row g-0">
           <div class="col-md-4">
             <img height="100%" src="homepagephoto.jpeg" class="card-img" alt="Image">
@@ -366,10 +368,10 @@
   <!-- Notice that i use an off-3 to centre the divs
   ----There are two main divs: one containing the location url and the other containing the text -->
  
-  <section id="location">
+  <section  id="location">
     <div class="container">
       <div style="margin-top: 10%; margin-bottom: 10%;" class="row g-4">
-        <div class="card  col-6 offset-3 align-items-center p-0">
+        <div class="card reveal animate-fade-in col-6 offset-3 align-items-center p-0">
           <iframe class="ratio ratio-iframe"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3222.9789620869595!2d-122.4194158848887!3d37.7749299797544!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808a7b8b87a9%3A0x4a4f2c3b9917426f!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2sin!4v1623877119530!5m2!1sen!2sin"
             width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
