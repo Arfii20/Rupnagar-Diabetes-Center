@@ -8,5 +8,12 @@
       <jdbc-url>jdbc:sqlite:rdc.sqlite</jdbc-url>
       <working-dir>$ProjectFileDir$</working-dir>
     </data-source>
+    <data-source source="LOCAL" name="rdc" uuid="87187b77-6908-456a-9287-92700e23ba2c">
+      <driver-ref>sqlite.xerial</driver-ref>
+      <synchronize>true</synchronize>
+      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
+      <jdbc-url>jdbc:sqlite:C:\Study\Github\Rupnagar-Diabetes-Center-Website\server\rdc.sqlite</jdbc-url>
+      <working-dir>$ProjectFileDir$</working-dir>
+    </data-source>
   </component>
 </project>
