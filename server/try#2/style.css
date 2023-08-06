@@ -132,7 +132,7 @@ section .card-img{
 
 /* testimonila */
 
-.testimonials{
+.reviews{
     border-left: 4px solid ;
     margin-top: 50px;
     margin-bottom: 50px;
@@ -141,7 +141,7 @@ section .card-img{
 
 
 
-.testimonials img{
+.reviews img{
     height: 60px;
     width: 60px;
     border-radius: 50%;
