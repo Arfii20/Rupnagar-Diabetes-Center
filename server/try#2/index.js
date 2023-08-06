@@ -27,3 +27,42 @@ reveal();
 
 // Listen for scroll events and trigger reveal function
 window.addEventListener('scroll', reveal);
+
+
+
+
+// Function to fetch language file and update the page content
+function loadLanguage(language) {
+    fetch(`languages/${language}.json`)
+        .then(response => response.json())
+        .then(data => {
+            // Update the text content on the page
+            const translatableElements = document.getElementsByClassName('translatable');
+            for (let i = 0; i < translatableElements.length; i++) {
+                const element = translatableElements[i];
+                const key = element.dataset.key;
+                element.textContent = data[key] || element.textContent;
+            }
+        })
+        .catch(error => {
+            console.error('Error loading language:', error);
+        });
+}
+
+// Listen for language selection changes
+const languageLink = document.getElementById('language-select');
+languageLink.addEventListener('click', function(event) {
+    const selectedLanguage = this.textContent.trim();
+    if (selectedLanguage === "English") {
+        loadLanguage("en");
+        languageLink.textContent = "বাংলা"
+    }
+    else {
+        loadLanguage("bn");
+        languageLink.textContent = "English"
+    }
+});
+
+// Loads the default language when the page loads
+loadLanguage('en');
+
