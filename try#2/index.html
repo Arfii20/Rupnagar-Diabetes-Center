@@ -21,11 +21,11 @@
 
   <!-- margin-top of each section was 8% in the css file so it needs to be made 0 for 
   -----the nav bar and the title page -->
-  <section id="nav-bar" style="margin-top: 0%;">
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-      <div style="padding-left: 30px;" class="container-fluid">
+  <section id="nav-bar" style="margin-top: 0%; ">
+    <nav  class="navbar navbar-expand-lg ">
+      <div style="padding-left: 30px; " class="container-fluid">
 
-        <a class="navbar-brand" href="#">Rupanagar Diabetes Center</a>
+        <a style="color: white;" class="navbar-brand" href="#">Rupanagar Diabetes Center</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -80,14 +80,20 @@
 
 
 
+
         <div class="carousel-item active">
+          <div  class="overlay"></div>
+
           <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
-            <h5 style="color: black;">First slide label</h5>
+            
+            <h5 >First slide label</h5>
             <p>Some representative placeholder content for the first slide.</p>
           </div>
         </div>
         <div class="carousel-item">
+          <div  class="overlay"></div>
+
           <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
@@ -95,6 +101,8 @@
           </div>
         </div>
         <div class="carousel-item">
+          <div  class="overlay"></div>
+
           <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
@@ -151,7 +159,7 @@
   <!-- ----------------------------Welcome page --------------------------------------------------------- -->
 
 
-  <section id="welcome-page" class="" style="margin-bottom: 6%;" >
+  <section id="welcome-page" class=""  >
 
     <div class="container-fluid padding">
       <div class="row padding text-center">
@@ -161,11 +169,12 @@
 
           <!-- This code below is for the jumbotron i know i did a good job -->
           <div class="p-5 reveal animate-fade-in  container">
-            <h1 class="display-5">Welcome to RMC website</h1>
+            <h1 class="display-5 heading-all">Welcome to RMC website</h1>
             <p class="lead">Health is wealth typa shit quote or smthn.</p>
             <hr class="my-4">
             <p>Get youself the headltcare you deserve!</p>
-            <a class="btn btn-primary btn-lg" href="gallery.html" role="button">Visit our gallery</a>
+            <button class="button">Visit our gallery</button>
+            <!-- <a style="border: 2px;" class="btn btn-lg" href="gallery.html" role="button">Visit our gallery</a> -->
           </div>
         </div>
 
@@ -174,17 +183,15 @@
         <div style="display: flex; justify-content: center;" class="col-xs-12 col-sm-6 col-md-6">
           <!-- This is the card for the youtube video -->
           <div class="card reveal animate-fade-in" style="width: 20rem;">
-            <iframe width="100%" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"
+            <iframe id="youtube-iframe" width="100%" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"
               allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div class="card-body">
+            <div id="youtube-link" class="card-body heading-all">
               <h5 class="card-title">One video title</h5>
               <p class="card-text">here we are gonna have a long ass description of youtube </p>
+              <a href="#" class="card-link">Link to youtube channel</a>
+
             </div>
 
-            <div class="card-body">
-              <a href="#" class="card-link">Link to youtube channel</a>
-              <a href="#" class="card-link">Another link maybe</a>
-            </div>
           </div>
 
         </div>
@@ -208,15 +215,15 @@
 ----- -->
 <section class="" id="testimonials">
   <div class="container">
-      <h1 class="title reveal animate-fade-in text-center">Client testimonials</h1>
+      <h1 class="title heading-all reveal animate-fade-in text-center">Client testimonials</h1>
       <div class="row justify-content-center pt-3" >
           <div class="col-lg-3 col-md-4 col-sm-12 testimonials reveal animate-slide-in-left">
-              <p>very very nice jjjjjjjjjjjjjjjjjjjjjjjjjjjjjj jjjjjjjjjjjjjjjjj ggggggggggggggggggggg ggggggggggggggg dactor</p>
+              <p>Very high quality Diabetes center in Dhaka</p>
               <img src="homepagephoto.jpeg"  alt="">
-              <p class="user-details">hanzila <br> cofounder of Illuminati</p>
+              <p class="user-details">Hanzila <br> cofounder of Illuminati</p>
           </div>
-          <div class="col-lg-3 col-md-4 col-sm-12 testimonials reveal animate-slide-in-left">
-              <p>very very nice dactor</p>
+          <div class="col-lg-3 col-md-4 col-sm-12 pe-5 testimonials reveal animate-slide-in-left">
+              <p>It is a right place of Diabetes treatment Doctor is very cordial and ensures proper counselling advice which is essential for a patient</p>
               <img src="homepagephoto.jpeg"  alt="">
               <p class="user-details">arefin <br>Amazonian girlie</p>
           </div>
@@ -407,12 +414,12 @@
 
 
 <section>
-  <footer class="footer mt-auto py-3 bg-light">
+  <footer class="footer mt-auto py-3">
     <div class="container text-center">
 
       <div class="row">
         <div class="col-12">
-          <span class="text-muted">© 2023 Your Website. All rights reserved.</span>
+          <span >© 2023 Your Website. All rights reserved.</span>
         </div>
       </div>
 
@@ -420,12 +427,12 @@
       <div class="container text-center">
         <p style="margin-top: 1%;">Find us on social media</p>
 
-        <div style="margin-top: 1%;" class="row">
+        <div  class="row">
 
-        <div class="col-12 d-flex social-handle justify-content-center">
-          <a href="#" class="social-link p-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
-          <a href="#" class="social-link p-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
-          <a href="#" class="social-link p-3"><img height="50px" class="social-handle" src="homephoto.jpeg" alt=""></a>
+        <div class="col-12 d-flex social-handle justify-content-center pb-3">
+          <a href="#" class="social-link pe-3 fab fa-instagram"><img height="50px" class="social-handle" src="icons8-twitter-96.png" alt=""></a>
+          <a href="#" class="social-link pe-3"><img height="50px" class="social-handle" src="icons8-instagram-100.png" alt=""></a>
+          <a href="#" class="social-link pe-3"><img height="50px" class="social-handle" src="icons8-facebook-96.png" alt=""></a>
         </div>
       </div>
       </div>

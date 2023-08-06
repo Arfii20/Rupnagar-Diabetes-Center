@@ -1,23 +1,48 @@
-/* *{
-    margin: 0;
-    padding: 0;
-} */
+
 
 
 html{
     scroll-behavior: smooth;
+    /* to hide the horizontal scroll */
+    overflow-x: hidden;
+
+    
+    
+    
+    
+
+    
 }
+
+
 
 section{
-    margin-top: 8%;
+    margin-top: 7%;
+    color: black;
+
 
 }
 
-body{
-    font-family: 'Courier New', Courier, monospace;
+section .heading-all{
+    color: #022a30;
+    font-weight: 400;
+
 }
+
+section .card{
+    color: #075561;
+}
+
+section .card-img{
+    /* border-top-right-radius: 30px; */
+    border: 0px;
+}
+
+
 
 #nav-bar{
+    background: #075561;
+
     position: sticky;
     top: 0;
     z-index: 20;
@@ -25,11 +50,41 @@ body{
 
 
 
+.navbar-nav .nav-link {
+
+    color: white;
+    font-weight: 200;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s;
+  }
+
+  .navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    color: #54d5e1; 
+    text-decoration: none;
+    border-bottom: 20px;
+  }
+
+  .navbar-nav .nav-link:hover::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #027e89; 
+    
+  }
+
+
+
 .navbar-nav li{
     padding: 0 10px;
 }
-.navbar-nav li{
-    font-weight: 600;
+.navbar-brand{
+    font-weight: 300;
+    color: white;
 }
 
 
@@ -37,6 +92,7 @@ body{
 
 
 .carousel-item {
+    font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -48,11 +104,15 @@ body{
     max-height: 80%;
     width: auto;
     height: auto;
-    object-fit: contain;
+    object-fit: cover;
   }
   
 
 
+
+  .jumbotron{
+    color: #075561;
+  }
 
 
 
@@ -86,6 +146,7 @@ body{
     width: 60px;
     border-radius: 50%;
     margin: 0 10px;
+    object-fit: cover;
 }
 
 .user-details{
@@ -95,7 +156,6 @@ body{
 
 
 .card-img{
-    border-bottom-right-radius: 0px;
     object-fit: cover;
 }
 
@@ -145,14 +205,71 @@ body{
     transform: translatey(-10px);
 }
 
+/* ----------------------------Carousel---------------------------------------------- */
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(to right, #027e89, rgba(0, 0, 0, 0));
+  }
+  
+  
+
+/* ---------------------Footer------------------------------------------------------------------ */
+
+.footer{
+    background-color: #075561;
+    color: white;
+}
 
 
 
+/* ---------------------------button----------------------------------------- */
+.button {
+    position: relative;
+    display: inline-block;
+    margin: 15px;
+    padding: 5px 10px;
+    text-align: center;
+    letter-spacing: 1px;
+
+    color: #075561;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-in-out 0.3s;
+    border: 2px solid #075561;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #075561;
+  }
+  
+  .button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 #075561;
+  }
+
+
+/* -----------------------------headings---------------------------------- */
+
+#youtube-link{
+    color: #075561;
+}
+#youtube-link a {
+    color: #075561;
+}
 
 
 
+  
+#youtube-iframe{
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+/*  */
 
 
+.card-title{
+    color: #075561;
 
-
-
+}
