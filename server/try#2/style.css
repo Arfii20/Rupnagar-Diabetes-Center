@@ -197,16 +197,15 @@ section .card-img{
 
 @media (max-width: 768px) {
     .ratio-iframe {
-        height: width;
+        height: 450px;
     }
-  }
+}
 
-
-  @media (min-width: 768px) {
+@media (min-width: 768px) {
     .ratio-iframe {
         height: 450px;
     }
-  }
+}
 
 
 .social-handle{
