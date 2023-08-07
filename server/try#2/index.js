@@ -52,6 +52,7 @@ function loadLanguage(language) {
 // Listen for language selection changes
 const languageLink = document.getElementById('language-select');
 languageLink.addEventListener('click', function(event) {
+    event.preventDefault();
     const selectedLanguage = this.textContent.trim();
     if (selectedLanguage === "English") {
         loadLanguage("en");
