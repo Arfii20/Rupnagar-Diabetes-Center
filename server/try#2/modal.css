@@ -93,7 +93,7 @@
     border-radius: 8px;
   }
   
-  .enter {
+  .submit{
     height: 45px;
     width: 100px;
     border-radius: 5px;
@@ -107,7 +107,7 @@
     margin-bottom: 1em;
   }
   
-  .enter:hover {
+  .submit:hover {
     background-color: rgb(0, 0, 0);
     color: white;
   }
@@ -120,10 +120,9 @@
 
   /* ----------------------------For text area */
 
-  #entry-text {
+  #appointment-entry-text {
     outline: none;
 
-    background-color: transparent;
     border: 0;
     min-height: 30px;
     color: #000;
@@ -145,7 +144,7 @@
 }
 
 
-#entry-text:focus {
+#appointment-entry-text:focus {
     /* border: 2px solid #000; */
     /* border-radius: 8px; */
 }
@@ -164,7 +163,7 @@ textarea::-webkit-scrollbar {
 }
 
 
-#how-can-we-help {
+#appointment-how-can-we-help {
     font-size: 15px;
     letter-spacing: 2px;
     display: inline-block; 

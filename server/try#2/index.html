@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="modal.css">
   <link rel="stylesheet" href="animations.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
 
@@ -19,40 +20,41 @@
 <body>
   <!-- margin-top of each section was 8% in the css file so it needs to be made 0 for 
   -----the nav bar and the title page -->
-  <section id="nav-bar" style="margin-top: 0%; ">
-    <nav  class="navbar navbar-expand-lg ">
-      <div style="padding-left: 30px; " class="container-fluid">
+    <section id="nav-bar" style="margin-top: 0; ">
+        <nav  class="navbar navbar-expand-lg ">
+            <div style="padding-left: 30px; " class="container-fluid">
 
-        <a style="color: white;" class="navbar-brand translatable" data-key="title" href="#">Rupanagar Diabetes Center</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ms-auto"> 
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#welcome-page">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#reviews">Reviews</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#location">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#appointment">Book Appointment</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#about-us">About us</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#" id="language-select">বাংলা</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </section>
+                <a style="color: white;" class="navbar-brand translatable" data-key="title" href="#">Rupanagar Diabetes Center</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#welcome-page">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#welcome-page">Appointment</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#reviews">Reviews</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#location">Contact</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#" id="language-select">বাংলা</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+        </nav>
+    </section>
 
 
 
@@ -127,13 +129,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-
-
-
-
-
-
   </section>
 
 
@@ -192,12 +187,8 @@
 
                   <!--          </div>-->
                   <div class="review-buttons reveal animate-slide-in-right" style="flex-direction: column">
-                      <a href="https://search.google.com/local/writereview?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI">
-                          <button class="button">Book Appointment</button>
-                      </a>
-                      <a href="https://search.google.com/local/reviews?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI">
-                          <button class="button">Ask Questions</button>
-                      </a>
+                      <button data-bs-toggle="modal" data-bs-target="#appointmentModal" class="button">Book Appointment</button>
+                      <button class="button">Ask Questions</button>
                   </div>
 
 
@@ -274,7 +265,7 @@
 -----Look at the css file as well
 ----Each testimonial has a col value; just change that if you wanna change the width
 ----- -->
-<section class=reviews">
+<section id="reviews" class=reviews">
   <div class="container">
       <h1 class="title heading-all reveal animate-fade-in text-center">Patient reviews</h1>
       <div class="row justify-content-center pt-3" >
@@ -359,40 +350,148 @@
 
 
   <!-- ----------------------------------Appointment----------------------------------------------- -->
-  
-  
 
+<!--  <section id="appointment">-->
+<!--    <div class="cream-bg">-->
+<!--      <div class="container">-->
+<!--        <div class="row  justify-content-center">-->
+<!--          <div class="col-lg-10">-->
+<!--            <div class="card reveal animate-fade-in">-->
+<!--              <div class="row g-0">-->
+<!--                <div class="col-6 col-md-5 col-sm-7">-->
+<!--                  <img src="images/homephoto.jpeg" style="height: 100%; object-fit: cover;" class="card-img img-fluid rounded-start" alt="">-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-7 col-sm-5">-->
+<!--                  <div class="card-body d-flex flex-column">-->
+<!--                    <div >-->
+<!--                      <h3 class="card-title">hi ther</h3>-->
+<!--                      <h2 class="card-title">alsdfjl</h2>-->
+<!--                      <p class="card-text">fuck you man this is just a para text about appointments</p>-->
+<!--                      <a class="btn btn-primary">Appointment</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
 
-  <section id="appointment">
-    <div class="cream-bg">
-      <div class="container">
-        <div class="row  justify-content-center">
-          <div class="col-lg-10">
-            <div class="card reveal animate-fade-in">
-              <div class="row g-0">
-                <div class="col-6 col-md-5 col-sm-7">
-                  <img src="images/homephoto.jpeg" style="height: 100%; object-fit: cover;" class="card-img img-fluid rounded-start" alt="">
-                </div>
-                <div class="col-6 col-md-7 col-sm-5">
-                  <div class="card-body d-flex flex-column">
-                    <div >
-                      <h3 class="card-title">hi ther</h3>
-                      <h2 class="card-title">alsdfjl</h2>
-                      <p class="card-text">fuck you man this is just a para text about appointments</p>
-                      <a href="appointment.html" class="btn btn-primary">Appointment</a>
-                    </div>
+  <div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+       aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <div class="m-lg-1 mt-0">
+                      <div id="appointment-heading">
+                          Appointment Form
+                      </div>
                   </div>
-                </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-            </div>
+              <div class="modal-body">
+                  <div class="container mx-auto">
+                      <div style="min-height: fit-content;" class="row justify-content-center">
+                          <div class="col-lg-10 col-md-10 col-sm-10 form">
+                              <form style="max-width: 90%;">
+                                  <div class="m-lg-5 mt-4">
+                                      <div  class="inputBox">
+                                          <input id="appointment-name-input" type="text" required="required">
+                                          <span class="user">Name</span>
+                                      </div>
+                                  </div>
+                                  <div class="m-lg-5 mt-5">
+                                      <div class="inputBox">
+                                          <input id="appointment-email-input" type="text" required="required">
+                                          <span class="user">Email</span>
+                                      </div>
+                                      <div id="appointment-email-text">Valid email required *</div>
+                                  </div>
+                                  <div class="m-lg-5 mt-5 ">
+
+                                      <div class="inputBox">
+                                          <input id="appointment-phone-input" type="text" required="required">
+                                          <span class="user">Phone number</span>
+                                      </div>
+                                  </div>
+                                  <div class="m-lg-5 mt-5">
+                                      <label id="appointment-how-can-we-help" class="mb-lg-4 mb-3">How can we help?</label>
+                                      <textarea id="appointment-entry-text" class="form-control" placeholder="Enter text" ></textarea>
+                                  </div>
+                                  <div class="row m-lg-5 mt-5  justify-content-end">
+                                      <button type="submit" id="appointment-submit-button" class="submit">Submit</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
           </div>
-        </div>
       </div>
-    </div>
-  </section>
+  </div>
 
+  <!-- ---------------------------------- Question ----------------------------------------------- -->
 
+  <div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+       aria-hidden="true">
+      <div class="modal-dialog modal-lg">
+          <div class="modal-content">
+              <div class="modal-header">
+                  <div class="m-lg-1 mt-0">
+                      <div id="question-heading">
+                          Ask Your Question
+                      </div>
+                  </div>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                  <div class="container mx-auto">
+                      <div style="min-height: fit-content;" class="row justify-content-center">
+                          <div class="col-lg-10 col-md-10 col-sm-10 form">
+                              <form style="max-width: 90%;">
+                                  <div class="m-lg-5 mt-4">
+                                      <div  class="inputBox">
+                                          <input id="question-name-input" type="text" required="required">
+                                          <span class="user">Name</span>
+                                      </div>
+                                  </div>
+                                  <div class="m-lg-5 mt-5">
+                                      <div class="inputBox">
+                                          <input id="question-email-input" type="text" required="required">
+                                          <span class="user">Email</span>
+                                      </div>
+                                      <div id="email-text">Valid email required *</div>
+                                  </div>
+                                  <div class="m-lg-5 mt-5 ">
 
+                                      <div class="inputBox">
+                                          <input id="question-phone-input" type="text" required="required">
+                                          <span class="user">Phone number</span>
+                                      </div>
+                                  </div>
+                                  <div class="m-lg-5 mt-5">
+                                      <label id="question-how-can-we-help" class="mb-lg-4 mb-3">How can we help?</label>
+                                      <textarea id="question-entry-text" class="form-control" placeholder="Enter text" ></textarea>
+                                  </div>
+                                  <div class="row m-lg-5 mt-5  justify-content-end">
+                                      <button type="submit" id="question-enter-button" class="enter">Enter</button>
+                                  </div>
+                              </form>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              </div>
+          </div>
+      </div>
+  </div>
 
 
 
