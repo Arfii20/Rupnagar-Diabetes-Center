@@ -84,7 +84,7 @@
         <div class="carousel-item active">
           <div  class="overlay"></div>
 
-          <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
+          <img src="images/homepagephoto.jpeg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             
             <h5 >First slide label</h5>
@@ -94,7 +94,7 @@
         <div class="carousel-item">
           <div  class="overlay"></div>
 
-          <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
+          <img src="images/homepagephoto.jpeg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Second slide label</h5>
             <p>Some representative placeholder content for the second slide.</p>
@@ -103,7 +103,7 @@
         <div class="carousel-item">
           <div  class="overlay"></div>
 
-          <img src="homepagephoto.jpeg" class="d-block w-100" alt="...">
+          <img src="images/homepagephoto.jpeg" class="d-block w-100" alt="...">
           <div class="carousel-caption d-none d-md-block">
             <h5>Third slide label</h5>
             <p>Some representative placeholder content for the third slide.</p>
@@ -169,12 +169,11 @@
 
           <!-- This code below is for the jumbotron i know i did a good job -->
           <div class="p-5 reveal animate-fade-in  container">
-            <h1 class="display-5 heading-all">Welcome to Rupnagar Diabetes Center website</h1>
-            <p class="lead">Health is wealth typa shit quote or smthn.</p>
+            <h1 class="display-5 heading-all">Welcome to<br>Rupnagar Diabetes Center</h1>
+              <p class="lead"><i>An Excellent Diabetes Center in Dhaka</i></p>
             <hr class="my-4">
             <p>Get youself the headltcare you deserve!</p>
-            <button class="button">Visit our gallery</button>
-            <!-- <a style="border: 2px;" class="btn btn-lg" href="gallery.html" role="button">Visit our gallery</a> -->
+             <a style="border: 2px;" class="btn btn-lg" href="gallery.html" role="button"><button class="button">Visit our gallery</button></a>
           </div>
         </div>
 
@@ -182,17 +181,26 @@
 
         <div style="display: flex; justify-content: center;" class="col-xs-12 col-sm-6 col-md-6">
           <!-- This is the card for the youtube video -->
-          <div class="card reveal animate-fade-in" style="width: 20rem;">
-            <iframe id="youtube-iframe" width="100%" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"
-              allow="autoplay; encrypted-media" allowfullscreen></iframe>
-            <div id="youtube-link" class="card-body heading-all">
-              <h5 class="card-title">One video title</h5>
-              <p class="card-text">here we are gonna have a long ass description of youtube </p>
-              <a href="#" class="card-link">Link to youtube channel</a>
+<!--          <div class="card reveal animate-fade-in" style="width: 20rem;">-->
+<!--            <iframe id="youtube-iframe" width="100%" height="158" src="https://www.youtube.com/embed/VIDEO_ID_1"-->
+<!--              allow="autoplay; encrypted-media" allowfullscreen></iframe>-->
+<!--            <div id="youtube-link" class="card-body heading-all">-->
+<!--              <h5 class="card-title">One video title</h5>-->
+<!--              <p class="card-text">here we are gonna have a long ass description of youtube </p>-->
+<!--              <a href="#" class="card-link">Link to youtube channel</a>-->
 
+<!--            </div>-->
+
+<!--          </div>-->
+            <div class="review-buttons reveal animate-slide-in-right">
+                <a href="https://search.google.com/local/writereview?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI">
+                    <button class="button">Book Appointment</button>
+                </a>
+                <a href="https://search.google.com/local/reviews?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI">
+                    <button class="button">Ask Questions</button>
+                </a>
             </div>
 
-          </div>
 
         </div>
 
@@ -202,6 +210,60 @@
   </section>
 
 
+
+
+
+  <!-- ---------------------why choose us--------------------------------------------------------------------- -->
+
+  <!-- This section consists of two rows
+  -----The first row is only for the text
+  -----The second row consist of three cards
+  -----just change the h-100 value to change the height of the card-->
+
+  <section id="why-choose-us">
+      <div class="row  reveal animate-fade-in text-center">
+          <h1 class="title heading-all reveal animate-fade-in text-center">Why choose us?</h1>
+      </div>
+
+      <div class="container text-center">
+          <div class="row gy-3">
+              <div class="col-sm">
+                  <div class="card reveal animate-slide-in-right h-100">
+                      <img src="images/disciplineislife.png" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Affiliated with Diabetic Association of Bangladesh</h5>
+                          <p class="card-text">Our center is </p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card reveal animate-slide-in-right h-100">
+                      <img src="images/homephoto.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some long boring tedious irrelevant promotional explanation</p>
+                      </div>
+                  </div>
+              </div>
+              <div class="col-sm">
+                  <div class="card reveal animate-slide-in-right h-100">
+                      <img src="images/homephoto.jpeg" class="card-img-top" alt="...">
+                      <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">Some long boring tedious irrelevant promotional explanation.</p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+
+  </section>
+
+
+
+
+  <hr style="border: none; height: 1px; background-color: transparent;">
+  <hr style=" height: 1px; width: 50%; position: relative; left: 30%;">
 
 
 
@@ -213,137 +275,88 @@
 -----Look at the css file as well
 ----Each testimonial has a col value; just change that if you wanna change the width
 ----- -->
-<section class="" id="reviews">
+<section class=reviews">
   <div class="container">
       <h1 class="title heading-all reveal animate-fade-in text-center">Patient reviews</h1>
       <div class="row justify-content-center pt-3" >
           <div class="col-lg-3 col-md-4 col-sm-12 reviews reveal animate-slide-in-left">
               <p class="user-details mb-0"> Zia Rahman </p>
               <p class="mb-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
               </p>
               <p>Rupnagar Diabetes center is a very high quality Diabetes center in Dhaka. I am highly satisfied with the services of the center.</p>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-12 reviews reveal animate-slide-in-left">
               <p class="user-details mb-0">Masud Rana Milon</p>
               <p class="mb-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
               </p>
               <p class="mb-2">I am highly satisfied by the services of the Centre. It is a high quality diabetes and obesity management centre in Dhaka.</p>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-12 reviews reveal animate-slide-in-left">
               <p class="user-details mb-0"> MD Miah</p>
               <p class="mb-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
               </p>
               <p>A good quality speialized Diabetes care centre in Mirpur, Dhaka.</p>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-12 reviews reveal animate-slide-in-left">
               <p class="user-details mb-0"> Maruf Mahmud</p>
               <p class="mb-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
               </p>
               <p>In no doubt, it is a small center. But quality is really good. For 30 minutes I forgot myself. I explored myself as a student.😃😃 Dr. Asrafh who was a diabetic doctor, he taught me many things regarding on diabetic. He drew chart on blackboard and made me understood well. 100% appreciable.</p>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-12 reviews reveal animate-slide-in-left">
               <p class="user-details mb-0"> Sammi Sultana </p>
               <p class="mb-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
               </p>
               <p>It is a right place of Diabetes treatment Doctor is very cordial and ensures proper counselling advice which is essential for a patient</p>
           </div>
           <div class="col-lg-3 col-md-4 col-sm-12 reviews reveal animate-slide-in-left">
               <p class="user-details mb-0">Tushar Sarkar</p>
               <p class="mb-1">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
               </p>
               <p>It's a outstanding station.  Self awareness for patients is the focal point here. I am a Diabetes patient for one and a half decade but it totally control by consulting in this center .</p>
           </div>
       </div>
+      <div class="review-buttons reveal animate-slide-in-right">
+          <a href="https://search.google.com/local/writereview?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI">
+              <button class="button">Write a Review</button>
+          </a>
+          <a href="https://search.google.com/local/reviews?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI">
+            <button class="button">More Reviews</button>
+          </a>
+      </div>
   </div>
 
 </section>
-
-
-
-<!-- ---------------------why choose us--------------------------------------------------------------------- -->
-
-<!-- This section consists of two rows
------The first row is only for the text
------The second row consist of three cards 
------just change the h-100 value to change the height of the card-->
-
-  <section id="why-choose-us">
-    <div class="row  reveal animate-fade-in text-center">
-      <h1>Why choose us?</h1>
-    </div>
-
-    <div class="container text-center">
-      <div class="row gy-3">
-        <div class="col-sm">
-          <div class="card reveal animate-slide-in-right h-100">
-            <img src="homephoto.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Some ecellence</h5>
-              <p class="card-text">Some long boring tedious irrelevant promotional explanation.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="card reveal animate-slide-in-right h-100">
-            <img src="homephoto.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some long boring tedious irrelevant promotional explanation</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm">
-          <div class="card reveal animate-slide-in-right h-100">
-            <img src="homephoto.jpeg" class="card-img-top" alt="...">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <p class="card-text">Some long boring tedious irrelevant promotional explanation.</p>
-              <a href="#" class="btn btn-primary">Go somewhere</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </section>
-
-
-
-  
-  <hr style="border: none; height: 1px; background-color: transparent;">
-  <hr style=" height: 1px; width: 50%; position: relative; left: 30%;">
 
 
   <!-- ----------------------------------Appointment----------------------------------------------- -->
@@ -359,7 +372,7 @@
             <div class="card reveal animate-fade-in">
               <div class="row g-0">
                 <div class="col-6 col-md-5 col-sm-7">
-                  <img src="homephoto.jpeg" style="height: 100%; object-fit: cover;" class="card-img img-fluid rounded-start" alt="">
+                  <img src="images/homephoto.jpeg" style="height: 100%; object-fit: cover;" class="card-img img-fluid rounded-start" alt="">
                 </div>
                 <div class="col-6 col-md-7 col-sm-5">
                   <div class="card-body d-flex flex-column">
@@ -394,19 +407,46 @@
       <div class="card reveal animate-slide-in-left wrapper-consultant-info">
         <div class="row g-0">
           <div class="col-md-4">
-            <img height="100%" src="homepagephoto.jpeg" class="card-img" alt="Image">
+            <img height="100%" src="images/homepagephoto.jpeg" class="card-img" alt="Image">
           </div>
           <div class="col-md-8">
             <div class="card-body ps-lg-4">
-              <h5 class="card-title">About our doctor arefin</h5>
-              <p class="card-text">Card description
-                ggggggggggggdfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggggoes
-                here.</p>
+              <h5 class="card-title">About Dr. Ashraf</h5>
+              <p class="card-text"></p>
               <a href="#" class="btn btn-primary">Read More</a>
             </div>
           </div>
         </div>
       </div>
+        <div class="card reveal animate-slide-in-left wrapper-consultant-info">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img height="100%" src="images/homepagephoto.jpeg" class="card-img" alt="Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body ps-lg-4">
+                        <h5 class="card-title">About Dr. Ashraf</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="card reveal animate-slide-in-left wrapper-consultant-info">
+            <div class="row g-0">
+                <div class="col-md-4">
+                    <img height="100%" src="images/homepagephoto.jpeg" class="card-img" alt="Image">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body ps-lg-4">
+                        <h5 class="card-title">About Dr. Ashraf</h5>
+                        <p class="card-text"></p>
+                        <a href="#" class="btn btn-primary">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </div>
 
 
@@ -442,79 +482,80 @@
 
 
 <!----------------------------------------------------- NEED CSS FOR THIS PART ----------------------------------------------------->
-<!--        <div class="fGZQDc">-->
-<!--          <div class="kCmrbf">-->
-<!--            <h3 class="Gou21b">Contact</h3>-->
-<!--            <div data-field="phone">-->
-<!--              <a class="PDvGL q8cvFf" href="tel:+880-1705-129282" data-tracking-element-type="3" jslog="56037; track:impression,click" itemprop="telephone" dir="ltr">Call now</a>-->
-<!--              <ul class="R7Di0e">-->
-<!--                <li dir="ltr">01705-129282</li>-->
-<!--              </ul>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="kCmrbf">-->
-<!--            <h3 class="Gou21b">Address</h3>-->
-<!--            <div data-field="address">-->
-<!--              <a class="PDvGL q8cvFf" href="https://www.google.com/maps/dir//Rupnagar+Diabetes+Center+%28%E0%A6%B0%E0%A7%82%E0%A6%AA%E0%A6%A8%E0%A6%97%E0%A6%B0+%E0%A6%A1%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%B8+%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0/data=!4m8!4m7!1m0!1m5!1m1!1s0x3755c118ac2c7d35:0xd25849688f9c6df9!2m2!1d90.3556615!2d23.8170823" target="_blank" data-tracking-element-type="6" jslog="56039; track:impression,click">Get directions</a>-->
-<!--              <address class="qhkvMe " itemprop="address">-->
-<!--                <div>Rd. No. 23, House No. 29, Rupnagar Abashik More</div>-->
-<!--                <div>Rupnagar Road</div>-->
-<!--                <div>Dhaka 1216</div>-->
-<!--                <div>Bangladesh</div>-->
-<!--              </address>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--          <div class="kCmrbf">-->
-<!--            <h3 class="Gou21b">Opening Hours</h3>-->
-<!--            <div>-->
-<!--              <table itemprop="openingHours">-->
-<!--                <tbody>-->
-<!--                <tr>-->
-<!--                  <th class="x2TOCf">Mon:</th>-->
-<!--                  <td class="o0m3Qb">-->
-<!--                    <span class="WF8WNe">7:30 am – 11:30 pm</span>-->
-<!--                  </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <th class="x2TOCf">Tue:</th>-->
-<!--                  <td class="o0m3Qb">-->
-<!--                    <span class="WF8WNe">7:30 am – 11:30 pm</span>-->
-<!--                  </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <th class="x2TOCf">Wed:</th>-->
-<!--                  <td class="o0m3Qb">-->
-<!--                    <span class="WF8WNe">7:30 am – 11:30 pm</span>-->
-<!--                  </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <th class="x2TOCf">Thu:</th>-->
-<!--                  <td class="o0m3Qb"><span class="WF8WNe">7:30 am – 11:30 pm</span>-->
-<!--                  </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <th class="x2TOCf">Fri:</th>-->
-<!--                  <td class="o0m3Qb">-->
-<!--                    <span class="WF8WNe">7:30 am – 11:30 pm</span>-->
-<!--                  </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <th class="x2TOCf">Sat:</th>-->
-<!--                  <td class="o0m3Qb">-->
-<!--                    <span class="WF8WNe">7:30 am – 11:30 pm</span>-->
-<!--                  </td>-->
-<!--                </tr>-->
-<!--                <tr>-->
-<!--                  <th class="x2TOCf">Sun:</th>-->
-<!--                  <td class="o0m3Qb">-->
-<!--                    <span class="WF8WNe">7:30 am – 11:30 pm</span>-->
-<!--                  </td>-->
-<!--                </tr>-->
-<!--                </tbody>-->
-<!--              </table>-->
-<!--            </div>-->
-<!--          </div>-->
-<!--        </div>-->
+        <div class="fGZQDc">
+          <div class="kCmrbf">
+            <h3 class="Gou21b">Contact</h3>
+            <div data-field="phone">
+               <ul class="R7Di0e">
+                <li dir="ltr"><a class="PDvGL q8cvFf" href="tel:+880 28035745" data-tracking-element-type="3" jslog="56037; track:impression,click" itemprop="telephone" dir="ltr">+880-28035745</a></li>
+                <li dir="ltr"><a class="PDvGL q8cvFf" href="tel:+880-1705-129282" data-tracking-element-type="3" jslog="56037; track:impression,click" itemprop="telephone" dir="ltr">+880-1705-129282</a></li>
+                <li dir="ltr"><a class="PDvGL q8cvFf" href="tel:+880-1935-300727" data-tracking-element-type="3" jslog="56037; track:impression,click" itemprop="telephone" dir="ltr">+880-1935-300727</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="kCmrbf">
+            <h3 class="Gou21b">Address</h3>
+            <div data-field="address">
+              <a class="PDvGL q8cvFf" href="https://www.google.com/maps/dir//Rupnagar+Diabetes+Center+%28%E0%A6%B0%E0%A7%82%E0%A6%AA%E0%A6%A8%E0%A6%97%E0%A6%B0+%E0%A6%A1%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%B8+%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0/data=!4m8!4m7!1m0!1m5!1m1!1s0x3755c118ac2c7d35:0xd25849688f9c6df9!2m2!1d90.3556615!2d23.8170823" target="_blank" data-tracking-element-type="6" jslog="56039; track:impression,click">Get directions</a>
+              <address class="qhkvMe " itemprop="address">
+                <div>Rd. No. 23, House No. 29, Rupnagar Abashik More</div>
+                <div>Rupnagar Road</div>
+                <div>Dhaka 1216</div>
+                <div>Bangladesh</div>
+              </address>
+            </div>
+          </div>
+          <div class="kCmrbf">
+            <h3 class="Gou21b">Opening Hours</h3>
+            <div>
+              <table itemprop="openingHours">
+                <tbody>
+                <tr>
+                  <th class="x2TOCf">Mon:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">8:00 am – 11:30 pm</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">Tue:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">8:00 am – 11:30 pm</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">Wed:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">8:00 am – 11:30 pm</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">Thu:</th>
+                  <td class="o0m3Qb"><span class="WF8WNe">8:00 am – 11:30 pm</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">Fri:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">8:00 am – 11:30 pm</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">Sat:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">8:00 am – 11:30 pm</span>
+                  </td>
+                </tr>
+                <tr>
+                  <th class="x2TOCf">Sun:</th>
+                  <td class="o0m3Qb">
+                    <span class="WF8WNe">8:00 am – 11:30 pm</span>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
 <!---------------------------------------------------------------------------------------------------------------------------------->
 
 
@@ -561,9 +602,9 @@
         <div  class="row">
 
         <div class="col-12 d-flex social-handle justify-content-center pb-3">
-          <a href="#" class="social-link pe-3 fab fa-instagram"><img height="50px" class="social-handle" src="icons8-twitter-96.png" alt=""></a>
-          <a href="#" class="social-link pe-3"><img height="50px" class="social-handle" src="icons8-instagram-100.png" alt=""></a>
-          <a href="#" class="social-link pe-3"><img height="50px" class="social-handle" src="icons8-facebook-96.png" alt=""></a>
+          <a href="#" class="social-link pe-3 fab fa-instagram"><img height="50px" class="social-handle" src="images/icons8-twitter-96.png" alt=""></a>
+          <a href="#" class="social-link pe-3"><img height="50px" class="social-handle" src="images/icons8-instagram-100.png" alt=""></a>
+          <a href="#" class="social-link pe-3"><img height="50px" class="social-handle" src="images/icons8-facebook-96.png" alt=""></a>
         </div>
       </div>
       </div>

@@ -70,7 +70,7 @@ section .card-img{
   .navbar-nav .nav-link:hover::after {
     content: "";
     position: absolute;
-    bottom: 0px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 2px;
@@ -97,7 +97,7 @@ section .card-img{
     display: flex;
     justify-content: center;
     align-items: center;
-    max-height: 600px;
+    max-height: 450px;
   }
   
   .carousel-item img {
@@ -131,7 +131,7 @@ section .card-img{
 
 
 
-/* testimonila */
+/* reviews */
 
 .reviews{
     border-left: 4px solid ;
@@ -173,6 +173,13 @@ section .card-img{
     padding-top: 2rem;
 }
 
+.review-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 
 
 
@@ -180,7 +187,7 @@ section .card-img{
 
 .wrapper-consultant-info{
 
-    margin: 10% auto;
+    margin: 1% auto;
     border-radius: 10px;
     /* padding-top: 10%;
     padding-bottom: 50px; */
