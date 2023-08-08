@@ -188,7 +188,7 @@
                   <!--          </div>-->
                   <div class="review-buttons reveal animate-slide-in-right" style="flex-direction: column">
                       <button data-bs-toggle="modal" data-bs-target="#appointmentModal" class="button">Book Appointment</button>
-                      <button class="button">Ask Questions</button>
+                      <button data-bs-toggle="modal" data-bs-target="#questionModal" class="button">Ask Questions</button>
                   </div>
 
 
@@ -395,29 +395,39 @@
                   <div class="container mx-auto">
                       <div style="min-height: fit-content;" class="row justify-content-center">
                           <div class="col-lg-10 col-md-10 col-sm-10 form">
-                              <form style="max-width: 90%;">
+                              <form id="appointment-form" style="max-width: 90%;">
                                   <div class="m-lg-5 mt-4">
-                                      <div  class="inputBox">
-                                          <input id="appointment-name-input" type="text" required="required">
-                                          <span class="user">Name</span>
+                                      <div class="inputBox">
+                                          <input id="appointment-first-name-input" type="text" required="required">
+                                          <span class="user">First Name *</span>
+                                      </div>
+                                  </div>
+                                  <div class="m-lg-5 mt-4">
+                                      <div class="inputBox">
+                                          <input id="appointment-last-name-input" type="text" required="required">
+                                          <span class="user">Last Name *</span>
+                                      </div>
+                                  </div>
+                                  <div class="m-lg-5 mt-4">
+                                      <div class="inputBox">
+                                          <input id="appointment-age-input" type="tel" required="required">
+                                          <span class="user">Age *</span>
                                       </div>
                                   </div>
                                   <div class="m-lg-5 mt-5">
                                       <div class="inputBox">
-                                          <input id="appointment-email-input" type="text" required="required">
+                                          <input id="appointment-email-input" type="text">
                                           <span class="user">Email</span>
                                       </div>
-                                      <div id="appointment-email-text">Valid email required *</div>
                                   </div>
                                   <div class="m-lg-5 mt-5 ">
-
                                       <div class="inputBox">
-                                          <input id="appointment-phone-input" type="text" required="required">
-                                          <span class="user">Phone number</span>
+                                          <input id="appointment-phone-input" type="tel" required="required">
+                                          <span class="user">Phone number *</span>
                                       </div>
                                   </div>
                                   <div class="m-lg-5 mt-5">
-                                      <label id="appointment-how-can-we-help" class="mb-lg-4 mb-3">How can we help?</label>
+                                      <label id="appointment-how-can-we-help" class="mb-lg-4 mb-3">Describe Your Issue</label>
                                       <textarea id="appointment-entry-text" class="form-control" placeholder="Enter text" ></textarea>
                                   </div>
                                   <div class="row m-lg-5 mt-5  justify-content-end">
@@ -453,33 +463,49 @@
                   <div class="container mx-auto">
                       <div style="min-height: fit-content;" class="row justify-content-center">
                           <div class="col-lg-10 col-md-10 col-sm-10 form">
-                              <form style="max-width: 90%;">
+                              <form id="question-form" style="max-width: 90%;">
                                   <div class="m-lg-5 mt-4">
-                                      <div  class="inputBox">
-                                          <input id="question-name-input" type="text" required="required">
-                                          <span class="user">Name</span>
+                                      <div class="inputBox">
+                                          <input id="question-first-name-input" type="text" required="required">
+                                          <span class="user">First Name *</span>
+                                      </div>
+                                  </div>
+                                  <div class="m-lg-5 mt-4">
+                                      <div class="inputBox">
+                                          <input id="question-last-name-input" type="text" required="required">
+                                          <span class="user">Last Name *</span>
+                                      </div>
+                                  </div>
+                                  <div class="m-lg-5 mt-4">
+                                      <div class="inputBox">
+                                          <input id="question-age-input" type="tel" required="required">
+                                          <span class="user">Age *</span>
                                       </div>
                                   </div>
                                   <div class="m-lg-5 mt-5">
                                       <div class="inputBox">
                                           <input id="question-email-input" type="text" required="required">
-                                          <span class="user">Email</span>
+                                          <span class="user">Email *</span>
                                       </div>
-                                      <div id="email-text">Valid email required *</div>
                                   </div>
                                   <div class="m-lg-5 mt-5 ">
-
                                       <div class="inputBox">
-                                          <input id="question-phone-input" type="text" required="required">
+                                          <input id="question-phone-input" type="tel">
                                           <span class="user">Phone number</span>
                                       </div>
                                   </div>
+                                  <div class="m-lg-5 mt-5 ">
+                                      <div class="inputBox">
+                                          <input id="question-subject-input" type="text" required="required">
+                                          <span class="user">Subject *</span>
+                                      </div>
+                                  </div>
                                   <div class="m-lg-5 mt-5">
-                                      <label id="question-how-can-we-help" class="mb-lg-4 mb-3">How can we help?</label>
+                                      <label id="question-how-can-we-help" class="mb-lg-4 mb-3">How can we help? *</label>
                                       <textarea id="question-entry-text" class="form-control" placeholder="Enter text" ></textarea>
                                   </div>
                                   <div class="row m-lg-5 mt-5  justify-content-end">
-                                      <button type="submit" id="question-enter-button" class="enter">Enter</button>
+                                      <button type="submit" id="question-submit-button" class="submit">Submit</button>
                                   </div>
                               </form>
                           </div>
@@ -727,6 +753,7 @@
 
 
   <script src="index.js"></script>
+  <script src="Features/automatedEmails/automatedEmails.js"></script>
 </body>
 
 </html>

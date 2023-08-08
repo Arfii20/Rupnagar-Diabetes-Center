@@ -1,18 +1,50 @@
 const BASE = "http://localhost/"
 
-async function sendQueryEmail(event) {
-    event.preventDefault();
-    const button= event.target;
+const questionElement = document.getElementById('question-entry-text');
 
-    const form = button.closest('form');
+const inputFields = document.querySelectorAll('.inputBox input');
+inputFields.forEach(input => {
+    input.addEventListener('input', function () {
+        if (this.value.trim() !== '') {
+            this.parentElement.classList.add('has-content');
+        } else {
+            this.parentElement.classList.remove('has-content');
+        }
+    });
+    input.addEventListener('focus', function () {
+        this.parentElement.classList.add('focused');
+    });
 
-    const firstNameElement = form.querySelector('input[placeholder*="First Name"]');
-    const lastNameElement = form.querySelector('input[placeholder*="Last Name"]');
-    const ageElement = form.querySelector('input[placeholder*="Age"]');
-    const emailAddressElement = form.querySelector('input[placeholder*="Email Address"]');
-    const phoneNumberElement = form.querySelector('input[placeholder*="Number"]');
-    const subjectElement = form.querySelector('input[placeholder*="Subject"]');
-    const descriptionElement = form.querySelector('input[placeholder*="Description"]');
+    input.addEventListener('blur', function () {
+        this.parentElement.classList.remove('focused');
+    });
+});
+
+questionElement.addEventListener("input", function (e) {
+    // this line may seem useless but its def needed
+    questionElement.style.minHeight = "30px";
+    questionElement.style.height = "auto";
+    questionElement.style.height = `${questionElement.scrollHeight}px`;
+});
+
+questionElement.addEventListener('focus', (e)=>{
+    questionElement.style.border = '2px solid #000'
+} )
+
+document.getElementById('question-submit-button').addEventListener('click', async function (event) {
+    const form = document.getElementById('question-form');
+    if (!form.reportValidity()) {
+        event.preventDefault();
+        return;
+    }
+
+    const firstNameElement = document.getElementById('question-first-name-input');
+    const lastNameElement = document.getElementById('question-last-name-input');
+    const ageElement = document.getElementById('question-age-input');
+    const emailAddressElement = document.getElementById('question-email-input');
+    const phoneNumberElement = document.getElementById('question-phone-input');
+    const subjectElement = document.getElementById('question-subject-input');
+    const descriptionElement = document.getElementById('question-how-can-we-help');
 
     const firstName = firstNameElement.value;
     const lastName = lastNameElement.value;
@@ -98,20 +130,35 @@ async function sendQueryEmail(event) {
         const data = await response.json();
         console.log(data);
     }
-}
+});
 
-async function sendAppointmentEmail(event) {
-    event.preventDefault();
-    const button= event.target;
+const appointmentElement = document.getElementById('appointment-entry-text');
 
-    const form = button.closest('form');
+appointmentElement.addEventListener("input", function (e) {
+    // this line may seem useless but its def needed
+    appointmentElement.style.minHeight = "30px";
+    appointmentElement.style.height = "auto";
+    appointmentElement.style.height = `${appointmentElement.scrollHeight}px`;
+});
 
-    const firstNameElement = form.querySelector('input[placeholder*="First Name"]');
-    const lastNameElement = form.querySelector('input[placeholder*="Last Name"]');
-    const ageElement = form.querySelector('input[placeholder*="Age"]');
-    const emailAddressElement = form.querySelector('input[placeholder*="Email Address"]');
-    const phoneNumberElement = form.querySelector('input[placeholder*="Number"]');
-    const descriptionElement = form.querySelector('input[placeholder*="Description"]');
+appointmentElement.addEventListener('focus', (e)=>{
+    appointmentElement.style.border = '2px solid #000'
+} )
+
+
+document.getElementById('appointment-submit-button').addEventListener('click', async function (event) {
+    const form = document.getElementById('appointment-form');
+    if (!form.reportValidity()) {
+        event.preventDefault();
+        return;
+    }
+
+    const firstNameElement = document.getElementById('appointment-first-name-input');
+    const lastNameElement = document.getElementById('appointment-last-name-input');
+    const ageElement = document.getElementById('appointment-age-input');
+    const emailAddressElement = document.getElementById('appointment-email-input');
+    const phoneNumberElement = document.getElementById('appointment-phone-input');
+    const descriptionElement = document.getElementById('appointment-how-can-we-help');
 
     const firstName = firstNameElement.value;
     const lastName = lastNameElement.value;
@@ -120,51 +167,27 @@ async function sendAppointmentEmail(event) {
     const phoneNumber = phoneNumberElement.value;
     const description = descriptionElement.value;
 
-    // Check first name
-    if (firstName === "") {
-        setInputError(firstNameElement, 'Please enter First Name');
-        return;
-    }
-    else{
-        clearInputError(firstNameElement);
-    }
-
-    // Check last name
-    if (lastName === "") {
-        setInputError(lastNameElement, 'Please enter Last Name');
-        return;
-    }
-    else{
-        clearInputError(lastNameElement);
-    }
 
     // Check age
-    if (age === "") {
-        setInputError(ageElement, 'Please enter age');
+    if (age > 0 && age < 110) {
+        ageElement.style.border = '2px solid black';
+    } else {
+        ageElement.style.border = '2px solid red';
         return;
-    }
-    else if (0 < age < 110) {
-        setInputError(ageElement, 'Invalid age');
-        return;
-    }
-    else{
-        clearInputError(ageElement);
     }
 
     // Check phone number
     if (phoneNumber === "") {
-        setInputError(phoneNumberElement, 'Please enter phone number');
+        phoneNumberElement.style.border = '2px solid red';
         return;
-    }
-    else if (!isValidNumber(phoneNumber)) {
-        setInputError(phoneNumberElement, 'Invalid phone number format');
+    } else if (!isValidNumber(phoneNumber)) {
+        phoneNumberElement.style.border = '2px solid red';
         return;
-    }
-    else{
-        clearInputError(phoneNumberElement);
+    } else {
+        phoneNumberElement.style.border = '2px solid black';
     }
 
-    const formBody=
+    const formBody =
         "Name: " + firstName + " " + lastName + "\n" +
         "Age: " + age + "\n" +
         "Email Address: " + emailAddress + "\n" +
@@ -176,7 +199,7 @@ async function sendAppointmentEmail(event) {
         description: formBody
     };
 
-    const response= await fetch(BASE + '/Features/automatedEmails/automatedEmails.php', {
+    const response = await fetch(BASE + '/Features/automatedEmails/automatedEmails.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -187,10 +210,10 @@ async function sendAppointmentEmail(event) {
         const data = await response.json();
         console.log(data);
     }
-}
+});
 
 function isValidNumber(phone_number) {
-    const number = /^[+]880[0-9]{10}$|^0[0-9]{10}$/;
+    const number = /^{[+]88}?0[0-9]{10}$|^0[0-9]{10}$/;
     return number.test(phone_number);
 }
 

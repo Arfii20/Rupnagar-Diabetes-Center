@@ -10,7 +10,8 @@
 
 
 
-#appointment-heading {
+  #appointment-heading,
+  #question-heading {
     /* padding-top: 5%;
     padding-left: 10%; */
 
@@ -40,12 +41,12 @@
           -16px -16px 32px #fefefe;
     border-radius: 8px;
   }
-  
+
   .inputBox {
     position: relative;
     /* width: 250px; */
   }
-  
+
   .inputBox input {
     width: 100%;
     padding: 10px;
@@ -59,7 +60,7 @@
     transition: 0.1s;
     border-bottom-left-radius: 8px;
   }
-  
+
   .inputBox span {
     margin-top: 5px;
     position: absolute;
@@ -75,9 +76,12 @@
     letter-spacing: 3px;
     border-radius: 8px;
   }
-  
-  .inputBox input:valid~span,
-  .inputBox input:focus~span {
+
+  /* New class styling */
+  .inputBox.focused span,
+  .inputBox.focused input:focus ~ span,
+  .inputBox.has-content span,
+  .inputBox.has-content input:focus ~ span {
     transform: translateX(10px) translateY(-25px);
     font-size: 0.8em;
     padding: 5px 10px;
@@ -86,13 +90,13 @@
     color: #fff;
     border: 2px;
   }
-  
-  .inputBox input:valid,
-  .inputBox input:focus {
+
+  .inputBox.focused input,
+  .inputBox.has-content input {
     border: 2px solid #000;
     border-radius: 8px;
   }
-  
+
   .submit{
     height: 45px;
     width: 100px;
@@ -112,6 +116,18 @@
     color: white;
   }
 
+  /* Placeholder styles */
+  ::placeholder {
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 3px;
+    /* border-radius: 8px; */
+  }
+
+
+  textarea::-webkit-scrollbar {
+    width: 0px;
+  }
 
 
 
@@ -120,59 +136,30 @@
 
   /* ----------------------------For text area */
 
-  #appointment-entry-text {
+  #appointment-entry-text,
+  #question-entry-text{
     outline: none;
-
     border: 0;
     min-height: 30px;
     color: #000;
     font-size: 1em;
     background: transparent;
-
     border-top-left-radius: 0;
     border-bottom-right-radius: 0;
-
     border-left: 2px solid #000;
     border-bottom: 2px solid #000;
-
     border-bottom-left-radius: 8px;
-
-
     transition: border 0.2s;
-
-    /* flex: 1; */
-}
+  }
 
 
-#appointment-entry-text:focus {
-    /* border: 2px solid #000; */
-    /* border-radius: 8px; */
-}
-
-/* Placeholder styles */
-::placeholder {
-    font-size: 12px;
-    color: #000;
-    letter-spacing: 3px;
-    /* border-radius: 8px; */
-}
-
-
-textarea::-webkit-scrollbar {
-    width: 0px;
-}
-
-
-#appointment-how-can-we-help {
+  #appointment-how-can-we-help,
+  #question-how-can-we-help
+  {
     font-size: 15px;
     letter-spacing: 2px;
-    display: inline-block; 
-    padding-bottom: 5px; 
+    display: inline-block;
+    padding-bottom: 5px;
     border-bottom: 2px solid #000;
-    margin-bottom: 10px; 
-    
-
-}
-
-
-  
+    margin-bottom: 10px;
+  }
