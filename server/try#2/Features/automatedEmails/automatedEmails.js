@@ -37,6 +37,7 @@ document.getElementById('question-submit-button').addEventListener('click', asyn
         event.preventDefault();
         return;
     }
+    let valid = true;
 
     const firstNameElement = document.getElementById('question-first-name-input');
     const lastNameElement = document.getElementById('question-last-name-input');
@@ -54,57 +55,34 @@ document.getElementById('question-submit-button').addEventListener('click', asyn
     const subject = subjectElement.value;
     const description = descriptionElement.value;
 
-    // Check first name
-    if (firstName === "") {
-        setInputError(firstNameElement, 'Please enter First Name');
-        return;
-    }
-    else{
-        clearInputError(firstNameElement);
-    }
-
-    // Check last name
-    if (lastName === "") {
-        setInputError(lastNameElement, 'Please enter Last Name');
-        return;
-    }
-    else{
-        clearInputError(lastNameElement);
-    }
 
     // Check age
-    if (age === "") {
-        setInputError(ageElement, 'Please enter age');
-        return;
-    }
-    else if (0 < age < 110) {
-        setInputError(ageElement, 'Invalid age');
-        return;
-    }
-    else{
-        clearInputError(ageElement);
+    if (age > 0 && age < 110) {
+        ageElement.style.border = '2px solid black';
+    } else {
+        ageElement.style.border = '2px solid red';
+        valid = false;
     }
 
     // Check phone number
-    if (phoneNumber === "") {
-        setInputError(phoneNumberElement, 'Please enter phone number');
-        return;
-    }
-    else if (!isValidNumber(phoneNumber)) {
-        setInputError(phoneNumberElement, 'Invalid phone number format');
-        return;
-    }
-    else{
-        clearInputError(phoneNumberElement);
+    if (!isValidNumber(phoneNumber)) {
+        phoneNumberElement.style.border = '2px solid red';
+        valid = false;
+    } else {
+        phoneNumberElement.style.border = '2px solid black';
     }
 
     // Check description
     if (description === "") {
-        setInputError(descriptionElement, 'Please enter some Description');
-        return;
+        descriptionElement.style.border = '2px solid red';
+        valid = false;
     }
     else{
-        clearInputError(descriptionElement);
+        descriptionElement.style.border = '2px solid black';
+    }
+
+    if (!valid) {
+        return;
     }
 
     const formBody=
@@ -152,6 +130,7 @@ document.getElementById('appointment-submit-button').addEventListener('click', a
         event.preventDefault();
         return;
     }
+    let valid = true;
 
     const firstNameElement = document.getElementById('appointment-first-name-input');
     const lastNameElement = document.getElementById('appointment-last-name-input');
@@ -173,18 +152,28 @@ document.getElementById('appointment-submit-button').addEventListener('click', a
         ageElement.style.border = '2px solid black';
     } else {
         ageElement.style.border = '2px solid red';
-        return;
+        valid = false;
     }
 
     // Check phone number
-    if (phoneNumber === "") {
+    if (!isValidNumber(phoneNumber)) {
         phoneNumberElement.style.border = '2px solid red';
-        return;
-    } else if (!isValidNumber(phoneNumber)) {
-        phoneNumberElement.style.border = '2px solid red';
-        return;
+        valid = false;
     } else {
         phoneNumberElement.style.border = '2px solid black';
+    }
+
+    // Check description
+    if (description === "") {
+        descriptionElement.style.border = '2px solid red';
+        valid = false;
+    }
+    else{
+        descriptionElement.style.border = '2px solid black';
+    }
+
+    if (!valid) {
+        return;
     }
 
     const formBody =
