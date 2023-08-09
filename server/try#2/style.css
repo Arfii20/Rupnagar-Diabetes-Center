@@ -3,15 +3,8 @@
 
 html{
     scroll-behavior: smooth;
-    /* to hide the horizontal scroll */
+     /*to hide the horizontal scroll */
     overflow-x: hidden;
-
-    
-    
-    
-    
-
-    
 }
 
 
@@ -19,27 +12,31 @@ html{
 section{
     margin-top: 7%;
     color: black;
-
-
 }
-
 section .heading-all{
     color: #022a30;
     font-weight: 400;
-
+    padding-bottom: 25px;
 }
 
+
+/* About our doctor cards */
 section .card{
     color: #075561;
 }
-
 section .card-img{
-    /* border-top-right-radius: 30px; */
-    border: 0px;
+    border-top-right-radius: 30px;
+    border: 0;
+}
+section .card-title{
+    color: #075561;
+}
+section .card-text{
+    font-size: 14px;
 }
 
 
-
+/* Top Navigation bar */
 #nav-bar{
     background: #075561;
 
@@ -47,9 +44,6 @@ section .card-img{
     top: 0;
     z-index: 20;
 }
-
-
-
 .navbar-nav .nav-link,
 .navbar-nav .nav-link:visited,
 .navbar-nav .nav-link:focus {
@@ -58,16 +52,14 @@ section .card-img{
     letter-spacing: 1px;
     position: relative;
     transition: color 0.3s;
-  }
-
-  .navbar-nav .nav-link:hover {
+}
+.navbar-nav .nav-link:hover {
     transform: scale(1.1);
-    color: #54d5e1; 
+    color: #54d5e1;
     text-decoration: none;
     border-bottom: 20px;
-  }
-
-  .navbar-nav .nav-link:hover::after {
+}
+.navbar-nav .nav-link:hover::after {
     content: "";
     position: absolute;
     bottom: 0;
@@ -75,17 +67,25 @@ section .card-img{
     width: 100%;
     height: 2px;
     background-color: #027e89;
-
-  }
-
-
-
+}
 .navbar-nav li{
     padding: 0 10px;
 }
 .navbar-brand{
     font-weight: 300;
     color: white;
+}
+
+.home-photo-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.title-logo {
+    width: 30px;
+    height: 30px;
+    border-radius: 15px;
 }
 
 
@@ -107,9 +107,6 @@ section .card-img{
     height: auto;
     object-fit: cover;
   }
-  
-
-
 
   .jumbotron{
     color: #075561;
@@ -281,8 +278,3 @@ section .card-img{
 }
 /*  */
 
-
-.card-title{
-    color: #075561;
-
-}

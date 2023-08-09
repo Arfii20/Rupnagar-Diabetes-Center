@@ -146,7 +146,6 @@ document.getElementById('appointment-submit-button').addEventListener('click', a
     const phoneNumber = phoneNumberElement.value;
     const description = descriptionElement.value;
 
-
     // Check age
     if (age > 0 && age < 110) {
         ageElement.style.border = '2px solid black';
