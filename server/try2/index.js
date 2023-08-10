@@ -36,12 +36,15 @@ function loadLanguage(language) {
     fetch(`languages/${language}.json`)
         .then(response => response.json())
         .then(data => {
-            // Update the text content on the page
+            // Update the text content and innerHTML on the page
             const translatableElements = document.getElementsByClassName('translatable');
             for (let i = 0; i < translatableElements.length; i++) {
                 const element = translatableElements[i];
                 const key = element.dataset.key;
-                element.textContent = data[key] || element.textContent;
+                const value = data[key];
+                if (value !== undefined) {
+                    element.innerHTML = value;
+                }
             }
         })
         .catch(error => {

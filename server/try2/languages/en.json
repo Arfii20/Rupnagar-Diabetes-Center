@@ -1,3 +1,44 @@
 {
-  "title": "Rupnagar Diabetes Center"
+  "title": "Rupnagar Diabetes Center",
+  "home": "Home",
+  "appointment": "Appointment",
+  "reviews": "Reviews",
+  "about": "About",
+  "contact": "Contact",
+  "welcome": "Welcome to<br>Rupnagar Diabetes Center",
+  "commitment": "Quality Healthcare is our Commitment",
+  "visitGalleryButton": "Visit our Gallery",
+  "bookAppointmentButton": "Book Appointment",
+  "askQuestionsButton": "Ask Questions",
+  "whyChooseUs": "Why choose us?",
+  "affiliated": "Affiliated with Diabetic Association of Bangladesh",
+  "committedExcellence": "Committed to excellence in diabetes care, we are affiliated with the esteemed Diabetic Association of Bangladesh, ensuring top-tier medical services",
+  "qualityDiabetesGeneral": "Quality Diabetes and General Medicine Services",
+  "beyondDiabetesCare": "Beyond diabetes care, our expertise extends to a range of general medical services, ensuring holistic health and wellness for all",
+  "comprehensiveDental": "Comprehensive Dental Care",
+  "topTierDental": "Experience top-tier dental services designed to enhance your oral health and provide you with a confident smile",
+
+  "patientReviews": "Patient reviews",
+  "writeReview": "Write a Review",
+  "moreReviews": "More Reviews",
+
+  "aboutDoctors": "About Our Doctors",
+  "drAshraf": "Dr. Ashraf Uddin Ahammed",
+  "drAshrafDegrees": "MBBS, FCGP (General Medicine), DFID (Diabetes) (CMC, Vellore), D. Ashtma (U.K), DCP (Australia), CCD, EDC (BIRDEM), DOC (Skin-VD), CCCD (Heart Foundation)",
+  "drAshrafOccupation": "Consultant Diabetologist & General Medicine Specialist",
+  "drAshrafDiseases": "(Diabetes, Medicine, Hypertention, Asthma, Skin & VD)",
+  "drAshrafConsultHours": "<b>Consultation Hours:</b> 8am-12pm, 9pm-12pm",
+  "drShafiur": "Dr. N.S.M. Shafiur Rahman Amin",
+  "drShafiurDegrees": "BDS (Dhaka), MPH, BMDC-2334",
+  "drShafiurOccupation": "Coordinator & Consultant, Marks Medical College & Dental Unit",
+  "drShafiurDiseases": "(Dental)",
+  "drShafiurConsultHours": "<b>Consultation Hours:</b> 8pm-11pm",
+  "drSamia": "Dr. Samia Tajnin Mawla",
+  "drSamiaDegrees": "BDS (Dhaka), MPH, D-Conjur (In-Course) (AFMI)",
+  "drSamiaOccupation": "Lecturer, Marks Medical College & Dental Unit",
+  "drSamiaConsultHours": "<b>Consultation Hours:</b> 6pm-9pm",
+
+  "location": "Location of Rupnagar Diabetes Center",
+  "contactUs": "Contact Us"
+
 }
