@@ -1,11 +1,12 @@
 <?php
-
+echo "hello2";
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\Exception;
 
 require 'vendor/autoload.php';
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    echo "hello1";
     $data = json_decode(file_get_contents('php://input'), true);
     $functionName = $data['function'];
     $dataBody = $data['data'];
@@ -42,14 +43,17 @@ function sendQueryEmail($data): void
         $mail->Body = $data["description"];
 
         $mail->send();
+        header('Content-Type: application/json');
         echo json_encode("Email sent successfully!");
     } catch (Exception $e) {
+        header('Content-Type: application/json');
         echo json_encode('Caught exception: ' . $e->getMessage() . "\n");
     }
 }
 
 function sendAppointmentEmail($data): void
 {
+    echo "hello";
     $mail = new PHPMailer(true);
     try {
         //Server settings
@@ -71,8 +75,10 @@ function sendAppointmentEmail($data): void
         $mail->Body = $data["description"];
 
         $mail->send();
+        header('Content-Type: application/json');
         echo json_encode("Email sent successfully!");
     } catch (Exception $e) {
+        header('Content-Type: application/json');
         echo json_encode('Caught exception: ' . $e->getMessage() . "\n");
     }
 }

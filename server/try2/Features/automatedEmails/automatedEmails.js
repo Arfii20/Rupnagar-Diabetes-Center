@@ -1,5 +1,3 @@
-const BASE = "http://localhost/"
-
 const questionElement = document.getElementById('question-entry-text');
 
 const inputFields = document.querySelectorAll('.inputBox input');
@@ -49,7 +47,7 @@ document.getElementById('question-submit-button').addEventListener('click', asyn
 
     const firstName = firstNameElement.value;
     const lastName = lastNameElement.value;
-    const age = ageElement.value;
+    const age = parseInt(ageElement.value);
     const emailAddress = emailAddressElement.value;
     const phoneNumber = phoneNumberElement.value;
     const subject = subjectElement.value;
@@ -57,11 +55,11 @@ document.getElementById('question-submit-button').addEventListener('click', asyn
 
 
     // Check age
-    if (age > 0 && age < 110) {
-        ageElement.style.border = '2px solid black';
-    } else {
+    if (age <= 0 || age >= 110) {
         ageElement.style.border = '2px solid red';
         valid = false;
+    } else {
+        ageElement.style.border = '2px solid black';
     }
 
     // Check phone number
@@ -97,7 +95,7 @@ document.getElementById('question-submit-button').addEventListener('click', asyn
         description: formBody
     };
 
-    const response= await fetch(BASE + '/Features/automatedEmails/automatedEmails.php', {
+    const response= await fetch('Features/automatedEmails/automatedEmails.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -125,6 +123,7 @@ appointmentElement.addEventListener('focus', (e)=>{
 
 
 document.getElementById('appointment-submit-button').addEventListener('click', async function (event) {
+    event.preventDefault();
     const form = document.getElementById('appointment-form');
     if (!form.reportValidity()) {
         event.preventDefault();
@@ -141,17 +140,17 @@ document.getElementById('appointment-submit-button').addEventListener('click', a
 
     const firstName = firstNameElement.value;
     const lastName = lastNameElement.value;
-    const age = ageElement.value;
+    const age = parseInt(ageElement.value);
     const emailAddress = emailAddressElement.value;
     const phoneNumber = phoneNumberElement.value;
     const description = descriptionElement.value;
 
     // Check age
-    if (age > 0 && age < 110) {
-        ageElement.style.border = '2px solid black';
-    } else {
+    if (age <= 0 || age >= 110) {
         ageElement.style.border = '2px solid red';
         valid = false;
+    } else {
+        ageElement.style.border = '2px solid black';
     }
 
     // Check phone number
@@ -187,7 +186,7 @@ document.getElementById('appointment-submit-button').addEventListener('click', a
         description: formBody
     };
 
-    const response = await fetch(BASE + '/Features/automatedEmails/automatedEmails.php', {
+    const response = await fetch('Features/automatedEmails/automatedEmails.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
