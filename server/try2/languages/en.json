@@ -1,15 +1,18 @@
 {
   "title": "Rupnagar Diabetes Center",
+
   "home": "Home",
   "appointment": "Appointment",
   "reviews": "Reviews",
   "about": "About",
   "contact": "Contact",
+
   "welcome": "Welcome to<br>Rupnagar Diabetes Center",
   "commitment": "Quality Healthcare is our Commitment",
   "visitGalleryButton": "Visit our Gallery",
   "bookAppointmentButton": "Book Appointment",
   "askQuestionsButton": "Ask Questions",
+
   "whyChooseUs": "Why choose us?",
   "affiliated": "Affiliated with Diabetic Association of Bangladesh",
   "committedExcellence": "Committed to excellence in diabetes care, we are affiliated with the esteemed Diabetic Association of Bangladesh, ensuring top-tier medical services",
@@ -21,6 +24,18 @@
   "patientReviews": "Patient reviews",
   "writeReview": "Write a Review",
   "moreReviews": "More Reviews",
+  "ziaRahman": "Zia Rahman",
+  "masudRana": "Masud Rana Milon",
+  "MDMiah": "MD Miah",
+  "marufMahmud": "Maruf Mahmud",
+  "samiSultana": "Sammi Sultana",
+  "tusharSarkar": "Tushar Sarkar",
+  "ziaRahmanReview": "Rupnagar Diabetes center is a very high quality Diabetes center in Dhaka. I am highly satisfied with the services of the center.",
+  "masudRanaReview": "I am highly satisfied by the services of the Centre. It is a high quality diabetes and obesity management centre in Dhaka.",
+  "MDMiahReview": "A good quality speialized Diabetes care centre in Mirpur, Dhaka.",
+  "marufMahmudReview": "In no doubt, it is a small center. But quality is really good. For 30 minutes I forgot myself. I explored myself as a student.\uD83D\uDE03\uD83D\uDE03 Dr. Asrafh who was a diabetic doctor, he taught me many things regarding on diabetic. He drew chart on blackboard and made me understood well. 100% appreciable.",
+  "samiSultanaReview": "It is a right place of Diabetes treatment Doctor is very cordial and ensures proper counselling advice which is essential for a patient",
+  "tusharSarkarReview": "It's a outstanding station. Self awareness for patients is the focal point here. I am a Diabetes patient for one and a half decade but it totally control by consulting in this center .",
 
   "aboutDoctors": "About Our Doctors",
   "drAshraf": "Dr. Ashraf Uddin Ahammed",
@@ -38,7 +53,23 @@
   "drSamiaOccupation": "Lecturer, Marks Medical College & Dental Unit",
   "drSamiaConsultHours": "<b>Consultation Hours:</b> 6pm-9pm",
 
+  "contactUs": "Contact Us",
   "location": "Location of Rupnagar Diabetes Center",
-  "contactUs": "Contact Us"
+  "contactNumber": "Contact Number",
+
+  "address": "Address",
+  "getDirection": "Get directions",
+  "fullAddress": " <p>Rd. No. 23, House No. 29, Rupnagar Abashik More, Rupnagar, Dhaka-1216, Bangladesh</p>",
+
+  "openingHours": "Opening Hours",
+  "mon": "Mon",
+  "tue": "Tue",
+  "wed": "Wed",
+  "thu": "Thu",
+  "fri": "Fri",
+  "sat": "Sat",
+  "sun": "Sun",
+  "openTime": "8:00 am – 11:30 pm"
+
 
 }
