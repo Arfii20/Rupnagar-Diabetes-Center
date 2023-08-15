@@ -1,4 +1,8 @@
-
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
 
 html{
@@ -7,10 +11,20 @@ html{
     overflow-x: hidden;
 }
 
+/*Hiding Scrollbar but keeping functionality*/
+body::-webkit-scrollbar{
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    font-family: 'Roboto', sans-serif;
+}
 
 
 section{
-    margin-top: 7%;
+    margin-top: 5rem;
     color: black;
 }
 section .heading-all{
@@ -22,7 +36,9 @@ section .heading-all{
 
 /* About our doctor cards */
 section .card{
-    color: #075561;
+    color: #fff;
+    border-radius: 1rem 1rem;
+    background-color: rgba(55, 116, 128, 0.69);
 }
 section .card-img{
     border-top-right-radius: 30px;
@@ -37,6 +53,12 @@ section .card-text{
 
 
 /* Top Navigation bar */
+nav.navbar{
+    padding: 1.2rem;
+    background: rgb(0, 0, 0, 0.3);
+}
+
+
 #nav-bar{
     background: #075561;
 
@@ -91,20 +113,23 @@ section .card-text{
 
 
 
-
+/*Carousel Styling*/
 .carousel-item {
     font-weight: 300;
     display: flex;
     justify-content: center;
     align-items: center;
     max-height: 450px;
-  }
+}
+
+button.carousel-control-prev, button.carousel-control-next{
+    display: none;
+}
+
   
-  .carousel-item img {
-    max-width: 100%;
-    max-height: 80%;
-    width: auto;
-    height: auto;
+  .carousel-item img {=
+    width: 100vw;
+    height: 100vh;
     object-fit: cover;
   }
 
@@ -113,20 +138,55 @@ section .card-text{
   }
 
 
+/*Front Page Styling*/
+.landing-section,.carousel-inner, .overlay, .welcome-page{
+    height: 100vh;
+    width: 100vw;
+}
 
+.landing-section {
+    position: absolute;
+}
 
+/*Welcome Page Styling*/
+section.welcome-section{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
 
+div.welcome-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
 
+.welcome-buttons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
 
+h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons > a > button{
+    color: #fff;
+}
 
+/*Why Choose Us Section*/
+.why-choose-us{
+    height: 100vh;
+}
 
+section .card-img-top{
+    padding: 2rem;
+    border-radius: 50%;
+}
 
-
-
-
-
-
-
+.card-image{
+    object-fit: cover;
+}
 
 /* reviews */
 
@@ -220,10 +280,10 @@ section .card-text{
     position: absolute;
     top: 0;
     left: 0;
-    width: 80%;
-    height: 100%;
-    background: linear-gradient(to right, #027e89, rgba(0, 0, 0, 0));
-  }
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(to bottom, #027e89, rgba(0, 0, 0, 0.2));
+}
   
   
 
