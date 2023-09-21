@@ -59,9 +59,9 @@
 
   "address": "Address",
   "getDirection": "Get directions",
-  "fullAddress": " <p>Rd. No. 23, House No. 29, Rupnagar Abashik More, Rupnagar, Dhaka-1216, Bangladesh</p>",
+  "fullAddress": " <p>Rd. No. 23, House No. 29, Rupnagar Abashik More,<br> Rupnagar, Dhaka-1216, Bangladesh</p>",
 
-  "openingHours": "Opening Hours:",
+  "openingHours": "Opening Hours",
   "mon": "Mon",
   "tue": "Tue",
   "wed": "Wed",

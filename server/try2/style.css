@@ -6,6 +6,15 @@
     letter-spacing: normal;
 }
 
+a{
+    text-decoration: none !important;
+}
+
+
+.hide{
+    display: none;
+}
+
 
 html{
     scroll-behavior: smooth;
@@ -26,10 +35,9 @@ body {
 
 
 section{
-    margin-top: 3.5rem;
     color: black;
 }
-section .heading-all{
+.why-choose-us .heading-all{
     color: #022a30;
     font-weight: 400;
     padding-bottom: 25px;
@@ -37,22 +45,21 @@ section .heading-all{
 
 
 /* About our doctor cards */
-section .card{
+.why-choose-us .card{
     color: #fff;
     border-radius: 1rem 1rem;
-    background-color: rgba(2, 126, 137, 0.61);
+    background-color: rgba(2, 126, 137, 0.9);
 }
-section .card-img{
-    border-top-right-radius: 30px;
-    border: 0;
+.why-choose-us .card-img{
+    border-radius: 1rem 0 0 1rem;
+    border: none;
 }
-section .card-title{
+.why-choose-us .card-title{
     color: #075561;
 }
-section .card-text{
+.why-choose-us .card-text{
     font-size: 14px;
 }
-
 
 /* Top Navigation bar */
 nav.navbar{
@@ -60,7 +67,6 @@ nav.navbar{
     font-size: 1rem;
     font-weight: 400;
     background: rgb(0, 0, 0, 0.3);
-
 }
 
 
@@ -69,12 +75,12 @@ nav.navbar{
     position: sticky;
     top: 0;
     z-index: 20;
-    opacity: .8;
+    opacity: 1;
 }
 .navbar-nav .nav-link,
 .navbar-nav .nav-link:visited,
 .navbar-nav .nav-link:focus {
-    color: white;
+    color: white !important;
     font-weight: 400;
     letter-spacing: 1px;
     position: relative;
@@ -85,6 +91,7 @@ nav.navbar{
     text-decoration: none;
     border-bottom: 20px;
     transition: .3s;
+
 }
 .navbar-nav .nav-link:hover::after {
     content: "";
@@ -132,15 +139,15 @@ button.carousel-control-prev, button.carousel-control-next{
 }
 
   
-  .carousel-item img {=
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-  }
+.carousel-item img {
+width: 100vw;
+height: 100vh;
+object-fit: cover;
+}
 
-  .jumbotron{
-    color: #075561;
-  }
+.jumbotron{
+color: #075561;
+}
 
 
 /*Front Page Styling*/
@@ -156,6 +163,7 @@ button.carousel-control-prev, button.carousel-control-next{
 /*Welcome Page Styling*/
 section.welcome-section{
     display: flex;
+    padding-top: 5%;
     justify-content: center;
     height: 100vh;
     width: 100vw;
@@ -180,10 +188,25 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 }
 
 /*Why Choose Us Section*/
-h1.title{
+.why-choose-us .cards{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.why-choose-us .card{
+    -webkit-box-shadow: 0 0 16px 0 rgba(0,0,0,0.6);
+    box-shadow: 0 0 16px 0 rgba(0,0,0,0.6);
+    border-style: none;
+}
+
+.why-choose-us .title{
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
+    font-weight: bold;
     margin-bottom: 2rem;
+    color: black;
+    text-transform: uppercase;
 }
 
 .card-body{
@@ -194,41 +217,50 @@ h1.title{
 }
 
 .why-choose-us{
-    height: 100vh;
+    min-height: 100vh;
+    /*padding-top: 5%;*/
+    padding-bottom: 5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-section .card-img-top{
-    padding: 2rem;
+.why-choose-us .card-img-top{
+    padding: 1rem 3.5rem;
     border-radius: 50%;
 }
 
-.card-title{
+.why-choose-us .card-title{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
+    color: black !important;
+    text-transform: uppercase;
 }
 
-.card-text{
+.why-choose-us .card-text{
     font-family: 'Roboto', sans-serif;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding-top: 1rem;
+    text-align: center;
 }
 
 /* reviews */
 .reviews-quote{
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items: center;
-    height: 80vh;
     width: 100vw;
-    color: #fff;
-}
-
-p.user-details{
-    color: #fff;
+    background: url("images/des.jpg") no-repeat fixed center;
+    min-height: 100vh;
 }
 
 .reviews-quote h1.title{
-    margin-bottom: -6rem;
+    font-weight: bold;
+    font-size: 3rem;
+    color: black;
+    text-transform: uppercase;
 }
 
 .reviews{
@@ -246,8 +278,7 @@ p.user-details{
 }
 
 .review-carousel{
-    margin: auto;
-    width: 68%;
+    width: 86%;
 }
 
 .carousel-cell {
@@ -257,12 +288,22 @@ p.user-details{
     gap: 1.5rem;
     text-align: center;
     padding: 2rem;
-    width: 32%;
+    width: 30%;
     height: 360px;
-    margin-right: 20px;
-    background: rgba(2, 126, 137, 0.61);
+    margin-right: 3rem;
+    background-color: rgba(2, 126, 137, 0.9);
     counter-increment: carousel-cell;
     border-radius: 1rem 1rem;
+}
+
+.carousel-cell .user-details{
+    font-size: 1.5rem;
+    color: black;
+}
+
+.carousel-cell .text{
+    color: white;
+    font-size: 1.1rem;
 }
 
 .flickity-page-dots{
@@ -270,7 +311,7 @@ p.user-details{
 }
 
 .flickity-button{
-    opacity: .5;
+    opacity: .7;
 }
 
 .reviews img{
@@ -310,14 +351,167 @@ p.user-details{
     align-items: center;
 }
 
+.review-buttons .button{
+    color: white;
+    padding: 0.5rem 1rem;
+}
 
+/* About Our Doctors*/
+#about-us{
+    padding-top: 6%;
+}
 
+.about-us{
+    padding-top: 1.2rem;
+    min-height: 80vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 4rem;
+}
 
+.about-us .container{
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .doctors{
+    border-style: none;
+    border: none;
+}
+
+/* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+
+    background-color: transparent;
+    width: 380px;
+    height: 380px;
+    border-style: none;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+
+}
+
+/* This container is needed to position the front and back side */
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.flip-card-front {
+    border-radius: 0.6rem;
+    color: white;
+    height: auto;
+    width: auto;
+    background-color: rgba(2, 126, 137, 0.9)
+}
+
+.flip-card-front img{
+    padding: 2rem;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+/* Style the back side */
+.flip-card-back {
+    padding: 2rem;
+    height: 460px;
+    width: 100%;
+    border-radius: 0.6rem;
+    background-color: rgba(2, 126, 137, 0.9);
+    color: white;
+    transform: rotateY(180deg);
+}
+
+.flip-card-back h4{
+    font-size: 1.6rem;
+    padding-bottom: 1rem;
+}
+
+.flip-card-back p{
+    font-size: 1rem;
+    text-align: start;
+}
+
+/*Contact Us*/
+#contact-us{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    padding-top: 5%;
+}
+
+.map{
+    padding-top: 2rem;
+}
+
+.map-caption{
+    text-align: center;
+}
+
+.contact-us{
+    padding-top: 4%;
+    min-height: 60vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.contact-us .contact-numbers{
+    margin: 0 !important;
+    padding: 0 !important;
+    list-style: none;
+    color: black !important;
+}
+
+.contact-us .numbers, .address, .open-hours{
+    color: white;
+    height: 320px;
+    width: 360px;
+    background: rgba(2, 126, 137, 0.9);
+    padding: 2rem;
+    border-radius: 1.2rem;
+}
+
+.contact-us a{
+    color: black;
+}
+
+.contact-us a:hover{
+    color: white;
+}
+
+/*Contact Us table Styling*/
+.contact-us .open-hours .hour-table .pad{
+    padding: 0.3rem;
+}
 
 
 
 .wrapper-consultant-info{
-
     margin: 1% auto;
     border-radius: 10px;
     /* padding-top: 10%;
@@ -371,26 +565,34 @@ p.user-details{
 
 
 /* ---------------------------button----------------------------------------- */
+.welcome-buttons{
+    margin-top: 3rem;
+}
+
 .button {
     position: relative;
     display: inline-block;
-    margin: 15px;
+    font-weight: 400;
+    font-size: 1rem;
+    margin: 0.5rem;
+    width: 180px;
     padding: 5px 10px;
     text-align: center;
     letter-spacing: 1px;
 
     color: #075561;
-    background: transparent;
+    background: #075561;
     cursor: pointer;
     transition: ease-in-out 0.3s;
     border: 2px solid #075561;
     border-radius: 10px;
     box-shadow: inset 0 0 0 0 #075561;
+    transform: scale(1);
   }
   
   .button:hover {
-    color: white;
-    box-shadow: inset 0 -100px 0 0 #075561;
+    color: black;
+      transform: scale(0.97);
   }
 
 
