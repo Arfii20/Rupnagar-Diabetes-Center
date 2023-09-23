@@ -382,7 +382,6 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-card {
-
     background-color: transparent;
     width: 380px;
     height: 380px;
@@ -434,7 +433,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 /* Style the back side */
 .flip-card-back {
     padding: 2rem;
-    height: 460px;
+    min-height: 460px;
     width: 100%;
     border-radius: 0.6rem;
     background-color: rgba(2, 126, 137, 0.9);
@@ -539,10 +538,6 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     box-shadow: 0 0 40px 2px rgba(0, 0, 0, 0.2);
 }
 
-
-
-
-
 .social-handle{
     border-radius: 50%;
     transition: 0.5s;
@@ -562,17 +557,21 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     height: 100vh;
     background: linear-gradient(to bottom, #027e89, rgba(0, 0, 0, 0.2));
 }
-  
-  
 
-/* ---------------------Footer------------------------------------------------------------------ */
-
+/*Footer Styling*/
 .footer{
     background-color: #075561;
     color: white;
 }
 
+#footer a{
+    color: black;
+    scale: 1;
+}
 
+#footer a:hover{
+    scale: 0.8;
+}
 
 /* ---------------------------button----------------------------------------- */
 .welcome-buttons{
