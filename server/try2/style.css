@@ -249,8 +249,9 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 .reviews-quote{
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
+    gap: 2rem;
     width: 100vw;
     background: url("images/des.jpg") no-repeat fixed center;
     min-height: 100vh;
@@ -358,12 +359,13 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 
 /* About Our Doctors*/
 #about-us{
-    padding-top: 6%;
+    padding-top: 8%;
+    min-height: 100vh;
+    margin-bottom: 8%;
 }
 
 .about-us{
-    padding-top: 1.2rem;
-    min-height: 80vh;
+    padding-top: 3rem;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -461,7 +463,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    padding-top: 5%;
+    margin-top: -5%;
 }
 
 .map{
@@ -477,7 +479,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     min-height: 60vh;
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: space-between;
 }
 
 .contact-us .contact-numbers{
@@ -489,7 +491,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 
 .contact-us .numbers, .address, .open-hours{
     color: white;
-    height: 320px;
+    max-height: 320px;
     width: 360px;
     background: rgba(2, 126, 137, 0.9);
     padding: 2rem;
@@ -504,12 +506,26 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     color: white;
 }
 
+.address .button{
+    margin: 0.5rem 0;
+    background: white;
+    border-style: none;
+    padding: 0.5rem 1rem;
+    scale: 1;
+}
+
+.address .button:hover{
+    transform: scale(.94);
+}
+
+.address .button:hover a:hover{
+    color: black;
+}
+
 /*Contact Us table Styling*/
 .contact-us .open-hours .hour-table .pad{
     padding: 0.3rem;
 }
-
-
 
 .wrapper-consultant-info{
     margin: 1% auto;
