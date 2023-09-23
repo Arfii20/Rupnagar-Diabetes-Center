@@ -1,0 +1,102 @@
+/*Responsive Styling*/
+@media screen and (max-width: 912px) {
+    html{
+        scroll-behavior: smooth;
+        /*to hide the horizontal scroll */
+        overflow-x: hidden;
+    }
+
+    /*Hiding Scrollbar but keeping functionality*/
+    body::-webkit-scrollbar{
+        display: none;
+    }
+
+    body {
+        -ms-overflow-style: none;  /* IE and Edge */
+        scrollbar-width: none;  /* Firefox */
+        font-family: 'Roboto', sans-serif;
+    }
+
+    /*Navbar Styling*/
+    div.home-photo-title a{
+        display: none;
+    }
+
+    div.home-photo-title img{
+        scale: 1.5;
+    }
+
+    div.navbar-collapse{
+        width: 100%;
+    }
+
+    div.navbar-collapse .navbar-nav{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        gap: 1rem;
+
+    }
+
+    div.navbar-collapse .navbar-nav > li{
+        border: 1px solid #075561;
+        width: 100%;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    button.navbar-toggler{
+        box-shadow: 0 0 0 black !important;
+        border: 2px solid #075561;
+    }
+
+    button.navbar-toggler:focus{
+        border: 2px solid rgba(255, 255, 255, 0.46);
+    }
+
+    button.navbar-toggler{
+        box-shadow: 0 0 0 black !important;
+        border: 2px solid #075561;
+
+    }
+
+    .burger-overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0,0,0,0.3);
+        opacity: 1;
+        z-index: 1;
+    }
+
+    .welcome-section .welcome-heading{
+        margin: auto;
+        width: 100vw;
+        font-size: 1.4rem;
+    }
+
+    .welcome-container{
+        height: 100%;
+    }
+
+    .welcome-container > div.reveal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row>*{
+        padding: 0 !important;
+    }
+
+    #nav-bar{
+        position: absolute;
+        width: 100vw;
+    }
+
+}

@@ -70,3 +70,22 @@ languageLink.addEventListener('click', function(event) {
 // Loads the default language when the page loads
 loadLanguage('en');
 
+function dropOverlay(){
+    console.log(document.getElementById("navbarSupportedContent").classList.contains("visible"))
+    if (document.getElementById("navbarSupportedContent").classList.contains("visible")){
+        document.getElementById("burger-overlay").classList.remove("burger-overlay");
+        removeClass()
+    }else{
+        addClass()
+        document.getElementById("burger-overlay").classList.add("burger-overlay");
+    }
+
+}
+
+function addClass(){
+    document.getElementById("navbarSupportedContent").classList.add("visible");
+}
+
+function removeClass(){
+    document.getElementById("navbarSupportedContent").classList.remove("visible");
+}

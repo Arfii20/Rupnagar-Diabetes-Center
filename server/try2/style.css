@@ -33,10 +33,6 @@ body {
     font-family: 'Roboto', sans-serif;
 }
 
-
-section{
-    color: black;
-}
 .why-choose-us .heading-all{
     color: #022a30;
     font-weight: 400;
@@ -470,6 +466,10 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     padding-top: 2rem;
 }
 
+.map .ratio-iframe{
+    min-height: 438px;
+}
+
 .map-caption{
     text-align: center;
 }
@@ -540,17 +540,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 }
 
 
-@media (max-width: 768px) {
-    .ratio-iframe {
-        height: 450px;
-    }
-}
 
-@media (min-width: 768px) {
-    .ratio-iframe {
-        height: 450px;
-    }
-}
 
 
 .social-handle{
