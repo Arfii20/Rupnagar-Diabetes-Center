@@ -1,5 +1,5 @@
 /*Responsive Styling*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 1080px) {
     /*Hiding Scrollbar but keeping functionality*/
     body::-webkit-scrollbar {
         display: none;
