@@ -19,6 +19,10 @@
         width: 100vw;
     }
 
+    #nav-bar a.nav-img{
+        display: block;
+    }
+
     div.home-photo-title a {
         display: none;
     }

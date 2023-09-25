@@ -103,4 +103,8 @@
         align-items: center;
         height: 100vh;
     }
+
+    #nav-bar a.nav-img{
+        display: block;
+    }
 }
