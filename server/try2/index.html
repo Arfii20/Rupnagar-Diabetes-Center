@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="gallery.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="modal.css">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+            crossorigin="anonymous"></script>
+
+    <title>Rupnagar Diabetes Center</title>
+</head>
+
+<body>
+<!-- margin-top of each section was 8% in the css file so it needs to be made 0 for
+-----the nav bar and the title page -->
+<section id="nav-bar" style="margin-top: 0; ">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <div class="home-photo-title">
+                <a class="nav-img" href="./index.html"><img class="title-logo" src="images/accreditedphysician.jpg" alt=""></a>
+                <a style="color: white;" class="navbar-brand translatable" data-key="title" href="./index.html">Rupnagar Diabetes
+                    Center</a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                    onclick="dropOverlay()">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link translatable" aria-current="page" href="./index.html"
+                           data-key="home">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translatable" aria-current="page" href="#welcome-page"
+                           data-key="appointment">Appointment</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translatable" aria-current="page" href="#reviews"
+                           data-key="reviews">Reviews</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translatable" aria-current="page" href="#about-us" data-key="about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translatable" aria-current="page" href="#contact-us"
+                           data-key="contact">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link translatable" aria-current="page" href="#" id="language-select">বাংলা</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</section>
+
+
+<!-- ----------------------------------------Welcome Page Background Image Slides---------------------------------------------------------- -->
+<div id="burger-overlay"></div>
+<section class="landing-section" style="margin-top: 0;">
+    <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <div class="overlay"></div>
+                <img src="images/f1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="images/f2.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <div class="overlay"></div>
+                <img src="images/f3.jpg" class="d-block w-100" alt="...">
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ----------------------------Welcome Page--------------------------------------------------------- -->
+<section id="welcome-page" class="welcome-section">
+    <div class="container-fluid padding">
+        <div class="welcome-container row padding text-center">
+            <div class="col-xs-12 col-sm-6 col-md-6 jumbotron" style="width: 100%">
+                <div class="reveal animate-fade-in">
+                    <h1 class="welcome-heading display-5 heading-all translatable" data-key="welcome">Welcome to<br>Rupnagar
+                        Diabetes
+                        Center</h1>
+                    <p class="welcome-para lead translatable" data-key="commitment"><i>Quality Healthcare is our
+                        Commitment</i></p>
+                    <div class="welcome-buttons">
+                        <a href="gallery.html" role="button">
+                            <button class="button translatable" data-key="visitGalleryButton">Visit our gallery</button>
+                        </a>
+                        <button data-bs-toggle="modal" data-bs-target="#appointmentModal" class="button translatable"
+                                data-key="bookAppointmentButton">Book Appointment
+                        </button>
+                        <button data-bs-toggle="modal" data-bs-target="#questionModal" class="button translatable"
+                                data-key="askQuestionsButton">Ask Questions
+                        </button>
+                        <a role="button" target="_blank" href="https://www.youtube.com/@ashrafahammed9478/videos">
+                            <button class="button translatable" data-key="youtubeButton">Our Youtube</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- ---------------------why choose us--------------------------------------------------------------------- -->
+
+<!-- This section consists of two rows
+-----The first row is only for the text
+-----The second row consist of three cards
+-----just change the h-100 value to change the height of the card-->
+
+<section id="why-choose-us" class="why-choose-us">
+    <div class="row reveal animate-fade-in text-center">
+        <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="whyChooseUs">Why choose
+            us?
+        </h1>
+    </div>
+
+    <div class="container text-center">
+        <div class="row gy-3 cards">
+            <div class="col-sm">
+                <div class="card reveal animate-slide-in-right h-100">
+                    <img src="images/disciplineislife.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title translatable" data-key="affiliated">Affiliated with Diabetic Association
+                            of Bangladesh</h5>
+                        <p class="card-text translatable" data-key="committedExcellence">Committed to excellence in
+                            diabetes care, we are affiliated with the esteemed Diabetic Association of Bangladesh,
+                            ensuring top-tier medical services</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card reveal animate-slide-in-right h-100">
+                    <img src="images/medicine.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title translatable" data-key="qualityDiabetesGeneral">Quality Diabetes and
+                            General Medicine Services</h5>
+                        <p class="card-text translatable" data-key="beyondDiabetesCare">Beyond diabetes care, our
+                            expertise extends to a range of general medical services, ensuring holistic health and
+                            wellness for all</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm">
+                <div class="card reveal animate-slide-in-right h-100">
+                    <img src="images/dental.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title translatable" data-key="comprehensiveDental">Comprehensive Dental
+                            Care</h5>
+                        <p class="card-text translatable" data-key="topTierDental">Experience top-tier dental services
+                            designed to enhance your oral health and provide you with a confident smile</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- --------------------------Reviews------------------------------------------------ -->
+
+
+<!-- All the reviews are in a single row
+-----Look at the css file as well
+----Each testimonial has a col value; just change that if you wanna change the width
+----- -->
+<section id="reviews" class="reviews-quote">
+    <!-- Flickity HTML init -->
+    <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="patientReviews">Patient
+        reviews
+    </h1>
+    <div class="review-carousel"
+         data-flickity='{ "wrapAround": true }'>
+        <div class="carousel-cell">
+            <div class="user">
+                <p class="user-details mb-0 translatable" data-key="ziaRahman">Zia Rahman</p>
+                <p class="mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="translatable text" data-key="ziaRahmanReview">Rupnagar Diabetes center is a very high quality
+                Diabetes center in Dhaka. I am highly satisfied with the services of the center.</p>
+        </div>
+        <div class="carousel-cell">
+            <div class="user">
+                <p class="user-details mb-0 translatable" data-key="masudRana">Masud Rana Milon</p>
+                <p class="mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="translatable text" data-key="masudRanaReview">I am highly satisfied by the services of the Centre.
+                It is a high quality diabetes and obesity management centre in Dhaka.</p>
+        </div>
+        <div class="carousel-cell">
+            <div class="user">
+                <p class="user-details mb-0 translatable" data-key="MDMiah">MD Miah</p>
+                <p class="mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="translatable text" data-key="MDMiahReview">A good quality speialized Diabetes care centre in
+                Mirpur, Dhaka.</p>
+        </div>
+        <div class="carousel-cell">
+            <div class="user">
+                <p class="user-details mb-0 translatable" data-key="marufMahmud">Maruf Mahmud</p>
+                <p class="mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="translatable text" data-key="marufMahmudReview">In no doubt, it is a small center. But quality is
+                really good. For 30 minutes I forgot myself. I explored myself as a student.😃😃 Dr. Asrafh who was a
+                diabetic doctor, he taught me many things regarding on diabetic. He drew chart on blackboard and
+                made me understood well. 100% appreciable.</p>
+        </div>
+        <div class="carousel-cell">
+            <div class="user">
+                <p class="user-details mb-0 translatable" data-key="samiSultana">Sammi Sultana</p>
+                <p class="mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="translatable text" data-key="samiSultanaReview">It is a right place of Diabetes treatment Doctor
+                is
+                very cordial and ensures proper counselling advice which is essential for a patient</p>
+        </div>
+        <div class="carousel-cell">
+            <div class="user">
+                <p class="user-details mb-0 translatable" data-key="tusharSarkar">Tushar Sarkar</p>
+                <p class="mb-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                </p>
+            </div>
+            <p class="translatable text" data-key="tusharSarkarReview">It's a outstanding station. Self awareness for
+                patients is the focal point here. I am a Diabetes patient for one and a half decade but it totally
+                control by consulting in this center.
+            </p>
+        </div>
+    </div>
+    <div class="review-buttons animate-slide-in-right">
+        <a href="https://search.google.com/local/writereview?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI" target="_blank">
+            <button class="button translatable" data-key="writeReview">Write a Review</button>
+        </a>
+        <a href="https://search.google.com/local/reviews?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI" target="_blank">
+            <button class="button translatable" data-key="moreReviews">More Reviews</button>
+        </a>
+    </div>
+</section>
+
+
+<!-- --------.--------------------------Appointment----------------------------------------------- -->
+
+<!--  <section id="appointment">-->
+<!--    <div class="cream-bg">-->
+<!--      <div class="container">-->
+<!--        <div class="row  justify-content-center">-->
+<!--          <div class="col-lg-10">-->
+<!--            <div class="card reveal animate-fade-in">-->
+<!--              <div class="row g-0">-->
+<!--                <div class="col-6 col-md-5 col-sm-7">-->
+<!--                  <img src="images/homephoto.jpeg" style="height: 100%; object-fit: cover;" class="card-img img-fluid rounded-start" alt="">-->
+<!--                </div>-->
+<!--                <div class="col-6 col-md-7 col-sm-5">-->
+<!--                  <div class="card-body d-flex flex-column">-->
+<!--                    <div >-->
+<!--                      <h3 class="card-title">hi ther</h3>-->
+<!--                      <h2 class="card-title">alsdfjl</h2>-->
+<!--                      <p class="card-text">fuck you man this is just a para text about appointments</p>-->
+<!--                      <a class="btn btn-primary">Appointment</a>-->
+<!--                    </div>-->
+<!--                  </div>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </div>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </section>-->
+
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="m-lg-1 mt-0">
+                    <div id="appointment-heading">
+                        Appointment Form
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container mx-auto">
+                    <div style="min-height: fit-content;" class="row justify-content-center">
+                        <div class="col-lg-10 col-md-10 col-sm-10 form">
+                            <form id="appointment-form" style="max-width: 90%;">
+                                <div class="m-lg-5 mt-4">
+                                    <div class="inputBox">
+                                        <input id="appointment-first-name-input" type="text" required="required">
+                                        <span class="user">First Name *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-4">
+                                    <div class="inputBox">
+                                        <input id="appointment-last-name-input" type="text" required="required">
+                                        <span class="user">Last Name *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-4">
+                                    <div class="inputBox">
+                                        <input id="appointment-age-input" type="number" required="required">
+                                        <span class="user">Age *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-5">
+                                    <div class="inputBox">
+                                        <input id="appointment-email-input" type="text">
+                                        <span class="user">Email</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-5 ">
+                                    <div class="inputBox">
+                                        <input id="appointment-phone-input" type="tel" required="required">
+                                        <span class="user">Phone number *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-5">
+                                    <label id="appointment-how-can-we-help" class="mb-lg-4 mb-3">Describe Your
+                                        Issue</label>
+                                    <textarea id="appointment-entry-text" class="form-control"
+                                              placeholder="Enter text"></textarea>
+                                </div>
+                                <div class="row m-lg-5 mt-5  justify-content-end">
+                                    <button type="submit" id="appointment-submit-button" class="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- ---------------------------------- Question ----------------------------------------------- -->
+
+<div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <div class="m-lg-1 mt-0">
+                    <div id="question-heading">
+                        Ask Your Question
+                    </div>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="container mx-auto">
+                    <div style="min-height: fit-content;" class="row justify-content-center">
+                        <div class="col-lg-10 col-md-10 col-sm-10 form">
+                            <form id="question-form" style="max-width: 90%;">
+                                <div class="m-lg-5 mt-4">
+                                    <div class="inputBox">
+                                        <input id="question-first-name-input" type="text" required="required">
+                                        <span class="user">First Name *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-4">
+                                    <div class="inputBox">
+                                        <input id="question-last-name-input" type="text" required="required">
+                                        <span class="user">Last Name *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-4">
+                                    <div class="inputBox">
+                                        <input id="question-age-input" type="number" required="required">
+                                        <span class="user">Age *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-5">
+                                    <div class="inputBox">
+                                        <input id="question-email-input" type="text" required="required">
+                                        <span class="user">Email *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-5 ">
+                                    <div class="inputBox">
+                                        <input id="question-phone-input" type="tel">
+                                        <span class="user">Phone number</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-5 ">
+                                    <div class="inputBox">
+                                        <input id="question-subject-input" type="text" required="required">
+                                        <span class="user">Subject *</span>
+                                    </div>
+                                </div>
+                                <div class="m-lg-5 mt-5">
+                                    <label id="question-how-can-we-help" class="mb-lg-4 mb-3">How can we help? *</label>
+                                    <textarea id="question-entry-text" class="form-control"
+                                              placeholder="Enter text"></textarea>
+                                </div>
+                                <div class="row m-lg-5 mt-5  justify-content-end">
+                                    <button type="submit" id="question-submit-button" class="submit">Submit</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- -------------------------------About us ------------------------------------------------------- -->
+
+
+<!-- This is just one huge card for an img div on the left and the info div on the right
+-----Look at the style file for the box shadow -->
+<section id="about-us">
+    <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="aboutDoctors">About Our
+        Doctors
+    </h1>
+    <div class="about-us">
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/doc1.png" alt="Avatar">
+                    <h4>Dr. Ashraf Uddin Ahammed</h4>
+                    <p><b>Consultation Hours:</b> 8am-12pm, 9pm-12pm</p>
+                </div>
+                <div class="flip-card-back">
+                    <h4>Dr. Ashraf Uddin Ahammed</h4>
+                    <p>
+                        MBBS, FCGP (General Medicine), DFID (Diabetes) (CMC, Vellore), D. Ashtma (U.K), DCP
+                        (Australia), CCD, EDC (BIRDEM), DOC (Skin-VD), CCCD (Heart Foundation)
+                    </p>
+                    <p>Consultant Diabetologist & General Medicine Specialist</p>
+                    <p>(Diabetes, Medicine, Hypertention, Asthma, Skin & VD)</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/doc1.png" alt="Avatar">
+                    <h4>Dr. Samia Tajnin Mawla</h4>
+                    <p><b>Consultation Hours:</b> 8am-12pm, 9pm-12pm</p>
+                </div>
+                <div class="flip-card-back">
+                    <h4>Dr. Samia Tajnin Mawla</h4>
+                    <p>
+                        MBBS, FCGP (General Medicine), DFID (Diabetes) (CMC, Vellore), D. Ashtma (U.K), DCP
+                        (Australia), CCD, EDC (BIRDEM), DOC (Skin-VD), CCCD (Heart Foundation)
+                    </p>
+                    <p>Consultant Diabetologist & General Medicine Specialist</p>
+                    <p>(Diabetes, Medicine, Hypertention, Asthma, Skin & VD)</p>
+                </div>
+            </div>
+        </div>
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <div class="flip-card-front">
+                    <img src="images/doc1.png" alt="Avatar">
+                    <h4>Dr. Shafiur Rahman Amin</h4>
+                    <p><b>Consultation Hours:</b> 8pm-11pm</p>
+                </div>
+                <div class="flip-card-back">
+                    <h4>Dr. Shafiur Rahman Amin</h4>
+                    <p>
+                        BDS (Dhaka), MPH, D-Conjur (In-Course) (AFMI)
+                    </p>
+                    <p>Lecturer, Marks Medical College & Dental Unit</p>
+                    <p>(Dental)</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- ---------------------------------------Maps------------------------------------------ -->
+
+<!-- Notice that i use an off-3 to centre the divs
+----There are two main divs: one containing the location url and the other containing the text -->
+
+
+<!----------------------------------------------------- NEED CSS FOR THIS PART ----------------------------------------------------->
+<section id="contact-us">
+    <div class="container">
+        <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="contactUs">Contact
+            Us
+        </h1>
+        <div class="map">
+            <iframe class="ratio ratio-iframe"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.0426521036766!2d90.3556615!3d23.8170823!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c118ac2c7d35%3A0xd25849688f9c6df9!2zUnVwbmFnYXIgRGlhYmV0ZXMgQ2VudGVyICjgprDgp4LgpqrgpqjgppfgprAg4Kah4Ka-4Kef4Ka-4Kas4KeH4Kaf4Ka_4Ka4IOCmuOCnh-CmqOCnjeCmn-CmvuCmsCk!5e0!3m2!1sen!2sbd!4v1691355750034!5m2!1sen!2sbd"
+                    width="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+        <div class="contact-us">
+            <div class="open-hours">
+                <h3 class="translatable" data-key="openingHours">Opening Hours</h3>
+                <div>
+                    <table class="hour-table" itemprop="openingHours">
+                        <tbody>
+                        <tr>
+                            <th class="pad translatable" data-key="mon">Mon:</th>
+                            <td class="pad">
+                                <span class="WF8WNe translatable" data-key="openTime">8:00 am – 11:30 pm</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="pad translatable" data-key="tue">Tue:</th>
+                            <td class="pad">
+                                <span class="WF8WNe translatable" data-key="openTime">8:00 am – 11:30 pm</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="pad translatable" data-key="wed">Wed:</th>
+                            <td class="pad">
+                                <span class="WF8WNe translatable" data-key="openTime">8:00 am – 11:30 pm</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="pad translatable" data-key="thu">Thu:</th>
+                            <td class="pad">
+                                <span class="WF8WNe translatable" data-key="openTime">8:00 am – 11:30 pm</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="pad translatable" data-key="fri">Fri:</th>
+                            <td class="pad">
+                                <span class="WF8WNe translatable" data-key="openTime">8:00 am – 11:30 pm</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="pad translatable" data-key="sat">Sat:</th>
+                            <td class="pad">
+                                <span class="WF8WNe translatable" data-key="openTime">8:00 am – 11:30 pm</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th class="pad translatable" data-key="sun">Sun:</th>
+                            <td class="pad">
+                                <span class="WF8WNe translatable" data-key="openTime">8:00 am – 11:30 pm</span>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="address">
+                <h3 class="translatable" data-key="address">Address</h3>
+                <div data-field="address">
+                    <address class="translatable" data-key="fullAddress" itemprop="address">
+                        <p>Rd. No. 23, House No. 29, Rupnagar Abashik More,
+                            Rupnagar, Dhaka-1216, Bangladesh</p>
+                    </address>
+                    <button class="button" data-key="moreReviews">
+                        <a class="translatable"
+                           href="https://www.google.com/maps/dir//Rupnagar+Diabetes+Center+%28%E0%A6%B0%E0%A7%82%E0%A6%AA%E0%A6%A8%E0%A6%97%E0%A6%B0+%E0%A6%A1%E0%A6%BE%E0%A7%9F%E0%A6%BE%E0%A6%AC%E0%A7%87%E0%A6%9F%E0%A6%BF%E0%A6%B8+%E0%A6%B8%E0%A7%87%E0%A6%A8%E0%A7%8D%E0%A6%9F%E0%A6%BE%E0%A6%B0/data=!4m8!4m7!1m0!1m5!1m1!1s0x3755c118ac2c7d35:0xd25849688f9c6df9!2m2!1d90.3556615!2d23.8170823"
+                           target="_blank" data-tracking-element-type="6"
+                           jslog="56039; track:impression,click"
+                           data-key="getDirection">Get directions
+                        </a>
+                    </button>
+                </div>
+            </div>
+            <div class="numbers">
+                <h3 class="Gou21b translatable" data-key="contactNumber">Contact Numbers</h3>
+                <div data-field="phone">
+                    <ul class="contact-numbers">
+                        <li dir="ltr"><a class="" href="tel:+880 28035745"
+                                         data-tracking-element-type="3" jslog="56037; track:impression,click"
+                                         itemprop="telephone" dir="ltr">+880-28035745</a></li>
+                        <li dir="ltr"><a class="" href="tel:+880-1705-129282"
+                                         data-tracking-element-type="3" jslog="56037; track:impression,click"
+                                         itemprop="telephone" dir="ltr">+880-1705-129282</a></li>
+                        <li dir="ltr"><a class="" href="tel:+880-1935-300727"
+                                         data-tracking-element-type="3" jslog="56037; track:impression,click"
+                                         itemprop="telephone" dir="ltr">+880-1935-300727</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+
+<section id="footer">
+    <footer class="footer mt-auto py-3">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-12">
+                    <span>© 2023 Your Website, All rights reserved, Made by <a target="_blank" href="https://github.com/IPogenI">Pogen</a></span>
+                </div>
+            </div>
+            <div class="container text-center">
+                <p style="margin-top: 1%;">Find us on social media</p>
+                <div class="row">
+                    <div class="col-12 d-flex social-handle justify-content-center pb-3">
+                        <a href="#" class="social-link pe-3"><img height="50px" class="social-handle"
+                                                                  src="images/icons8-twitter-96.png" alt=""></a>
+                        <a href="#" class="social-link pe-3"><img height="50px" class="social-handle"
+                                                                  src="images/icons8-instagram-100.png" alt=""></a>
+                        <a href="#" class="social-link pe-3"><img height="50px" class="social-handle"
+                                                                  src="images/icons8-facebook-96.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</section>
+
+
+<script src="index.js"></script>
+<script src="Features/automatedEmails/automatedEmails.js"></script>
+</body>
+
+</html>

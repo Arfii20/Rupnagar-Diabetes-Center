@@ -1,0 +1,360 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: y mandatory;
+    
+}
+
+html{
+    scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    margin: 0;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.wrapper section{
+    width: 100%;
+    height: 100vh;
+    
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: center;
+}
+/* 
+
+.home {
+    position: relative;
+   
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+   
+} */
+
+/* .home {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
+}
+  
+.homePhoto {
+
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: top;
+} */
+  
+
+
+
+
+
+
+.home div h1{
+    position: relative;
+    z-index: 1;
+    font-size: 5vw;
+    /* line-height: 150px; */
+    color: #3E54AC;
+}
+.home div p{
+    font-size: 3vw;
+    color:4E6E81;
+}
+
+
+
+
+.menu{
+    display: none;
+}
+.header {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transition: 0.6s;
+    padding-left: 40px;
+    height: 80px;
+    
+    background-color: #3E54AC;
+    /* padding-right: 10px; */
+    /* padding: 40px 100px; */
+
+}
+
+.logo{
+    position: relative;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: 0.6s;
+}
+
+
+.header ul{
+    list-style: none;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.header ul li{
+    position: relative;
+    text-align:initial;
+    /* text-align: left; */
+
+}
+.header ul li a{
+    position: relative;
+    margin: 0 15px;
+    text-decoration: none;
+    color: white;
+    letter-spacing: 2px;
+    transition: 0.6s;
+    text-align: left;
+    padding: 4px 4px 4px 4px ;
+}
+
+.header ul li a:hover{
+    color: #4D4D4D;
+    background: #fff;
+}
+
+/*Fix the issue with menu icon*/
+@media (max-width: 700px) {
+    .header ul li a {
+        display: none;
+        text-align: center;
+    }
+    .header{
+        height: 80px;
+        justify-content:space-evenly;
+        padding-right: 15px;
+
+    }
+
+    .menu{
+        display: block;
+    }
+
+}
+
+/* .homePhoto{
+    float:;
+} */
+
+/* .home {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .home-photo {
+    width: 100%;
+  }
+  
+  .home-info {
+    margin-top: 20px;
+  } */
+  .home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .home-photo {
+    padding-top: 0%;
+    margin-top: 0;
+    border-top: 0;
+    display: flex;
+    justify-content:first baseline;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  
+  .home-photo img {
+    width: 80%;
+    height: auto;
+  }
+  
+  .home-info {
+    /* background-color: #f2f2f2; */
+    
+    padding: 20px;
+    width: 80%;
+  }
+
+
+
+
+
+
+/*Below code is for section 2*/
+.health-videos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+
+
+/* iframe {
+
+    
+    border-radius: 10px;
+  box-sizing: border-box;
+  outline: 10px solid #3E54AC;
+  border-top-width: 0cm;
+  border-bottom-width: 0px;
+  border-left-width: 0px;
+  margin: 0;
+  } */
+
+.video-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+  
+.video-item {
+    flex: 1 1 280px;
+    margin: 20px;
+
+    margin-right: 20px;
+}
+  
+.youtube-link {
+    margin-top: 20px;
+    text-align: center;
+}
+  
+@media (max-width: 619px) {
+    .video-item {
+        flex: 1 1 80%;
+        justify-content: right;
+        padding-left: 5vw;
+    }
+
+    .video-grid {
+        justify-content: center;
+    }
+
+    #remove-video{
+        display: none;
+    }
+    .youtube-link{
+        float: left;
+    }
+}
+
+
+/*Below is the code for the third page*/
+
+
+#blog{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    /* padding-top: 80px; */
+    padding: 40px;
+    border-bottom: 1px rbga(0,0,0,0.05);
+}
+
+.blog-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog-heading span{
+    color: #4D4D4D;
+}
+
+.blog-heading h3{
+    font-size: 2.4rem;
+    color: 2b2b2b;
+    font-weight: 600;
+}
+
+
+  /* .health-articles {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  .articles-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 10px 0; 
+    margin-top: 40px;
+  }
+  
+  .article-item {
+    flex: 1 0 300px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+  }
+  
+
+  .article-item iframe {
+    width: 100%;
+  }
+  
+  .read-more-link {
+    display: block;
+    text-align: right;
+    margin-top: 20px;
+
+  }
+  
+  @media only screen and (max-width: 935px) {
+    .articles-grid {
+      flex-direction: column;
+      margin-top: 20px; 
+      padding: 0;
+    }
+  
+    .article-item {
+      flex: 1 0 auto;
+      margin-right: 0;
+      margin-bottom: 30px;
+    }
+  } */
+  
+
+
+  
+  
+
+
+
+  

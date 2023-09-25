@@ -1,0 +1,265 @@
+/*Responsive Styling*/
+@media only screen and (max-width: 1080px) {
+    /*Hiding Scrollbar but keeping functionality*/
+    body::-webkit-scrollbar {
+        display: none;
+    }
+
+    body {
+        -ms-overflow-style: none; /* IE and Edge */
+        scrollbar-width: none; /* Firefox */
+        font-family: 'Roboto', sans-serif;
+        overflow-x: hidden;
+        scroll-behavior: smooth;
+    }
+
+    /*Navbar Styling*/
+    #nav-bar {
+        position: absolute;
+        width: 100vw;
+    }
+
+    #nav-bar a.nav-img{
+        display: block;
+    }
+
+    div.home-photo-title a {
+        display: none;
+    }
+
+    div.home-photo-title img {
+        scale: 1.5;
+    }
+
+    div.navbar-collapse {
+        width: 100%;
+    }
+
+    div.navbar-collapse .navbar-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 1rem;
+        gap: 1rem;
+
+    }
+
+    div.navbar-collapse .navbar-nav > li {
+        border: 1px solid #075561;
+        width: 100%;
+        text-align: center;
+        border-radius: 1rem;
+    }
+
+    button.navbar-toggler {
+        box-shadow: 0 0 0 black !important;
+        border: 2px solid #075561;
+    }
+
+    button.navbar-toggler:focus {
+        border: 2px solid rgba(255, 255, 255, 0.46);
+    }
+
+    button.navbar-toggler {
+        box-shadow: 0 0 0 black !important;
+        border: 2px solid #075561;
+
+    }
+
+    /*Landing Page Styling*/
+    .landing-section{
+        position: relative;
+    }
+
+    /*Overlay Styling*/
+    #burger-overlay{
+        height: 100vh;
+        position: absolute;
+    }
+
+    .burger-overlay {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.3);
+        opacity: 1;
+        z-index: 1;
+    }
+
+    /*Welcome Page Styling*/
+    #welcome-page{
+        position: absolute;
+        top: 0;
+        left: 0;
+    }
+
+    section.welcome-section{
+        padding-top: 0;
+    }
+
+    .welcome-section .welcome-heading {
+        margin: auto;
+        width: 100vw;
+        font-size: 1.4rem;
+    }
+
+    .welcome-container {
+        height: 100%;
+    }
+
+    .welcome-container > div.reveal {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .row > * {
+        padding: 0 !important;
+    }
+
+    #why-choose-us {
+        margin: 4rem 0;
+    }
+
+    /*Why Choose Us Styling*/
+    .why-choose-us{
+        position: relative;
+        overflow-y: hidden;
+    }
+
+    .why-choose-us h1.title {
+        font-size: 2rem;
+    }
+
+    .why-choose-us .cards {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .why-choose-us .card {
+        margin: auto;
+        max-width: 320px
+    }
+
+    .why-choose-us .card-title {
+        font-size: 1.1rem;
+    }
+
+    .why-choose-us .card-text {
+        padding-top: 0.5rem;
+        font-size: 0.8rem;
+    }
+
+    /*Reviews Styling*/
+    .reviews-quote .review-carousel {
+        width: 100%;
+    }
+
+    .reviews-quote .carousel-cell {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+        width: 97.7%;
+        height: 360px;
+        background-color: rgba(2, 126, 137, 0.9);
+        counter-increment: carousel-cell;
+        border-radius: 1rem 1rem;
+    }
+
+    .reviews-quote h1.title {
+        font-size: 2rem;
+    }
+
+    .reviews-quote .user-details {
+        font-size: 1.4rem;
+    }
+
+    .reviews-quote .carousel-cell > p.text {
+        font-size: 1rem;
+    }
+
+    .reviews-quote .flickity-button {
+        scale: 0.7;
+    }
+
+    .reviews-quote .flickity-button.previous {
+        left: 6px;
+    }
+
+    .reviews-quote .flickity-button.next {
+        right: 6px;
+    }
+
+    .reviews-quote .review-buttons{
+        flex-direction: column;
+        gap: 1rem;
+    }
+
+    .reviews-quote .review-buttons button.button {
+        font-size: 1rem;
+        color: white;
+        padding: 0.5rem 0rem;
+        margin: 0rem;
+    }
+
+    /*About Us Styling*/
+    .about-us{
+    /*    Change Font*/
+    }
+
+    .about-us{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .about-us .flip-card{
+        margin: auto;
+        max-width: 320px;
+    }
+
+    .about-us .flip-card-back{
+        min-height: 100%;
+    }
+
+    /*Contact Us Styling*/
+    #contact-us{
+        margin-top: 30%;
+        margin-bottom: 30%;
+    }
+
+    .map .ratio-iframe{
+        min-height: 360px;
+    }
+
+    .contact-us{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .contact-us .numbers, .address, .open-hours{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        color: white;
+        max-height: 320px;
+        width: 320px;
+        background: rgba(2, 126, 137, 0.9);
+        padding: 2rem;
+        border-radius: 1.2rem;
+    }
+
+    #footer a{
+        color: black;
+    }
+
+}
