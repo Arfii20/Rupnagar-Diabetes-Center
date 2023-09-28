@@ -59,10 +59,12 @@ languageLink.addEventListener('click', function(event) {
     const selectedLanguage = this.textContent.trim();
     if (selectedLanguage === "English") {
         loadLanguage("en");
+        document.body.style.fontFamily = "Roboto, sans-serif";
         languageLink.textContent = "বাংলা"
     }
     else {
         loadLanguage("bn");
+        document.body.style.fontFamily = "Tiro Bangla, serif";
         languageLink.textContent = "English"
     }
 });

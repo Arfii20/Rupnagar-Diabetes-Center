@@ -20,6 +20,12 @@
           integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
     <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 
+    <!-- The Bengali Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiro+Bangla&display=swap" rel="stylesheet">
+    <!---------------------->
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
@@ -30,45 +36,94 @@
 </head>
 
 <body>
-<!-- margin-top of each section was 8% in the css file so it needs to be made 0 for
------the nav bar and the title page -->
-<section id="nav-bar" style="margin-top: 0; ">
+
+<!-- Navigation Bar Section -->
+<section id="nav-bar" style="margin-top: 0;">
+    <!-- Navigation Bar Section contains the website's navigation menu. -->
+
+    <!-- Navbar Component -->
     <nav class="navbar navbar-expand-lg">
+        <!-- The main navigation bar component. -->
+
+        <!-- Container for Navbar Contents -->
         <div class="container-fluid">
+            <!-- A fluid container to hold the navigation elements. -->
+
+            <!-- Logo and Title Section -->
             <div class="home-photo-title">
-                <a class="nav-img" href="./index.html"><img class="title-logo" src="images/accreditedphysician.jpg" alt=""></a>
-                <a style="color: white;" class="navbar-brand translatable" data-key="title" href="./index.html">Rupnagar Diabetes
-                    Center</a>
+                <!-- Section containing the website logo and title. -->
+
+                <!-- Logo Link -->
+                <a class="nav-img" href="./index.html">
+                    <!-- Link to the website's home page. -->
+
+                    <!-- Logo Image -->
+                    <img class="title-logo" src="images/accreditedphysician.jpg" alt="Logo">
+                    <!-- The website's logo image. -->
+                </a>
+
+                <!-- Navbar Brand with Website Title -->
+                <a style="color: white;" class="navbar-brand translatable" data-key="title" href="./index.html">
+                    Rupnagar Diabetes Center
+                </a>
+                <!-- The website's title displayed in the navigation bar. -->
             </div>
+
+            <!-- Navbar Toggler Button -->
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
                     onclick="dropOverlay()">
+                <!-- Button to toggle the responsive navbar menu. -->
                 <span class="navbar-toggler-icon"></span>
             </button>
+
+            <!-- Navbar Links Section -->
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <!-- Section containing the navigation links. -->
+
+                <!-- Navbar List -->
                 <ul class="navbar-nav ms-auto">
+                    <!-- Unordered list for navigation links. -->
+
+                    <!-- List Item - Home Link -->
                     <li class="nav-item">
                         <a class="nav-link translatable" aria-current="page" href="./index.html"
                            data-key="home">Home</a>
+                        <!-- Link to the home page. -->
                     </li>
+
+                    <!-- List Item - Appointment Link -->
                     <li class="nav-item">
                         <a class="nav-link translatable" aria-current="page" href="#welcome-page"
                            data-key="appointment">Appointment</a>
+                        <!-- Link to the appointment section. -->
                     </li>
+
+                    <!-- List Item - Reviews Link -->
                     <li class="nav-item">
                         <a class="nav-link translatable" aria-current="page" href="#reviews"
                            data-key="reviews">Reviews</a>
+                        <!-- Link to the reviews section. -->
                     </li>
+
+                    <!-- List Item - About Link -->
                     <li class="nav-item">
                         <a class="nav-link translatable" aria-current="page" href="#about-us" data-key="about">About</a>
+                        <!-- Link to the about us section. -->
                     </li>
+
+                    <!-- List Item - Contact Link -->
                     <li class="nav-item">
                         <a class="nav-link translatable" aria-current="page" href="#contact-us"
                            data-key="contact">Contact</a>
+                        <!-- Link to the contact us section. -->
                     </li>
+
+                    <!-- List Item - Language Selection -->
                     <li class="nav-item">
                         <a class="nav-link translatable" aria-current="page" href="#" id="language-select">বাংলা</a>
+                        <!-- Link to select the website's language. -->
                     </li>
                 </ul>
             </div>
@@ -77,55 +132,130 @@
 </section>
 
 
-<!-- ----------------------------------------Welcome Page Background Image Slides---------------------------------------------------------- -->
+<!-- Welcome Page Background Image Slides -->
 <div id="burger-overlay"></div>
 <section class="landing-section" style="margin-top: 0;">
+    <!-- This section contains background image slides for the welcome page. -->
+
+    <!-- Carousel Component -->
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+        <!-- Carousel element for displaying image slides with automatic playback. -->
+
+        <!-- Carousel Inner Container -->
         <div class="carousel-inner">
+            <!-- Container for individual carousel items (image slides). -->
+
+            <!-- Carousel Item 1 (Active) -->
             <div class="carousel-item active">
+                <!-- The first image slide (active by default). -->
+
+                <!-- Overlay for Image -->
                 <div class="overlay"></div>
+                <!-- An overlay to add visual effects to the image. -->
+
+                <!-- Image 1 -->
                 <img src="images/f0.jpg" class="d-block w-100" alt="...">
+                <!-- The first background image displayed in the carousel. -->
             </div>
+
+            <!-- Carousel Item 2 -->
             <div class="carousel-item">
+                <!-- The second image slide. -->
+
+                <!-- Overlay for Image -->
                 <div class="overlay"></div>
+                <!-- An overlay to add visual effects to the image. -->
+
+                <!-- Image 2 -->
                 <img src="images/f1.jpg" class="d-block w-100" alt="...">
+                <!-- The second background image displayed in the carousel. -->
             </div>
+
+            <!-- Carousel Item 3 -->
             <div class="carousel-item">
+                <!-- The third image slide. -->
+
+                <!-- Overlay for Image -->
                 <div class="overlay"></div>
+                <!-- An overlay to add visual effects to the image. -->
+
+                <!-- Image 3 -->
                 <img src="images/f2.jpg" class="d-block w-100" alt="...">
+                <!-- The third background image displayed in the carousel. -->
             </div>
+
+            <!-- Carousel Item 4 -->
             <div class="carousel-item">
+                <!-- The fourth image slide. -->
+
+                <!-- Overlay for Image -->
                 <div class="overlay"></div>
+                <!-- An overlay to add visual effects to the image. -->
+
+                <!-- Image 4 -->
                 <img src="images/f3.jpg" class="d-block w-100" alt="...">
+                <!-- The fourth background image displayed in the carousel. -->
             </div>
         </div>
     </div>
 </section>
+
 
 
 <!-- ----------------------------Welcome Page--------------------------------------------------------- -->
 <section id="welcome-page" class="welcome-section">
+    <!-- Welcome Page Section -->
     <div class="container-fluid padding">
+        <!-- Fluid container for content with padding. -->
         <div class="welcome-container row padding text-center">
+            <!-- Row for content with padding, centered text. -->
             <div class="col-xs-12 col-sm-6 col-md-6 jumbotron" style="width: 100%">
+                <!-- Responsive column for content with a jumbotron style. -->
+
+                <!-- Content Reveal Animation -->
                 <div class="reveal animate-fade-in">
-                    <h1 class="welcome-heading display-5 heading-all translatable" data-key="welcome">Welcome to<br>Rupnagar
-                        Diabetes
-                        Center</h1>
-                    <p class="welcome-para lead translatable" data-key="commitment"><i>Quality Healthcare is our
-                        Commitment</i></p>
+                    <!-- Animated content reveal with fading effect. -->
+
+                    <!-- Welcome Heading -->
+                    <h1 class="welcome-heading display-5 heading-all translatable" data-key="welcome">
+                        Welcome to<br>Rupnagar Diabetes Center
+                    </h1>
+                    <!-- Main heading with translation support. -->
+
+                    <!-- Welcome Paragraph -->
+                    <p class="welcome-para lead translatable" data-key="commitment">
+                        <i>Quality Healthcare is our Commitment</i>
+                    </p>
+                    <!-- Lead paragraph with translation support. -->
+
+                    <!-- Welcome Buttons -->
                     <div class="welcome-buttons">
+                        <!-- Container for action buttons. -->
+
+                        <!-- Visit Gallery Button -->
                         <a href="gallery.html" role="button">
-                            <button class="button translatable" data-key="visitGalleryButton">Visit our gallery</button>
+                            <button class="button translatable" data-key="visitGalleryButton">
+                                Visit our gallery
+                            </button>
                         </a>
+
+                        <!-- Visit YouTube Button (Opens in a new tab) -->
                         <a role="button" target="_blank" href="https://www.youtube.com/@ashrafahammed9478/videos">
-                            <button class="button translatable" data-key="youtubeButton">Visit our Youtube</button>
+                            <button class="button translatable" data-key="youtubeButton">
+                                Visit our Youtube
+                            </button>
                         </a>
-                        <button data-bs-toggle="modal" data-bs-target="#appointmentModal" class="button translatable"
-                                data-key="bookAppointmentButton">Book Appointment
+
+                        <!-- Book Appointment Button (Opens a modal) -->
+                        <button data-bs-toggle="modal" data-bs-target="#appointmentModal"
+                                class="button translatable" data-key="bookAppointmentButton">
+                            Book Appointment
                         </button>
-                        <button data-bs-toggle="modal" data-bs-target="#questionModal" class="button translatable"
-                                data-key="askQuestionsButton">Ask Questions
+
+                        <!-- Ask Questions Button (Opens a modal) -->
+                        <button data-bs-toggle="modal" data-bs-target="#questionModal"
+                                class="button translatable" data-key="askQuestionsButton">
+                            Ask Questions
                         </button>
                     </div>
                 </div>
@@ -133,68 +263,96 @@
         </div>
     </div>
 </section>
+
 
 
 <!-- ---------------------why choose us--------------------------------------------------------------------- -->
 
+<!-- Why Choose Us Section -->
 <section id="why-choose-us" class="why-choose-us">
+    <!-- Section Title -->
     <div class="row reveal animate-fade-in text-center">
-        <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="whyChooseUs">Why choose
-            us?
+        <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="whyChooseUs">
+            Why Choose Us?
         </h1>
     </div>
 
+    <!-- Card Container -->
     <div class="container text-center">
         <div class="row gy-3 cards">
+            <!-- Card 1: Affiliated with Diabetic Association of Bangladesh -->
             <div class="col-sm">
                 <div class="card reveal animate-slide-in-right h-100">
-                    <img src="images/disciplineislife.png" class="card-img-top" alt="...">
+                    <!-- Card Image -->
+                    <img src="images/disciplineislife.png" class="card-img-top" alt="Affiliated with Diabetic Association of Bangladesh">
+
+                    <!-- Card Content -->
                     <div class="card-body">
-                        <h5 class="card-title translatable" data-key="affiliated">Affiliated with Diabetic Association
-                            of Bangladesh</h5>
-                        <p class="card-text translatable" data-key="committedExcellence">Committed to excellence in
-                            diabetes care, we are affiliated with the esteemed Diabetic Association of Bangladesh,
-                            ensuring top-tier medical services</p>
+                        <h5 class="card-title translatable" data-key="affiliated">
+                            Affiliated with Diabetic Association of Bangladesh
+                        </h5>
+                        <p class="card-text translatable" data-key="committedExcellence">
+                            Committed to excellence in diabetes care, we are affiliated with the esteemed Diabetic Association of Bangladesh, ensuring top-tier medical services.
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <!-- Card 2: Quality Diabetes and General Medicine Services -->
             <div class="col-sm">
                 <div class="card reveal animate-slide-in-right h-100">
-                    <img src="images/medicine.jpg" class="card-img-top" alt="...">
+                    <!-- Card Image -->
+                    <img src="images/medicine.jpg" class="card-img-top" alt="Quality Diabetes and General Medicine Services">
+
+                    <!-- Card Content -->
                     <div class="card-body">
-                        <h5 class="card-title translatable" data-key="qualityDiabetesGeneral">Quality Diabetes and
-                            General Medicine Services</h5>
-                        <p class="card-text translatable" data-key="beyondDiabetesCare">Beyond diabetes care, our
-                            expertise extends to a range of general medical services, ensuring holistic health and
-                            wellness for all</p>
+                        <h5 class="card-title translatable" data-key="qualityDiabetesGeneral">
+                            Quality Diabetes and General Medicine Services
+                        </h5>
+                        <p class="card-text translatable" data-key="beyondDiabetesCare">
+                            Beyond diabetes care, our expertise extends to a range of general medical services, ensuring holistic health and wellness for all.
+                        </p>
                     </div>
                 </div>
             </div>
+
+            <!-- Card 3: Comprehensive Dental Care -->
             <div class="col-sm">
                 <div class="card reveal animate-slide-in-right h-100">
-                    <img src="images/dental.jpg" class="card-img-top" alt="...">
+                    <!-- Card Image -->
+                    <img src="images/dental.jpg" class="card-img-top" alt="Comprehensive Dental Care">
+
+                    <!-- Card Content -->
                     <div class="card-body">
-                        <h5 class="card-title translatable" data-key="comprehensiveDental">Comprehensive Dental
-                            Care</h5>
-                        <p class="card-text translatable" data-key="topTierDental">Experience top-tier dental services
-                            designed to enhance your oral health and provide you with a confident smile</p>
+                        <h5 class="card-title translatable" data-key="comprehensiveDental">
+                            Comprehensive Dental Care
+                        </h5>
+                        <p class="card-text translatable" data-key="topTierDental">
+                            Experience top-tier dental services designed to enhance your oral health and provide you with a confident smile.
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 </section>
+<!-- End of Why Choose Us Section -->
+
 
 <!-- --------------------------Reviews------------------------------------------------ -->
 
-
+<!-- Reviews Section -->
 <section id="reviews" class="reviews-quote">
-    <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="patientReviews">Patient
-        reviews
+    <!-- Section Title -->
+    <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="patientReviews">
+        Patient Reviews
     </h1>
-    <div class="review-carousel"
-         data-flickity='{ "wrapAround": true }'>
+
+    <!-- Review Carousel -->
+    <div class="review-carousel" data-flickity='{ "wrapAround": true }'>
+        <!-- Review Carousel Cells -->
         <div class="carousel-cell">
+            <!-- User Review 1 -->
             <div class="user">
                 <p class="user-details mb-0 translatable" data-key="ziaRahman">Zia Rahman</p>
                 <p class="mb-1">
@@ -205,10 +363,12 @@
                     <i class="fas fa-star"></i>
                 </p>
             </div>
-            <p class="translatable text" data-key="ziaRahmanReview">Rupnagar Diabetes center is a very high quality
-                Diabetes center in Dhaka. I am highly satisfied with the services of the center.</p>
+            <p class="translatable text" data-key="ziaRahmanReview">
+                Rupnagar Diabetes center is a very high-quality Diabetes center in Dhaka. I am highly satisfied with the services of the center.
+            </p>
         </div>
         <div class="carousel-cell">
+            <!-- User Review 2 -->
             <div class="user">
                 <p class="user-details mb-0 translatable" data-key="masudRana">Masud Rana Milon</p>
                 <p class="mb-1">
@@ -223,6 +383,7 @@
                 It is a high quality diabetes and obesity management centre in Dhaka.</p>
         </div>
         <div class="carousel-cell">
+            <!-- User Review 3 -->
             <div class="user">
                 <p class="user-details mb-0 translatable" data-key="MDMiah">MD Miah</p>
                 <p class="mb-1">
@@ -237,6 +398,7 @@
                 Mirpur, Dhaka.</p>
         </div>
         <div class="carousel-cell">
+            <!-- User Review 4 -->
             <div class="user">
                 <p class="user-details mb-0 translatable" data-key="marufMahmud">Maruf Mahmud</p>
                 <p class="mb-1">
@@ -253,6 +415,7 @@
                 made me understood well. 100% appreciable.</p>
         </div>
         <div class="carousel-cell">
+            <!-- User Review 5 -->
             <div class="user">
                 <p class="user-details mb-0 translatable" data-key="samiSultana">Sammi Sultana</p>
                 <p class="mb-1">
@@ -268,6 +431,7 @@
                 very cordial and ensures proper counselling advice which is essential for a patient</p>
         </div>
         <div class="carousel-cell">
+            <!-- User Review 6 -->
             <div class="user">
                 <p class="user-details mb-0 translatable" data-key="tusharSarkar">Tushar Sarkar</p>
                 <p class="mb-1">
@@ -285,71 +449,95 @@
         </div>
     </div>
     <div class="review-buttons animate-slide-in-right">
+        <!-- Write a Review Button -->
         <a href="https://search.google.com/local/writereview?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI" target="_blank">
             <button class="button translatable" data-key="writeReview">Write a Review</button>
         </a>
+
+        <!-- More Reviews Button -->
         <a href="https://search.google.com/local/reviews?placeid=ChIJNX0srBjBVTcR-W2cj2hJWNI" target="_blank">
             <button class="button translatable" data-key="moreReviews">More Reviews</button>
         </a>
     </div>
 </section>
+<!-- End of Reviews Section -->
 
 
 <!-- --------.--------------------------Appointment----------------------------------------------- -->
 
-<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
-     aria-hidden="true">
+<!-- Appointment Modal -->
+<div class="modal fade" id="appointmentModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
+            <!-- Modal Header -->
             <div class="modal-header">
+                <!-- Modal Title -->
                 <div class="m-lg-1 mt-0">
                     <div id="appointment-heading">
                         Appointment Form
                     </div>
                 </div>
+                <!-- Close Button -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
+            <!-- Modal Body -->
             <div class="modal-body">
+                <!-- Container for Form -->
                 <div class="container mx-auto">
+                    <!-- Row for Form Elements -->
                     <div style="min-height: fit-content;" class="row justify-content-center">
+                        <!-- Form Columns -->
                         <div class="col-lg-10 col-md-10 col-sm-10 form">
+                            <!-- Appointment Form -->
                             <form id="appointment-form" style="max-width: 90%;">
+                                <!-- First Name Input -->
                                 <div class="m-lg-5 mt-4">
                                     <div class="inputBox">
                                         <input id="appointment-first-name-input" type="text" required="required">
                                         <span class="user">First Name *</span>
                                     </div>
                                 </div>
+
+                                <!-- Last Name Input -->
                                 <div class="m-lg-5 mt-4">
                                     <div class="inputBox">
                                         <input id="appointment-last-name-input" type="text" required="required">
                                         <span class="user">Last Name *</span>
                                     </div>
                                 </div>
+
+                                <!-- Age Input -->
                                 <div class="m-lg-5 mt-4">
                                     <div class="inputBox">
                                         <input id="appointment-age-input" type="number" required="required">
                                         <span class="user">Age *</span>
                                     </div>
                                 </div>
+
+                                <!-- Email Input -->
                                 <div class="m-lg-5 mt-5">
                                     <div class="inputBox">
                                         <input id="appointment-email-input" type="text">
                                         <span class="user">Email</span>
                                     </div>
                                 </div>
-                                <div class="m-lg-5 mt-5 ">
+
+                                <!-- Phone Number Input -->
+                                <div class="m-lg-5 mt-5">
                                     <div class="inputBox">
                                         <input id="appointment-phone-input" type="tel" required="required">
                                         <span class="user">Phone number *</span>
                                     </div>
                                 </div>
+
+                                <!-- Issue Description -->
                                 <div class="m-lg-5 mt-5">
-                                    <label id="appointment-how-can-we-help" class="mb-lg-4 mb-3">Describe Your
-                                        Issue</label>
-                                    <textarea id="appointment-entry-text" class="form-control"
-                                              placeholder="Enter text"></textarea>
+                                    <label id="appointment-how-can-we-help" class="mb-lg-4 mb-3">Describe Your Issue</label>
+                                    <textarea id="appointment-entry-text" class="form-control" placeholder="Enter text"></textarea>
                                 </div>
+
+                                <!-- Submit Button -->
                                 <div class="row m-lg-5 mt-5  justify-content-end">
                                     <button type="submit" id="appointment-submit-button" class="submit">Submit</button>
                                 </div>
@@ -358,73 +546,99 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal Footer -->
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
+<!-- End of Appointment Modal -->
 
 <!-- ---------------------------------- Question ----------------------------------------------- -->
 
-<div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="appointmentModalLabel"
-     aria-hidden="true">
+<!-- Question Modal -->
+<div class="modal fade" id="questionModal" tabindex="-1" aria-labelledby="appointmentModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-lg">
         <div class="modal-content">
+            <!-- Modal Header -->
             <div class="modal-header">
+                <!-- Modal Title -->
                 <div class="m-lg-1 mt-0">
                     <div id="question-heading">
                         Ask Your Question
                     </div>
                 </div>
+                <!-- Close Button -->
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+
+            <!-- Modal Body -->
             <div class="modal-body">
+                <!-- Container for Form -->
                 <div class="container mx-auto">
+                    <!-- Row for Form Elements -->
                     <div style="min-height: fit-content;" class="row justify-content-center">
+                        <!-- Form Columns -->
                         <div class="col-lg-10 col-md-10 col-sm-10 form">
+                            <!-- Question Form -->
                             <form id="question-form" style="max-width: 90%;">
+                                <!-- First Name Input -->
                                 <div class="m-lg-5 mt-4">
                                     <div class="inputBox">
                                         <input id="question-first-name-input" type="text" required="required">
                                         <span class="user">First Name *</span>
                                     </div>
                                 </div>
+
+                                <!-- Last Name Input -->
                                 <div class="m-lg-5 mt-4">
                                     <div class="inputBox">
                                         <input id="question-last-name-input" type="text" required="required">
                                         <span class="user">Last Name *</span>
                                     </div>
                                 </div>
+
+                                <!-- Age Input -->
                                 <div class="m-lg-5 mt-4">
                                     <div class="inputBox">
                                         <input id="question-age-input" type="number" required="required">
                                         <span class="user">Age *</span>
                                     </div>
                                 </div>
+
+                                <!-- Email Input -->
                                 <div class="m-lg-5 mt-5">
                                     <div class="inputBox">
                                         <input id="question-email-input" type="text" required="required">
                                         <span class="user">Email *</span>
                                     </div>
                                 </div>
-                                <div class="m-lg-5 mt-5 ">
+
+                                <!-- Phone Number Input -->
+                                <div class="m-lg-5 mt-5">
                                     <div class="inputBox">
                                         <input id="question-phone-input" type="tel">
                                         <span class="user">Phone number</span>
                                     </div>
                                 </div>
-                                <div class="m-lg-5 mt-5 ">
+
+                                <!-- Subject Input -->
+                                <div class="m-lg-5 mt-5">
                                     <div class="inputBox">
                                         <input id="question-subject-input" type="text" required="required">
                                         <span class="user">Subject *</span>
                                     </div>
                                 </div>
+
+                                <!-- How Can We Help? -->
                                 <div class="m-lg-5 mt-5">
                                     <label id="question-how-can-we-help" class="mb-lg-4 mb-3">How can we help? *</label>
-                                    <textarea id="question-entry-text" class="form-control"
-                                              placeholder="Enter text"></textarea>
+                                    <textarea id="question-entry-text" class="form-control" placeholder="Enter text"></textarea>
                                 </div>
+
+                                <!-- Submit Button -->
                                 <div class="row m-lg-5 mt-5  justify-content-end">
                                     <button type="submit" id="question-submit-button" class="submit">Submit</button>
                                 </div>
@@ -433,87 +647,95 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Modal Footer -->
             <div class="modal-footer">
                 <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
 </div>
+<!-- End of Question Modal -->
 
 
 <!-- -------------------------------About us ------------------------------------------------------- -->
 
-
-<!-- This is just one huge card for an img div on the left and the info div on the right
------Look at the style file for the box shadow -->
+<!-- About Us Section -->
 <section id="about-us">
-    <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="aboutDoctors">About Our
-        Doctors
-    </h1>
+    <!-- Section Title -->
+    <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="aboutDoctors">About Our Doctors</h1>
+
+    <!-- About Doctors Content -->
     <div class="about-us">
+        <!-- Doctor 1 -->
         <div class="flip-card">
             <div class="flip-card-inner">
+                <!-- Front Side -->
                 <div class="flip-card-front">
-                    <img src="images/doc1.png" alt="Avatar">
-                    <h4>Dr. Ashraf Uddin Ahammed</h4>
-                    <p><b>Consultation Hours:</b> 8am-12pm, 9pm-12pm</p>
+                    <img src="images/drAshraf.jpg" alt="Avatar">
+                    <h4 class="translatable" data-key="drAshraf">Dr. Ashraf Uddin Ahammed</h4>
+                    <p class="translatable" data-key="drAshrafConsultHours"><b>Consultation Hours:</b> 8am-12pm, 9pm-12pm</p>
                 </div>
+                <!-- Back Side -->
                 <div class="flip-card-back">
-                    <h4>Dr. Ashraf Uddin Ahammed</h4>
-                    <p>
+                    <h4 class="translatable" data-key="drAshraf">Dr. Ashraf Uddin Ahammed</h4>
+                    <p class="translatable" data-key="drAshrafDegrees">
                         MBBS, FCGP (General Medicine), DFID (Diabetes) (CMC, Vellore), D. Ashtma (U.K), DCP
                         (Australia), CCD, EDC (BIRDEM), DOC (Skin-VD), CCCD (Heart Foundation)
                     </p>
-                    <p>Consultant Diabetologist & General Medicine Specialist</p>
-                    <p>(Diabetes, Medicine, Hypertention, Asthma, Skin & VD)</p>
+                    <p class="translatable" data-key="drAshrafOccupation">Consultant Diabetologist & General Medicine Specialist</p>
+                    <p class="translatable" data-key="drAshrafDiseases">(Diabetes, Medicine, Hypertension, Asthma, Skin & VD)</p>
                 </div>
             </div>
         </div>
+
+        <!-- Doctor 2 -->
         <div class="flip-card">
             <div class="flip-card-inner">
+                <!-- Front Side -->
                 <div class="flip-card-front">
-                    <img src="images/doc1.png" alt="Avatar">
-                    <h4>Dr. Samia Tajnin Mawla</h4>
-                    <p><b>Consultation Hours:</b> 8am-12pm, 9pm-12pm</p>
+                    <img src="images/drSamia.jpg" alt="Avatar">
+                    <h4 class="translatable" data-key="drSamia">Dr. Samia Tajnin Mawla</h4>
+                    <p class="translatable" data-key="drSamiaConsultHours"><b>Consultation Hours:</b> 6pm-9pm</p>
                 </div>
+                <!-- Back Side -->
                 <div class="flip-card-back">
-                    <h4>Dr. Samia Tajnin Mawla</h4>
-                    <p>
-                        MBBS, FCGP (General Medicine), DFID (Diabetes) (CMC, Vellore), D. Ashtma (U.K), DCP
-                        (Australia), CCD, EDC (BIRDEM), DOC (Skin-VD), CCCD (Heart Foundation)
-                    </p>
-                    <p>Consultant Diabetologist & General Medicine Specialist</p>
-                    <p>(Diabetes, Medicine, Hypertention, Asthma, Skin & VD)</p>
-                </div>
-            </div>
-        </div>
-        <div class="flip-card">
-            <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="images/doc1.png" alt="Avatar">
-                    <h4>Dr. Shafiur Rahman Amin</h4>
-                    <p><b>Consultation Hours:</b> 8pm-11pm</p>
-                </div>
-                <div class="flip-card-back">
-                    <h4>Dr. Shafiur Rahman Amin</h4>
-                    <p>
+                    <h4 class="translatable" data-key="drSamia">Dr. Samia Tajnin Mawla</h4>
+                    <p class="translatable" data-key="drSamiaDegrees">
                         BDS (Dhaka), MPH, D-Conjur (In-Course) (AFMI)
                     </p>
-                    <p>Lecturer, Marks Medical College & Dental Unit</p>
-                    <p>(Dental)</p>
+                    <p class="translatable" data-key="drSamiaOccupation">Lecturer, Marks Medical College & Dental Unit</p>
+                    <p class="translatable" data-key="drShafiurDiseases">(Dental)</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Doctor 3 -->
+        <div class="flip-card">
+            <div class="flip-card-inner">
+                <!-- Front Side -->
+                <div class="flip-card-front">
+                    <img src="images/drShafiur.JPG" alt="Avatar">
+                    <h4 class="translatable" data-key="drShafiur">Dr. N.S.M. Shafiur Rahman Amin</h4>
+                    <p class="translatable" data-key="drShafiurConsultHours"><b>Consultation Hours:</b> 8pm-11pm</p>
+                </div>
+                <!-- Back Side -->
+                <div class="flip-card-back">
+                    <h4 class="translatable" data-key="drShafiur">Dr. N.S.M. Shafiur Rahman Amin</h4>
+                    <p class="translatable" data-key="drShafiurDegrees">
+                        BDS (Dhaka), MPH, BMDC-2334
+                    </p>
+                    <p class="translatable" data-key="drShafiurOccupation">Coordinator & Consultant, Marks Medical College & Dental Unit</p>
+                    <p class="translatable" data-key="drShafiurDiseases">(Dental)</p>
                 </div>
             </div>
         </div>
     </div>
 </section>
-
-<!-- ---------------------------------------Maps------------------------------------------ -->
-
-<!-- Notice that i use an off-3 to centre the divs
-----There are two main divs: one containing the location url and the other containing the text -->
+<!-- End of About Us Section -->
 
 
-<!----------------------------------------------------- NEED CSS FOR THIS PART ----------------------------------------------------->
+<!-- --------------------------------------- Contact Us --------------------------------------------->
 <section id="contact-us">
     <div class="container">
         <h1 class="title heading-all reveal animate-fade-in text-center translatable" data-key="contactUs">Contact
@@ -621,17 +843,15 @@
         <div class="container text-center">
             <div class="row">
                 <div class="col-12">
-                    <span>© 2023 Your Website, All rights reserved, Made by <a target="_blank" href="https://github.com/IPogenI">Pogen</a></span>
+                    <span>© 2023 Rupnagar Diabetes Center, All rights reserved</span>
                 </div>
             </div>
             <div class="container text-center">
                 <p style="margin-top: 1%;">Find us on social media</p>
                 <div class="row">
                     <div class="col-12 d-flex social-handle justify-content-center pb-3">
-                        <a href="#" class="social-link pe-3"><img height="50px" class="social-handle"
-                                                                  src="images/icons8-twitter-96.png" alt=""></a>
-                        <a href="#" class="social-link pe-3"><img height="50px" class="social-handle"
-                                                                  src="images/icons8-instagram-100.png" alt=""></a>
+                        <a href="https://www.youtube.com/@ashrafahammed9478/videos" class="social-link pe-3"><img height="50px" class="social-handle"
+                                                                  src="images/youtube.png" alt=""></a>
                         <a href="#" class="social-link pe-3"><img height="50px" class="social-handle"
                                                                   src="images/icons8-facebook-96.png" alt=""></a>
                     </div>

@@ -197,7 +197,8 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     border-style: none;
 }
 
-.why-choose-us .title{
+.why-choose-us .title
+{
     font-family: 'Roboto', sans-serif;
     font-size: 3rem;
     font-weight: bold;
@@ -254,7 +255,9 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     min-height: 100vh;
 }
 
-.reviews-quote h1.title{
+.reviews-quote h1.title,
+#about-us .title,
+#contact-us .title{
     font-weight: bold;
     font-size: 3rem;
     color: black;
@@ -357,7 +360,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 /* About Our Doctors*/
 #about-us{
     padding-top: 8%;
-    min-height: 100vh;
+    min-height: 85vh;
     margin-bottom: 8%;
 }
 
