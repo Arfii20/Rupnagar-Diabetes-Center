@@ -153,6 +153,10 @@ color: #075561;
     width: 100vw;
 }
 
+.welcome-container{
+    height: 80%;
+}
+
 .landing-section {
     position: absolute;
 }
