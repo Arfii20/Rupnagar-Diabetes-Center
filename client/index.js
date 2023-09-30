@@ -28,9 +28,6 @@ reveal();
 // Listen for scroll events and trigger reveal function
 window.addEventListener('scroll', reveal);
 
-
-
-
 // Function to fetch language file and update the page content
 function loadLanguage(language) {
     fetch(`languages/${language}.json`)

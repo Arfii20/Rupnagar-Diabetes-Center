@@ -14,7 +14,7 @@ function getPictures() {
     for (let i = 0; i < 61; i++) {
         galleryImage.innerHTML += `        
                                     <div class="bg">
-                                        <img src="images/gallery/${i}.JPG" alt="">
+                                        <img src="../images/gallery/${i}.JPG" alt="">
                                         <div class="bg_overlay"></div>
                                     </div>
                                  `

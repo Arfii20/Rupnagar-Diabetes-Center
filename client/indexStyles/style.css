@@ -255,7 +255,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     align-items: center;
     gap: 2rem;
     width: 100vw;
-    background: url("images/des.jpg") no-repeat fixed center;
+    background: url("../images/des.jpg") no-repeat fixed center;
     min-height: 100vh;
 }
 
@@ -466,7 +466,6 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     justify-content: center;
     align-items: center;
     gap: 1rem;
-    margin-top: -5%;
 }
 
 .map{

@@ -31,12 +31,6 @@
   "marufMahmud": "Maruf Mahmud",
   "samiSultana": "Sammi Sultana",
   "tusharSarkar": "Tushar Sarkar",
-  "ziaRahmanReview": "Rupnagar Diabetes center is a very high quality Diabetes center in Dhaka. I am highly satisfied with the services of the center.",
-  "masudRanaReview": "I am highly satisfied by the services of the Centre. It is a high quality diabetes and obesity management centre in Dhaka.",
-  "MDMiahReview": "A good quality speialized Diabetes care centre in Mirpur, Dhaka.",
-  "marufMahmudReview": "In no doubt, it is a small center. But quality is really good. For 30 minutes I forgot myself. I explored myself as a student.\uD83D\uDE03\uD83D\uDE03 Dr. Asrafh who was a diabetic doctor, he taught me many things regarding on diabetic. He drew chart on blackboard and made me understood well. 100% appreciable.",
-  "samiSultanaReview": "It is a right place of Diabetes treatment Doctor is very cordial and ensures proper counselling advice which is essential for a patient",
-  "tusharSarkarReview": "It's a outstanding station. Self awareness for patients is the focal point here. I am a Diabetes patient for one and a half decade but it totally control by consulting in this center .",
 
   "aboutDoctors": "About Our Doctors",
   "drAshraf": "Dr. Ashraf Uddin Ahammed",
@@ -70,5 +64,6 @@
   "fri": "Fri",
   "sat": "Sat",
   "sun": "Sun",
-  "openTime": "8:00 am – 11:30 pm"
+  "openTime": "8:00 am – 11:30 pm",
+  "openTimeEveryday": "8:00 am – 11:30 pm"
 }
