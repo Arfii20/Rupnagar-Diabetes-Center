@@ -26,7 +26,7 @@ function sendQueryEmail($data): void
     try {
         //Server settings
         $mail->isSMTP();                                                                  // Send using SMTP
-        $mail->Host = 'smtp.office365.com';                                               // SMTP server
+        $mail->Host = 'smtp.office365.com';                                               // SMTP php
         $mail->SMTPAuth = true;                                                           // Enable SMTP authentication
         $mail->Username = 'kishoreganjsender@outlook.com';                                // SMTP username
         $mail->Password = 'Arfi20 Narutoriri Enterokinase Vondo ChickenLegPiece@';        // SMTP password
@@ -58,7 +58,7 @@ function sendAppointmentEmail($data): void
     try {
         //Server settings
         $mail->isSMTP();                                                                  // Send using SMTP
-        $mail->Host = 'smtp.office365.com';                                               // SMTP server
+        $mail->Host = 'smtp.office365.com';                                               // SMTP php
         $mail->SMTPAuth = true;                                                           // Enable SMTP authentication
         $mail->Username = 'kishoreganjsender@outlook.com';                                // SMTP username
         $mail->Password = 'Arfi20 Narutoriri Enterokinase Vondo ChickenLegPiece@';        // SMTP password

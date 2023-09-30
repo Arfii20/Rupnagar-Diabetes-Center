@@ -1,24 +1,18 @@
-// const imageHtml = `<div class=" p-3 col-sm-8 col-md-6 col-lg-4" >
-//                     <img src="images/homephoto.jpeg" class="card-img-top" alt="Image Alt Text">
-//                 </div>`
-//
-// const root = document.getElementById('root')
-// for(var i = 0; i< 10; i++ ){
-//     root.insertAdjacentHTML('beforeend', imageHtml)
-// }
-
-const galleryImage = document.getElementById("gallery_displayID");
-
+// Function to populate the gallery with images
 function getPictures() {
-    console.log("Hello")
+    const galleryImage = document.getElementById("gallery_displayID");
+
+    // Loop through image numbers from 0 to 60
     for (let i = 0; i < 61; i++) {
+        // Add image elements with their source and overlay div to the gallery
         galleryImage.innerHTML += `        
-                                    <div class="bg">
-                                        <img src="../images/gallery/${i}.JPG" alt="">
-                                        <div class="bg_overlay"></div>
-                                    </div>
-                                 `
+            <div class="bg">
+                <img src="../images/gallery/${i}.JPG" alt="">
+                <div class="bg_overlay"></div>
+            </div>
+        `;
     }
 }
 
+// Call the function to populate the gallery with images
 getPictures();
