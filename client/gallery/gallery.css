@@ -31,6 +31,12 @@
     width: 100%;
 }
 
+.gallery_display .bg img{
+    object-fit: cover;
+    object-position: 25% 25%;
+
+}
+
 .gallery_display .bg .text {
     position: absolute;
     bottom: 0;
