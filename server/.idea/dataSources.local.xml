@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal" created-in="PS-232.8660.205">
+    <data-source name="rdc.sqlite" uuid="80e9d472-9b45-46ba-b1a7-4a4c673396f8">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+    <data-source name="rdc" uuid="87187b77-6908-456a-9287-92700e23ba2c">
+      <database-info product="" version="" jdbc-version="" driver-name="" driver-version="" dbms="SQLITE" exact-version="0" />
+      <schema-mapping />
+    </data-source>
+  </component>
+</project>

@@ -28,7 +28,7 @@
     cursor: pointer;
     height: 30vh;
     transition: all 0.5s ease-in;
-    min-width: 300px;
+    width: 100%;
 }
 
 .gallery_display .bg .text {
