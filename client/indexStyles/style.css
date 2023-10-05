@@ -162,7 +162,7 @@ color: #075561;
 }
 
 /*Welcome Page Styling*/
-section.welcome-section{
+.welcome-section{
     display: flex;
     padding-top: 5%;
     justify-content: center;
@@ -182,7 +182,10 @@ div.welcome-container{
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    width: fit-content;
+    margin: auto;
 }
+
 
 h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons > a > button{
     color: #fff;

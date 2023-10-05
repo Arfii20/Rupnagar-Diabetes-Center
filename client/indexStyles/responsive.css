@@ -96,6 +96,10 @@
         left: 0;
     }
 
+    p.welcome-para{
+        font-size: 0.9rem;
+    }
+
     section.welcome-section{
         padding-top: 0;
     }
