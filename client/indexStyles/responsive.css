@@ -97,7 +97,7 @@
     }
 
     p.welcome-para{
-        font-size: 0.9rem;
+        font-size: 1rem;
     }
 
     section.welcome-section{
@@ -107,7 +107,7 @@
     .welcome-section .welcome-heading {
         margin: auto;
         width: 100vw;
-        font-size: 1.4rem;
+        font-size: 1.8rem;
     }
 
     .welcome-container {
@@ -219,6 +219,10 @@
     /*    Change Font*/
     }
 
+    #about-us h1.title{
+        font-size: 2rem;
+    }
+
     .about-us{
         display: flex;
         flex-direction: column;
@@ -237,6 +241,10 @@
     #contact-us{
         margin-top: 30%;
         margin-bottom: 30%;
+    }
+
+    #contact-us h1.title{
+        font-size: 2rem;
     }
 
     .map .ratio-iframe{
