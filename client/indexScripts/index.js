@@ -103,3 +103,34 @@ function addClass() {
 function removeClass() {
     document.getElementById("navbarSupportedContent").classList.remove("visible");
 }
+
+
+// Listen for click events on the burger menu
+document.body.addEventListener('click', closeNavbar);
+document.body.addEventListener('touchstart', closeNavbar);
+
+// Function to close the navbar
+function closeNavbar(event) {
+    const navbar = document.querySelector('.navbar-collapse');
+    const toggleButton = document.querySelector('.navbar-toggler');
+
+    // Check if the navbar is open and the click/touch target is not within the navbar or toggle button
+    if (navbar.classList.contains('show') &&
+        !navbar.contains(event.target) &&
+        !toggleButton.contains(event.target)) {
+        // Close the navbar
+        toggleButton.click();
+    }
+}
+
+// Function to preload content from another HTML page
+async function preloadContent() {
+    try {
+        const response = await fetch('./gallery/gallery.html'); // Replace with the URL of the other page
+    } catch (error) {
+        console.error('Error preloading content:', error);
+    }
+}
+
+// Call the preloadContent function 5 seconds after the page loads
+setTimeout(preloadContent, 5000);

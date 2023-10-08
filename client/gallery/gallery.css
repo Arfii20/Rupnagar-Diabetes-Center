@@ -127,9 +127,8 @@
         justify-content: center;
         align-items: center;
         height: fit-content;
-        padding: 30% 10%;
-        gap: 2rem;
-
+        padding: 10% 2%;
+        gap: 1rem;
     }
 
     #nav-bar a.nav-img{

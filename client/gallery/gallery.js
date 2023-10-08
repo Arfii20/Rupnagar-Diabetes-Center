@@ -6,7 +6,7 @@ function getPictures() {
     for (let i = 0; i < 61; i++) {
         // Add image elements with their source and overlay div to the gallery
         galleryImage.innerHTML += `        
-            <div class="bg">
+            <div class="bg reveal animate-fade-in">
                 <img src="../images/gallery/${i}.JPG" alt="">
                 <div class="bg_overlay"></div>
             </div>
