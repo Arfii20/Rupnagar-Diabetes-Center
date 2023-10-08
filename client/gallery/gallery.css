@@ -105,7 +105,7 @@
         grid-gap: 1.2rem;
         justify-items: center;
         align-items: center;
-        padding: 10% 5%;
+        padding: 25% 2%;
         height: fit-content;
     }
 
@@ -127,7 +127,7 @@
         justify-content: center;
         align-items: center;
         height: fit-content;
-        padding: 10% 2%;
+        padding: 25% 2%;
         gap: 1rem;
     }
 

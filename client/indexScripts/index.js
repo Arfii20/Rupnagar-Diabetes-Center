@@ -133,4 +133,4 @@ async function preloadContent() {
 }
 
 // Call the preloadContent function 5 seconds after the page loads
-setTimeout(preloadContent, 5000);
+window.addEventListener('load', preloadContent);
