@@ -1,6 +1,3 @@
-// Get the element for the question input textarea
-const questionElement = document.getElementById('question-entry-text');
-
 // Get all input fields with the class 'inputBox' and attach event listeners to them
 const inputFields = document.querySelectorAll('.inputBox input');
 
@@ -21,6 +18,11 @@ inputFields.forEach(input => {
     });
 });
 
+
+
+// Get the element for the question input textarea
+const questionElement = document.getElementById('question-entry-text');
+
 // Automatically adjust the height of the question textarea based on its content
 questionElement.addEventListener("input", function (e) {
     questionElement.style.minHeight = "30px";
@@ -35,6 +37,7 @@ questionElement.addEventListener('focus', (e) => {
 
 // Add a click event listener to the question-submit-button
 document.getElementById('question-submit-button').addEventListener('click', async function (event) {
+    event.preventDefault();
     // Get the form element
     const form = document.getElementById('question-form');
 
@@ -54,7 +57,7 @@ document.getElementById('question-submit-button').addEventListener('click', asyn
     const emailAddressElement = document.getElementById('question-email-input');
     const phoneNumberElement = document.getElementById('question-phone-input');
     const subjectElement = document.getElementById('question-subject-input');
-    const descriptionElement = document.getElementById('question-how-can-we-help');
+    const descriptionElement = document.getElementById('question-entry-text');
 
     // Retrieve values from input elements
     const firstName = firstNameElement.value;
@@ -109,7 +112,7 @@ document.getElementById('question-submit-button').addEventListener('click', asyn
     };
 
     // Send a POST request to the server to send an email
-    const response = await fetch('Features/automatedEmails/automatedEmails.php', {
+    const response = await fetch('../php/automatedEmails.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -121,8 +124,14 @@ document.getElementById('question-submit-button').addEventListener('click', asyn
     if (response.ok) {
         const data = await response.json();
         console.log(data);
+
+        // Close the Bootstrap modal programmatically
+        const button = document.getElementById("closeQuestion");
+        button.click();
     }
 });
+
+
 
 // Get the element for the appointment input textarea
 const appointmentElement = document.getElementById('appointment-entry-text');
@@ -155,7 +164,7 @@ document.getElementById('appointment-submit-button').addEventListener('click', a
     const ageElement = document.getElementById('appointment-age-input');
     const emailAddressElement = document.getElementById('appointment-email-input');
     const phoneNumberElement = document.getElementById('appointment-phone-input');
-    const descriptionElement = document.getElementById('appointment-how-can-we-help');
+    const descriptionElement = document.getElementById('appointment-entry-text');
 
     // Get values from input elements
     const firstName = firstNameElement.value;
@@ -209,7 +218,7 @@ document.getElementById('appointment-submit-button').addEventListener('click', a
     };
 
     // Send a POST request with email data
-    const response = await fetch('Features/automatedEmails/automatedEmails.php', {
+    const response = await fetch('../php/automatedEmails.php', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -219,8 +228,13 @@ document.getElementById('appointment-submit-button').addEventListener('click', a
     if (response.ok) {
         const data = await response.json();
         console.log(data);
+
+        const button = document.getElementById("closeAppointment");
+        button.click();
     }
 });
+
+
 
 // Regular expression function to validate phone numbers
 function isValidNumber(phone_number) {
