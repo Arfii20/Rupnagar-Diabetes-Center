@@ -80,30 +80,6 @@ languageLink.addEventListener('click', function(event) {
 // Loads the default language when the page loads
 loadLanguage('en');
 
-// Function to toggle navigation overlay visibility
-function dropOverlay() {
-    // Check if the navigation overlay is currently visible
-    if (document.getElementById("navbarSupportedContent").classList.contains("visible")) {
-        // Remove the overlay and associated class
-        document.getElementById("burger-overlay").classList.remove("burger-overlay");
-        removeClass();
-    } else {
-        // Add the overlay and associated class
-        addClass();
-        document.getElementById("burger-overlay").classList.add("burger-overlay");
-    }
-}
-
-// Function to add class for overlay visibility
-function addClass() {
-    document.getElementById("navbarSupportedContent").classList.add("visible");
-}
-
-// Function to remove class for overlay visibility
-function removeClass() {
-    document.getElementById("navbarSupportedContent").classList.remove("visible");
-}
-
 
 // Listen for click events on the burger menu
 document.body.addEventListener('click', closeNavbar);
