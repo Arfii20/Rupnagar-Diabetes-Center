@@ -1,5 +1,5 @@
 /*Responsive Styling*/
-@media only screen and (max-width: 1080px) {
+@media only screen and (max-width: 1199px) {
     /*Hiding Scrollbar but keeping functionality*/
     body::-webkit-scrollbar {
         display: none;
@@ -162,7 +162,7 @@
 
     /*Reviews Styling*/
     .reviews-quote .review-carousel {
-        width: 100%;
+        width: 80%;
     }
 
     .reviews-quote .carousel-cell {
@@ -172,7 +172,7 @@
         text-align: center;
         padding: 2rem;
         width: 97.7%;
-        height: 360px;
+        height: fit-content;
         background-color: rgba(2, 126, 137, 0.9);
         counter-increment: carousel-cell;
         border-radius: 1rem 1rem;
@@ -215,8 +215,14 @@
     }
 
     /*About Us Styling*/
+    #about-us{
+        padding: 5% 0;
+    }
+
     .about-us{
-    /*    Change Font*/
+        display: flex;
+        justify-content: center;
+        gap: 4rem;
     }
 
     #about-us h1.title{
@@ -228,21 +234,39 @@
         flex-direction: column;
     }
 
-    .about-us .flip-card{
+
+    .flip-card {
         margin: auto;
         max-width: 320px;
+        background-color: transparent;
+        max-height: 380px;
+        border-style: none;
+        perspective: 1000px; /* Remove this if you don't want the 3D effect */
     }
 
-    .about-us .flip-card-back{
-        min-height: 100%;
+    .flip-card-front {
+        border-radius: 0.6rem;
+        color: white;
+        height: auto;
+        width: auto;
+        background-color: rgba(2, 126, 137, 0.9)
+    }
+
+    .flip-card-back {
+        padding: 2rem;
+        min-height: auto;
+        width: 100%;
+        border-radius: 0.6rem;
+        background-color: rgba(2, 126, 137, 0.9);
+        color: white;
+        transform: rotateY(180deg);
+    }
+
+    .contact-us .child{
+        min-width: 330px;
     }
 
     /*Contact Us Styling*/
-    #contact-us{
-        margin-top: 30%;
-        margin-bottom: 30%;
-    }
-
     #contact-us h1.title{
         font-size: 2rem;
     }
@@ -275,3 +299,11 @@
     }
 
 }
+
+/* Fixing Bootstrap Nav Collapse to Hamburger*/
+/*@media (min-width: 1081px) {*/
+/*    .navbar-expand-lg .navbar-collapse {*/
+/*        display: flex !important;*/
+/*        flex-basis: auto;*/
+/*    }*/
+/*}*/

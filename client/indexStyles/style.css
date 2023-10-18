@@ -50,9 +50,7 @@ body {
     border-radius: 1rem 0 0 1rem;
     border: none;
 }
-.why-choose-us .card-title{
-    color: #075561;
-}
+
 .why-choose-us .card-text{
     font-size: 14px;
 }
@@ -239,7 +237,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 .why-choose-us .card-title{
     font-family: 'Roboto', sans-serif;
     font-size: 1.3rem;
-    color: black !important;
+    color: white;
     text-transform: uppercase;
 }
 
@@ -293,20 +291,29 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 1.5rem;
     text-align: center;
     padding: 2rem;
     width: 30%;
-    height: 360px;
+    min-height: 380px;
     margin-right: 3rem;
     background-color: rgba(2, 126, 137, 0.9);
     counter-increment: carousel-cell;
     border-radius: 1rem 1rem;
 }
 
+.flickity-viewport{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+    min-height: 40vh !important;
+}
+
 .carousel-cell .user-details{
     font-size: 1.5rem;
-    color: black;
+    color: white;
 }
 
 .carousel-cell .text{
@@ -366,9 +373,12 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 
 /* About Our Doctors*/
 #about-us{
-    padding-top: 8%;
-    min-height: 85vh;
-    margin-bottom: 8%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
 }
 
 .about-us{
@@ -394,7 +404,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 .flip-card {
     background-color: transparent;
     width: 380px;
-    height: 380px;
+    height: 458px;
     border-style: none;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 
@@ -467,15 +477,12 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
-}
-
-.map{
-    padding-top: 2rem;
+    gap: 2rem;
+    padding: 6rem 0 4rem 0;
 }
 
 .map .ratio-iframe{
-    min-height: 438px;
+    min-height: 368px;
 }
 
 .map-caption{
@@ -484,11 +491,15 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 
 .contact-us{
     padding-top: 4%;
-    min-height: 60vh;
+    height: fit-content;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     text-align: center;
+}
+
+.contact-us .child{
+    width: 30%;
 }
 
 .contact-us .contact-numbers{
@@ -511,11 +522,11 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 }
 
 .contact-us a{
-    color: black;
+    color: white;
 }
 
 .contact-us a:hover{
-    color: white;
+    color: black;
 }
 
 .address .button{
@@ -524,6 +535,10 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
     border-style: none;
     padding: 0.5rem 1rem;
     scale: 1;
+}
+
+.address .button a{
+    color: black;
 }
 
 .address .button:hover{

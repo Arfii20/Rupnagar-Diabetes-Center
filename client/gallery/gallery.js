@@ -30,7 +30,7 @@ const galleryImage = document.getElementById("gallery_displayID");
 // Function to populate the gallery with images
 function addPictures() {
     // Loop through image numbers from 0 to 60
-    for (let i = 0; i < (8+val); i++) {
+    for (let i = 0; i < (8); i++) {
         // Add image elements with their source and overlay div to the gallery
         if (counter <= 60) {
             galleryImage.innerHTML +=   `        
@@ -43,8 +43,6 @@ function addPictures() {
             document.getElementById("viewMoreImages").style.display = "none";
         }
     }
-
-    val += 8
 }
 
 // Call the function to populate the gallery with images
