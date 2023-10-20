@@ -512,6 +512,7 @@ h1.welcome-heading, p.welcome-para, .welcome-buttons > button, .welcome-buttons 
 .contact-us .numbers, .address, .open-hours{
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: center;
     color: white;
     max-height: 320px;

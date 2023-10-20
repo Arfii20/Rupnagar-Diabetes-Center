@@ -99,6 +99,15 @@
     opacity: 1;
 }
 
+.gallery_box .title
+{
+    font-family: 'Roboto', sans-serif;
+    font-size: 3rem;
+    margin-top: 2rem;
+    color: white;
+    text-transform: uppercase;
+}
+
 @media only screen and (max-width: 1460px){
     /*Gallery Styling*/
     .gallery_box{
@@ -112,22 +121,31 @@
         grid-gap: 1.5rem;
         justify-items: center;
         align-items: center;
-        padding: 8% 2%;
+        padding: 3% 2% 8% 2%;
         height: fit-content;
     }
 
     .gallery_box{
-        padding: 3rem ;
+        padding: 6rem ;
         margin-top: 0;
     }
 
     .gallery_box button {
-        margin-top: -4%;
+        margin-top: -2%;
         color: white;
     }
 
     #nav-bar a.nav-img{
         display: block;
+    }
+
+    .gallery_box .title
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5rem;
+        margin-top: 2rem;
+        color: white;
+        text-transform: uppercase;
     }
 }
 
@@ -148,12 +166,12 @@
         grid-template-rows: auto;
         justify-items: center;
         align-items: center;
-        padding: 12% 2%;
+        padding: 3% 2% 8% 2%;
         height: fit-content;
     }
 
     .gallery_box button {
-        margin-top: -4%;
+        margin-top: -2%;
         color: white;
     }
 
@@ -169,13 +187,22 @@
         transition: all 0.5s ease-in;
         min-width: 30vw;
     }
+
+    .gallery_box .title
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5rem;
+        margin-top: 5rem;
+        color: white;
+        text-transform: uppercase;
+    }
 }
 
 @media only screen and (max-width: 540px){
     /*Gallery Styling*/
     .gallery_box{
         height: fit-content;
-        padding: 3rem ;
+        padding: 1rem ;
         margin-top: 0;
     }
 
@@ -186,12 +213,12 @@
         grid-template-rows: auto;
         justify-items: center;
         align-items: center;
-        padding: 20% 2%;
+        padding: 3% 2% 10% 2%;
         height: fit-content;
     }
 
     .gallery_box button {
-        margin-top: -4%;
+        margin-top: -2%;
         color: white;
     }
 
@@ -205,5 +232,14 @@
         min-height: auto;
         transition: all 0.5s ease-in;
         min-width: 30vw;
+    }
+
+    .gallery_box .title
+    {
+        font-family: 'Roboto', sans-serif;
+        font-size: 2.5rem;
+        margin-top: 5rem;
+        color: white;
+        text-transform: uppercase;
     }
 }
