@@ -1,7 +1,9 @@
 name: Node CI
 
 on:
-  push: {}                # trigger on all pushes
+  push:
+  pull_request:
+  workflow_dispatch:
 
 jobs:
   # Stage 1: Lint
