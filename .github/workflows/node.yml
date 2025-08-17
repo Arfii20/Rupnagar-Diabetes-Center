@@ -1,5 +1,8 @@
 name: Node CI
 
+on:
+  push: {}                # trigger on all pushes
+
 jobs:
   # Stage 1: Lint
   lint:
